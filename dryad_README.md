@@ -264,7 +264,7 @@ The read panels include 107 dated specimens. The bacterial-OTU panel includes 55
 
 Original Kruskal–Wallis annotations and Dunn/Bonferroni letter relations were checked against these source variables. They concern thresholded unrarefied `TotalOTU`, not recalculated rarefied richness. Historical software versions and literal compact-letter assignment order have not been fully recovered.
 
-S4 includes 56 bacterial profiles across 19 species and 48 valid prey profiles across 12 species. Its *A. bruennichi* labels are **34 bacterial and 35 prey profiles**. An earlier local note read the bacterial label as 44; that reading was corrected. It is not evidence of a 44-profile dataset.
+S4 includes 56 bacterial profiles across 19 species and 48 valid prey profiles across 12 species. Its *A. bruennichi* labels are **34 bacterial and 35 prey profiles**.
 
 ### Community distances and tests
 
