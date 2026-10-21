@@ -1,0 +1,8 @@
+* text=auto
+*.png binary
+*.xlsm binary
+*.xlsx binary
+*.rds binary
+# Preserve the bytes of retained source inputs.
+/data/raw/* -text
+/output/** -text

@@ -1,0 +1,35 @@
+published_tip,sample_species,mapping_status,original_mapping_status,normalized_species,note
+Argiope_aemula,A. aemula,mapped,exact_species_match,Argiope_aemula,Genus abbreviation/spacing normalized only.
+Argiope_aetherea,A. aetherea,mapped,exact_species_match,Argiope_aetherea,Genus abbreviation/spacing normalized only.
+Argiope_amoena,A. amoena,mapped,exact_species_match,Argiope_amoena,Genus abbreviation/spacing normalized only.
+Argiope_anasuja,A. anasuja,mapped,exact_species_match,Argiope_anasuja,Genus abbreviation/spacing normalized only.
+,A. appensa,unmatched,unmatched,Argiope_appensa,Absent from the deposited host phylogeny; do not invent a placement.
+Argiope_argentata,A. argentata,mapped,exact_species_match,Argiope_argentata,Genus abbreviation/spacing normalized only.
+Argiope_aurantia,A. aurantia,mapped,exact_species_match,Argiope_aurantia,Genus abbreviation/spacing normalized only.
+Argiope_australis,A. australis,mapped,exact_species_match,Argiope_australis,Genus abbreviation/spacing normalized only.
+Argiope_blanda,A. blanda,mapped,exact_species_match,Argiope_blanda,Genus abbreviation/spacing normalized only.
+Argiope_boesenbergi,A. boesenbergi,mapped,exact_species_match,Argiope_boesenbergi,Genus abbreviation/spacing normalized only.
+,A. bougainvilla,unmatched,unmatched,Argiope_bougainvilla,Absent from the deposited host phylogeny; do not invent a placement.
+Argiope_bruennichi,A. bruennichi,mapped,exact_species_match,Argiope_bruennichi,Genus abbreviation/spacing normalized only.
+,A. brunnescentia,unmatched,unmatched,Argiope_brunnescentia,Absent from the deposited host phylogeny; do not invent a placement.
+Argiope_catenulata,A. catenulata,mapped,exact_species_match,Argiope_catenulata,Genus abbreviation/spacing normalized only.
+,A. chloreis,unmatched,unmatched,Argiope_chloreis,Absent from the deposited host phylogeny; do not invent a placement.
+,A. coquereli,unmatched,unmatched,Argiope_coquereli,Absent from the deposited host phylogeny; do not invent a placement.
+Argiope dang (Laos),A. dang,mapped,geography_resolved_match,Argiope_dang,Deposition has separate Laos and Singapore A. dang tips. Both local specimen rows are from Laos. Mapping does not establish lineage identity.
+Argiope_flavipalpis,A. flavipalpis,mapped,exact_species_match,Argiope_flavipalpis,Genus abbreviation/spacing normalized only.
+Argiope_jinghongensis,A. jinghongensis,mapped,exact_species_match,Argiope_jinghongensis,Genus abbreviation/spacing normalized only.
+Argiope_lobata,A. lobata,mapped,exact_species_match,Argiope_lobata,Genus abbreviation/spacing normalized only.
+Argiope_luzona,A. luzona,mapped,exact_species_match,Argiope_luzona,Genus abbreviation/spacing normalized only.
+,A. magnifica,unmatched,unmatched,Argiope_magnifica,Absent from the deposited host phylogeny; do not invent a placement.
+Argiope_minuta,A. minuta,mapped,exact_species_match,Argiope_minuta,Genus abbreviation/spacing normalized only.
+Argiope_modesta,A.modesta,mapped,exact_species_match,Argiope_modesta,Genus abbreviation/spacing normalized only.
+Argiope_picta,A. picta,mapped,exact_species_match,Argiope_picta,Genus abbreviation/spacing normalized only.
+,A. pictula,unmatched,unmatched,Argiope_pictula,Absent from the deposited host phylogeny; do not invent a placement.
+Argiope_protensa,A. protensa,mapped,exact_species_match,Argiope_protensa,Genus abbreviation/spacing normalized only.
+Argiope_pulchella,A. pulchella,mapped,exact_species_match,Argiope_pulchella,Genus abbreviation/spacing normalized only.
+,A. pulchelloides,unmatched,unmatched,Argiope_pulchelloides,Absent from the deposited host phylogeny; do not invent a placement.
+Argiope_ranomafanensis,A. ranomafanensis,mapped,exact_species_match,Argiope_ranomafanensis,Genus abbreviation/spacing normalized only.
+Argiope_reinwardti,A. reinwardti,mapped,exact_species_match,Argiope_reinwardti,Genus abbreviation/spacing normalized only.
+Argiope_sector,A. sector,mapped,exact_species_match,Argiope_sector,Genus abbreviation/spacing normalized only.
+Argiope_trifaciata,A. trifasciata,mapped,deposited_spelling_match,Argiope_trifasciata,Deposition and article table spell the epithet trifaciata; local workbook has trifasciata. Original tree label retained.
+Argiope_versicolor,A. versicolor,mapped,exact_species_match,Argiope_versicolor,Genus abbreviation/spacing normalized only.
