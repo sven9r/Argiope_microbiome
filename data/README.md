@@ -25,7 +25,7 @@ The corresponding `*.OTu.fas` files preserve original OTU sequences. The `*.out_
 
 `reference/arg_sample_map.csv` preserves the original Arg1–Arg30 display identities. Use its original `ID` to join specimens. The display order does not change when a profile fails a read-depth cutoff.
 
-`reference/figures/` contains the retained map and supplementary images whose original plotting workflows are not reconstructed here. `make map` runs `scripts/01_map.R` to copy the saved Figure 1 image; `make saved-figures` copies S2–S4. The original map-drawing script is unavailable. Supplementary Figure 1 has a separate current rarefaction calculation; see the root README and Makefile for the exact target.
+Figure 1 (`figures/main/Fig01_map.png`) was created in ArcGIS. The R and Python scripts listed in the root README generate the other main and supplementary figures.
 
 The compact saved species summaries, pruned host tree and bacterial alignment remain at their analysis paths under `output/`. They are inputs to Figure 2 and Supplementary Figure 8. Their sources are described in [THIRD_PARTY_SOURCES.md](../THIRD_PARTY_SOURCES.md).
 

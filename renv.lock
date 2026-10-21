@@ -51,6 +51,55 @@
       "Maintainer": "Achim Zeileis <Achim.Zeileis@R-project.org>",
       "Repository": "CRAN"
     },
+    "GUniFrac": {
+      "Package": "GUniFrac",
+      "Version": "1.9",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Generalized UniFrac Distances, Distance-Based Multivariate Methods and Feature-Based Univariate Methods for Microbiome Data Analysis",
+      "Date": "2025-08-25",
+      "Authors@R": "c(person(given = \"Jun\", family = \"Chen\", role = c(\"aut\", \"cre\"), email = \"chen.jun2@mayo.edu\"), person(given = \"Xianyang\", family = \"Zhang\", role = \"aut\"), person(given = \"Lu\", family = \"Yang\", role = \"aut\"), person(given = \"Lujun\", family = \"Zhang\", role = \"aut\"))",
+      "Description": "A suite of methods for powerful and robust microbiome data analysis including data normalization, data simulation, community-level association testing and differential abundance analysis. It implements generalized UniFrac distances,  Geometric Mean of Pairwise Ratios (GMPR) normalization, semiparametric data simulator, distance-based statistical methods, and feature-based statistical methods. The distance-based statistical methods include three extensions of PERMANOVA: (1) PERMANOVA using the Freedman-Lane permutation scheme, (2) PERMANOVA omnibus test using multiple matrices, and  (3) analytical approach to approximating PERMANOVA p-value. Feature-based statistical methods include linear model-based methods for differential abundance analysis of zero-inflated high-dimensional compositional data.",
+      "Depends": [
+        "R (>= 3.5.0)"
+      ],
+      "Suggests": [
+        "ade4",
+        "knitr",
+        "markdown",
+        "ggpubr"
+      ],
+      "Imports": [
+        "Rcpp (>= 0.12.13)",
+        "vegan",
+        "ggplot2",
+        "matrixStats",
+        "Matrix",
+        "ape",
+        "parallel",
+        "stats",
+        "utils",
+        "statmod",
+        "rmutil",
+        "dirmult",
+        "MASS",
+        "ggrepel",
+        "foreach",
+        "modeest",
+        "inline",
+        "methods"
+      ],
+      "LinkingTo": [
+        "Rcpp"
+      ],
+      "NeedsCompilation": "yes",
+      "VignetteBuilder": "knitr",
+      "License": "GPL-3",
+      "Encoding": "UTF-8",
+      "Author": "Jun Chen [aut, cre], Xianyang Zhang [aut], Lu Yang [aut], Lujun Zhang [aut]",
+      "Maintainer": "Jun Chen <chen.jun2@mayo.edu>",
+      "Repository": "CRAN"
+    },
     "MASS": {
       "Package": "MASS",
       "Version": "7.3-65",
@@ -460,6 +509,48 @@
       "License": "MIT + file LICENSE",
       "NeedsCompilation": "no",
       "Author": "Tony Plate [aut, cre], Richard Heiberger [aut]",
+      "Repository": "CRAN"
+    },
+    "ape": {
+      "Package": "ape",
+      "Version": "5.8-1",
+      "Source": "Repository",
+      "Date": "2024-12-10",
+      "Title": "Analyses of Phylogenetics and Evolution",
+      "Authors@R": "c(person(\"Emmanuel\", \"Paradis\", role = c(\"aut\", \"cre\", \"cph\"), email = \"Emmanuel.Paradis@ird.fr\", comment = c(ORCID = \"0000-0003-3092-2199\")), person(\"Simon\", \"Blomberg\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0003-1062-0839\")), person(\"Ben\", \"Bolker\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-2127-0443\")), person(\"Joseph\", \"Brown\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-3835-8062\")), person(\"Santiago\", \"Claramunt\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-8926-5974\")), person(\"Julien\", \"Claude\", role = c(\"aut\", \"cph\"), , comment = c(ORCID = \"0000-0002-9267-1228\")), person(\"Hoa Sien\", \"Cuong\", role = c(\"aut\", \"cph\")), person(\"Richard\", \"Desper\", role = c(\"aut\", \"cph\")), person(\"Gilles\", \"Didier\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0003-0596-9112\")), person(\"Benoit\", \"Durand\", role = c(\"aut\", \"cph\")), person(\"Julien\", \"Dutheil\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0001-7753-4121\")), person(\"RJ\", \"Ewing\", role = c(\"aut\", \"cph\")), person(\"Olivier\", \"Gascuel\", role = c(\"aut\", \"cph\")), person(\"Thomas\", \"Guillerme\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0003-4325-1275\")), person(\"Christoph\", \"Heibl\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-7655-3299\")), person(\"Anthony\", \"Ives\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0001-9375-9523\")), person(\"Bradley\", \"Jones\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0003-4498-1069\")), person(\"Franz\", \"Krah\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0001-7866-7508\")), person(\"Daniel\", \"Lawson\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-5311-6213\")), person(\"Vincent\", \"Lefort\", role = c(\"aut\", \"cph\")), person(\"Pierre\", \"Legendre\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-3838-3305\")), person(\"Jim\", \"Lemon\", role = c(\"aut\", \"cph\")), person(\"Guillaume\", \"Louvel\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-7745-0785\")), person(\"Federico\", \"Marotta\", role = c(\"aut\", \"cph\")), person(\"Eric\", \"Marcon\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-5249-321X\")), person(\"Rosemary\", \"McCloskey\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0002-9772-8553\")), person(\"Johan\", \"Nylander\", role = c(\"aut\", \"cph\")), person(\"Rainer\", \"Opgen-Rhein\", role = c(\"aut\", \"cph\")), person(\"Andrei-Alin\", \"Popescu\", role = c(\"aut\", \"cph\")), person(\"Manuela\", \"Royer-Carenzi\", role = c(\"aut\", \"cph\")), person(\"Klaus\", \"Schliep\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0003-2941-0161\")), person(\"Korbinian\", \"Strimmer\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0001-7917-2056\")), person(\"Damien\", \"de Vienne\", role = c(\"aut\", \"cph\"), comment = c(ORCID = \"0000-0001-9532-5251\")))",
+      "Depends": [
+        "R (>= 3.2.0)"
+      ],
+      "Suggests": [
+        "gee",
+        "expm",
+        "igraph",
+        "phangorn",
+        "xml2"
+      ],
+      "Imports": [
+        "nlme",
+        "lattice",
+        "graphics",
+        "methods",
+        "stats",
+        "utils",
+        "parallel",
+        "Rcpp (>= 0.12.0)",
+        "digest"
+      ],
+      "LinkingTo": [
+        "Rcpp"
+      ],
+      "ZipData": "no",
+      "Description": "Functions for reading, writing, plotting, and manipulating phylogenetic trees, analyses of comparative data in a phylogenetic framework, ancestral character analyses, analyses of diversification and macroevolution, computing distances from DNA sequences, reading and writing nucleotide sequences as well as importing from BioConductor, and several tools such as Mantel's test, generalized skyline plots, graphical exploration of phylogenetic data (alex, trex, kronoviz), estimation of absolute evolutionary rates and clock-like trees using mean path lengths and penalized likelihood, dating trees with non-contemporaneous sequences, translating DNA into AA sequences, and assessing sequence alignments. Phylogeny estimation can be done with the NJ, BIONJ, ME, MVR, SDM, and triangle methods, and several methods handling incomplete distance matrices (NJ*, BIONJ*, MVR*, and the corresponding triangle method). Some functions call external applications (PhyML, Clustal, T-Coffee, Muscle) whose results are returned into R.",
+      "License": "GPL-2 | GPL-3",
+      "URL": "https://github.com/emmanuelparadis/ape",
+      "BugReports": "https://github.com/emmanuelparadis/ape/issues",
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "yes",
+      "Author": "Emmanuel Paradis [aut, cre, cph] (<https://orcid.org/0000-0003-3092-2199>), Simon Blomberg [aut, cph] (<https://orcid.org/0000-0003-1062-0839>), Ben Bolker [aut, cph] (<https://orcid.org/0000-0002-2127-0443>), Joseph Brown [aut, cph] (<https://orcid.org/0000-0002-3835-8062>), Santiago Claramunt [aut, cph] (<https://orcid.org/0000-0002-8926-5974>), Julien Claude [aut, cph] (<https://orcid.org/0000-0002-9267-1228>), Hoa Sien Cuong [aut, cph], Richard Desper [aut, cph], Gilles Didier [aut, cph] (<https://orcid.org/0000-0003-0596-9112>), Benoit Durand [aut, cph], Julien Dutheil [aut, cph] (<https://orcid.org/0000-0001-7753-4121>), RJ Ewing [aut, cph], Olivier Gascuel [aut, cph], Thomas Guillerme [aut, cph] (<https://orcid.org/0000-0003-4325-1275>), Christoph Heibl [aut, cph] (<https://orcid.org/0000-0002-7655-3299>), Anthony Ives [aut, cph] (<https://orcid.org/0000-0001-9375-9523>), Bradley Jones [aut, cph] (<https://orcid.org/0000-0003-4498-1069>), Franz Krah [aut, cph] (<https://orcid.org/0000-0001-7866-7508>), Daniel Lawson [aut, cph] (<https://orcid.org/0000-0002-5311-6213>), Vincent Lefort [aut, cph], Pierre Legendre [aut, cph] (<https://orcid.org/0000-0002-3838-3305>), Jim Lemon [aut, cph], Guillaume Louvel [aut, cph] (<https://orcid.org/0000-0002-7745-0785>), Federico Marotta [aut, cph], Eric Marcon [aut, cph] (<https://orcid.org/0000-0002-5249-321X>), Rosemary McCloskey [aut, cph] (<https://orcid.org/0000-0002-9772-8553>), Johan Nylander [aut, cph], Rainer Opgen-Rhein [aut, cph], Andrei-Alin Popescu [aut, cph], Manuela Royer-Carenzi [aut, cph], Klaus Schliep [aut, cph] (<https://orcid.org/0000-0003-2941-0161>), Korbinian Strimmer [aut, cph] (<https://orcid.org/0000-0001-7917-2056>), Damien de Vienne [aut, cph] (<https://orcid.org/0000-0001-9532-5251>)",
+      "Maintainer": "Emmanuel Paradis <Emmanuel.Paradis@ird.fr>",
       "Repository": "CRAN"
     },
     "backports": {
@@ -915,6 +1006,47 @@
       "Maintainer": "Matthew Lincoln <matthew.d.lincoln@gmail.com>",
       "Repository": "CRAN"
     },
+    "clue": {
+      "Package": "clue",
+      "Version": "0.3-68",
+      "Source": "Repository",
+      "Encoding": "UTF-8",
+      "Title": "Cluster Ensembles",
+      "Description": "CLUster Ensembles.",
+      "Authors@R": "c(person(\"Kurt\", \"Hornik\", role = c(\"aut\", \"cre\"), email = \"Kurt.Hornik@R-project.org\", comment = c(ORCID = \"0000-0003-4198-9911\")), person(\"Walter\", \"Böhm\", role = \"ctb\"))",
+      "License": "GPL-2",
+      "Depends": [
+        "R (>= 3.2.0)"
+      ],
+      "Imports": [
+        "stats",
+        "cluster",
+        "graphics",
+        "methods"
+      ],
+      "Suggests": [
+        "e1071",
+        "lpSolve (>= 5.5.7)",
+        "quadprog (>= 1.4-8)",
+        "relations"
+      ],
+      "Enhances": [
+        "RWeka",
+        "ape",
+        "cba",
+        "cclust",
+        "flexclust",
+        "flexmix",
+        "kernlab",
+        "mclust",
+        "movMF",
+        "modeltools"
+      ],
+      "NeedsCompilation": "yes",
+      "Author": "Kurt Hornik [aut, cre] (ORCID: <https://orcid.org/0000-0003-4198-9911>), Walter Böhm [ctb]",
+      "Maintainer": "Kurt Hornik <Kurt.Hornik@R-project.org>",
+      "Repository": "CRAN"
+    },
     "cluster": {
       "Package": "cluster",
       "Version": "2.1.8.1",
@@ -955,6 +1087,23 @@
       "URL": "https://svn.r-project.org/R-packages/trunk/cluster/",
       "NeedsCompilation": "yes",
       "Author": "Martin Maechler [aut, cre] (<https://orcid.org/0000-0002-8685-9910>), Peter Rousseeuw [aut] (Fortran original, <https://orcid.org/0000-0002-3807-5353>), Anja Struyf [aut] (S original), Mia Hubert [aut] (S original, <https://orcid.org/0000-0001-6398-4850>), Kurt Hornik [trl, ctb] (port to R; maintenance(1999-2000), <https://orcid.org/0000-0003-4198-9911>), Matthias Studer [ctb], Pierre Roudier [ctb], Juan Gonzalez [ctb], Kamil Kozlowski [ctb], Erich Schubert [ctb] (fastpam options for pam(), <https://orcid.org/0000-0001-9143-4880>), Keefe Murphy [ctb] (volume.ellipsoid({d >= 3}))",
+      "Repository": "CRAN"
+    },
+    "codetools": {
+      "Package": "codetools",
+      "Version": "0.2-20",
+      "Source": "Repository",
+      "Priority": "recommended",
+      "Author": "Luke Tierney <luke-tierney@uiowa.edu>",
+      "Description": "Code analysis tools for R.",
+      "Title": "Code Analysis Tools for R",
+      "Depends": [
+        "R (>= 2.1)"
+      ],
+      "Maintainer": "Luke Tierney <luke-tierney@uiowa.edu>",
+      "URL": "https://gitlab.com/luke-tierney/codetools",
+      "License": "GPL",
+      "NeedsCompilation": "no",
       "Repository": "CRAN"
     },
     "colorspace": {
@@ -1253,6 +1402,22 @@
       "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
       "Repository": "CRAN"
     },
+    "dirmult": {
+      "Package": "dirmult",
+      "Version": "0.1.3-5",
+      "Source": "Repository",
+      "Date": "2022-03-08",
+      "Title": "Estimation in Dirichlet-Multinomial Distribution",
+      "Author": "Torben Tvedebrink <tvede@math.aau.dk>",
+      "Maintainer": "Torben Tvedebrink <tvede@math.aau.dk>",
+      "Description": "Estimate parameters in Dirichlet-Multinomial and compute log-likelihoods.",
+      "Depends": [
+        "R (>= 2.5.0)"
+      ],
+      "License": "GPL (>= 2)",
+      "NeedsCompilation": "no",
+      "Repository": "CRAN"
+    },
     "doBy": {
       "Package": "doBy",
       "Version": "4.7.1",
@@ -1363,6 +1528,44 @@
       "Maintainer": "Hadley Wickham <hadley@posit.co>",
       "Repository": "CRAN"
     },
+    "fBasics": {
+      "Package": "fBasics",
+      "Version": "4052.98",
+      "Source": "Repository",
+      "Title": "Rmetrics - Markets and Basic Statistics",
+      "Authors@R": "c(person(\"Diethelm\", \"Wuertz\", role=\"aut\", comment = \"original code\") , person(\"Tobias\", \"Setz\", role = c(\"aut\"), email = \"tobias.setz@live.com\") , person(\"Yohan\", \"Chalabi\", role = \"aut\") , person(\"Martin\",\"Maechler\", role=\"ctb\", email=\"maechler@stat.math.ethz.ch\", comment = c(ORCID = \"0000-0002-8685-9910\")) , person(\"CRAN Team\", role = \"ctb\") , person(given = c(\"Georgi\", \"N.\"), family = \"Boshnakov\",  role = c(\"cre\", \"aut\"), email = \"georgi.boshnakov@manchester.ac.uk\", comment = c(ORCID = \"0000-0003-2839-346X\")) )",
+      "Description": "Provides a collection of functions to  explore and to investigate basic properties of financial returns  and related quantities. The covered fields include techniques of explorative data analysis and the investigation of distributional properties, including parameter estimation and hypothesis testing. Even more there are several utility functions for data handling and management.",
+      "Depends": [
+        "R (>= 2.15.1)"
+      ],
+      "Imports": [
+        "timeDate",
+        "timeSeries (>= 4021.105)",
+        "stats",
+        "grDevices",
+        "graphics",
+        "methods",
+        "utils",
+        "MASS",
+        "spatial",
+        "gss",
+        "stabledist"
+      ],
+      "Suggests": [
+        "interp",
+        "RUnit",
+        "tcltk"
+      ],
+      "LazyData": "yes",
+      "License": "GPL (>= 2)",
+      "Encoding": "UTF-8",
+      "URL": "https://geobosh.github.io/fBasicsDoc/ (doc), https://r-forge.r-project.org/scm/viewvc.php/pkg/fBasics/?root=rmetrics (devel), https://www.rmetrics.org",
+      "BugReports": "https://r-forge.r-project.org/projects/rmetrics",
+      "NeedsCompilation": "yes",
+      "Author": "Diethelm Wuertz [aut] (original code), Tobias Setz [aut], Yohan Chalabi [aut], Martin Maechler [ctb] (ORCID: <https://orcid.org/0000-0002-8685-9910>), CRAN Team [ctb], Georgi N. Boshnakov [cre, aut] (ORCID: <https://orcid.org/0000-0003-2839-346X>)",
+      "Maintainer": "Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>",
+      "Repository": "CRAN"
+    },
     "farver": {
       "Package": "farver",
       "Version": "2.1.2",
@@ -1426,6 +1629,41 @@
       "NeedsCompilation": "no",
       "Author": "Hadley Wickham [aut, cre], Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)",
       "Maintainer": "Hadley Wickham <hadley@posit.co>",
+      "Repository": "CRAN"
+    },
+    "foreach": {
+      "Package": "foreach",
+      "Version": "1.5.2",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Provides Foreach Looping Construct",
+      "Authors@R": "c(person(\"Folashade\", \"Daniel\", role=\"cre\", email=\"fdaniel@microsoft.com\"), person(\"Hong\", \"Ooi\", role=\"ctb\"), person(\"Rich\", \"Calaway\", role=\"ctb\"), person(\"Microsoft\", role=c(\"aut\", \"cph\")), person(\"Steve\", \"Weston\", role=\"aut\"))",
+      "Description": "Support for the foreach looping construct.  Foreach is an idiom that allows for iterating over elements in a collection, without the use of an explicit loop counter.  This package in particular is intended to be used for its return value, rather than for its side effects.  In that sense, it is similar to the standard lapply function, but doesn't require the evaluation of a function.  Using foreach without side effects also facilitates executing the loop in parallel.",
+      "License": "Apache License (== 2.0)",
+      "URL": "https://github.com/RevolutionAnalytics/foreach",
+      "BugReports": "https://github.com/RevolutionAnalytics/foreach/issues",
+      "Depends": [
+        "R (>= 2.5.0)"
+      ],
+      "Imports": [
+        "codetools",
+        "utils",
+        "iterators"
+      ],
+      "Suggests": [
+        "randomForest",
+        "doMC",
+        "doParallel",
+        "testthat",
+        "knitr",
+        "rmarkdown"
+      ],
+      "VignetteBuilder": "knitr",
+      "RoxygenNote": "7.1.1",
+      "Collate": "'callCombine.R' 'foreach.R' 'do.R' 'foreach-ext.R' 'foreach-pkg.R' 'getDoPar.R' 'getDoSeq.R' 'getsyms.R' 'iter.R' 'nextElem.R' 'onLoad.R' 'setDoPar.R' 'setDoSeq.R' 'times.R' 'utils.R'",
+      "NeedsCompilation": "no",
+      "Author": "Folashade Daniel [cre], Hong Ooi [ctb], Rich Calaway [ctb], Microsoft [aut, cph], Steve Weston [aut]",
+      "Maintainer": "Folashade Daniel <fdaniel@microsoft.com>",
       "Repository": "CRAN"
     },
     "forecast": {
@@ -1998,6 +2236,24 @@
       "Maintainer": "Brenton M. Wiernik <brenton@wiernik.org>",
       "Repository": "CRAN"
     },
+    "gss": {
+      "Package": "gss",
+      "Version": "2.2-10",
+      "Source": "Repository",
+      "Date": "2025-11-18",
+      "Title": "General Smoothing Splines",
+      "Authors@R": "c(person(\"Chong\",\"Gu\",role=c(\"aut\",\"cre\"), email=\"chong@purdue.edu\"))",
+      "Author": "Chong Gu [aut, cre]",
+      "Maintainer": "Chong Gu <chong@purdue.edu>",
+      "Depends": [
+        "R (>= 3.0.0)",
+        "stats"
+      ],
+      "Description": "A comprehensive package for structural multivariate function estimation using smoothing splines.",
+      "License": "GPL (>= 2)",
+      "NeedsCompilation": "yes",
+      "Repository": "CRAN"
+    },
     "gtable": {
       "Package": "gtable",
       "Version": "0.3.6",
@@ -2110,6 +2366,31 @@
       "Maintainer": "Kirill Müller <kirill@cynkra.com>",
       "Repository": "CRAN"
     },
+    "inline": {
+      "Package": "inline",
+      "Version": "0.3.21",
+      "Source": "Repository",
+      "Date": "2025-01-08",
+      "Title": "Functions to Inline C, C++, Fortran Function Calls from R",
+      "Authors@R": "c(person(\"Oleg\", \"Sklyar\", role = \"aut\"), person(\"Dirk\", \"Eddelbuettel\", role = c(\"aut\", \"cre\"), email = \"edd@debian.org\", comment = c(ORCID = \"0000-0001-6419-907X\")), person(\"Romain\", \"Francois\", role = \"aut\", comment = c(ORCID = \"0000-0002-2444-4226\")), person(\"Mike\", \"Smith\", role = \"ctb\"), person(\"Duncan\", \"Murdoch\", role = \"ctb\"), person(\"Karline\", \"Soetaert\", role = \"ctb\", comment = c(ORCID = \"0000-0003-4603-7100\")), person(\"Johannes\", \"Ranke\", role = \"ctb\", comment = c(ORCID = \"0000-0003-4371-6538\")))",
+      "Imports": [
+        "methods"
+      ],
+      "Suggests": [
+        "Rcpp",
+        "tinytest"
+      ],
+      "Description": "Functionality to dynamically define R functions and S4 methods with 'inlined' C, C++ or Fortran code supporting the .C and .Call calling conventions.",
+      "License": "LGPL",
+      "Copyright": "Oleg Sklyar, 2005-2010 and other authors per their commits",
+      "LazyLoad": "yes",
+      "URL": "https://github.com/eddelbuettel/inline, https://dirk.eddelbuettel.com/code/inline.html",
+      "BugReports": "https://github.com/eddelbuettel/inline/issues",
+      "NeedsCompilation": "no",
+      "Author": "Oleg Sklyar [aut], Dirk Eddelbuettel [aut, cre] (<https://orcid.org/0000-0001-6419-907X>), Romain Francois [aut] (<https://orcid.org/0000-0002-2444-4226>), Mike Smith [ctb], Duncan Murdoch [ctb], Karline Soetaert [ctb] (<https://orcid.org/0000-0003-4603-7100>), Johannes Ranke [ctb] (<https://orcid.org/0000-0003-4371-6538>)",
+      "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
+      "Repository": "CRAN"
+    },
     "isoband": {
       "Package": "isoband",
       "Version": "0.3.0",
@@ -2150,6 +2431,29 @@
       "NeedsCompilation": "yes",
       "Author": "Hadley Wickham [aut] (ORCID: <https://orcid.org/0000-0003-4757-117X>), Claus O. Wilke [aut] (Original author, ORCID: <https://orcid.org/0000-0002-7470-9261>), Thomas Lin Pedersen [aut, cre] (ORCID: <https://orcid.org/0000-0002-5147-4711>), Posit, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)",
       "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
+      "Repository": "CRAN"
+    },
+    "iterators": {
+      "Package": "iterators",
+      "Version": "1.0.14",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Provides Iterator Construct",
+      "Authors@R": "c(person(\"Folashade\", \"Daniel\", role=\"cre\", email=\"fdaniel@microsoft.com\"), person(\"Revolution\", \"Analytics\", role=c(\"aut\", \"cph\")), person(\"Steve\", \"Weston\", role=\"aut\"))",
+      "Description": "Support for iterators, which allow a programmer to traverse through all the elements of a vector, list, or other collection of data.",
+      "URL": "https://github.com/RevolutionAnalytics/iterators",
+      "Depends": [
+        "R (>= 2.5.0)",
+        "utils"
+      ],
+      "Suggests": [
+        "RUnit",
+        "foreach"
+      ],
+      "License": "Apache License (== 2.0)",
+      "NeedsCompilation": "no",
+      "Author": "Folashade Daniel [cre], Revolution Analytics [aut, cph], Steve Weston [aut]",
+      "Maintainer": "Folashade Daniel <fdaniel@microsoft.com>",
       "Repository": "CRAN"
     },
     "jpeg": {
@@ -2499,6 +2803,38 @@
       "Maintainer": "Yihui Xie <xie@yihui.name>",
       "Repository": "CRAN"
     },
+    "matrixStats": {
+      "Package": "matrixStats",
+      "Version": "1.5.0",
+      "Source": "Repository",
+      "Depends": [
+        "R (>= 3.4.0)"
+      ],
+      "Suggests": [
+        "utils",
+        "base64enc",
+        "ggplot2",
+        "knitr",
+        "markdown",
+        "microbenchmark",
+        "R.devices",
+        "R.rsp"
+      ],
+      "VignetteBuilder": "R.rsp",
+      "Title": "Functions that Apply to Rows and Columns of Matrices (and to Vectors)",
+      "Authors@R": "c( person(\"Henrik\", \"Bengtsson\", role=c(\"aut\", \"cre\", \"cph\"), email=\"henrikb@braju.com\"), person(\"Constantin\", \"Ahlmann-Eltze\", role = \"ctb\"), person(\"Hector\", \"Corrada Bravo\", role=\"ctb\"), person(\"Robert\", \"Gentleman\", role=\"ctb\"), person(\"Jan\", \"Gleixner\", role=\"ctb\"), person(\"Peter\", \"Hickey\", role=\"ctb\"), person(\"Ola\", \"Hossjer\", role=\"ctb\"), person(\"Harris\", \"Jaffee\", role=\"ctb\"), person(\"Dongcan\", \"Jiang\", role=\"ctb\"), person(\"Peter\", \"Langfelder\", role=\"ctb\"), person(\"Brian\", \"Montgomery\", role=\"ctb\"), person(\"Angelina\", \"Panagopoulou\", role=\"ctb\"), person(\"Hugh\", \"Parsonage\", role=\"ctb\"), person(\"Jakob Peder\", \"Pettersen\", role=\"ctb\"))",
+      "Author": "Henrik Bengtsson [aut, cre, cph], Constantin Ahlmann-Eltze [ctb], Hector Corrada Bravo [ctb], Robert Gentleman [ctb], Jan Gleixner [ctb], Peter Hickey [ctb], Ola Hossjer [ctb], Harris Jaffee [ctb], Dongcan Jiang [ctb], Peter Langfelder [ctb], Brian Montgomery [ctb], Angelina Panagopoulou [ctb], Hugh Parsonage [ctb], Jakob Peder Pettersen [ctb]",
+      "Maintainer": "Henrik Bengtsson <henrikb@braju.com>",
+      "Description": "High-performing functions operating on rows and columns of matrices, e.g. col / rowMedians(), col / rowRanks(), and col / rowSds().  Functions optimized per data type and for subsetted calculations such that both memory usage and processing time is minimized.  There are also optimized vector-based methods, e.g. binMeans(), madDiff() and weightedMedian().",
+      "License": "Artistic-2.0",
+      "LazyLoad": "TRUE",
+      "NeedsCompilation": "yes",
+      "ByteCompile": "TRUE",
+      "URL": "https://github.com/HenrikBengtsson/matrixStats",
+      "BugReports": "https://github.com/HenrikBengtsson/matrixStats/issues",
+      "RoxygenNote": "7.3.2",
+      "Repository": "CRAN"
+    },
     "mgcv": {
       "Package": "mgcv",
       "Version": "1.9-4",
@@ -2582,6 +2918,41 @@
       "NeedsCompilation": "yes",
       "Repository": "CRAN",
       "Author": "Douglas Bates [aut], Katharine M. Mullen [aut, cre], John C. Nash [aut], Ravi Varadhan [aut]"
+    },
+    "modeest": {
+      "Package": "modeest",
+      "Version": "2.4.0",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Mode Estimation",
+      "Authors@R": "person(\"Paul\", \"Poncet\", , \"paulponcet@yahoo.fr\", role = c(\"aut\", \"cre\"))",
+      "Description": "Provides estimators of the mode of univariate data or univariate distributions.",
+      "License": "GPL-3",
+      "LazyData": "TRUE",
+      "Depends": [
+        "R (>= 3.2)"
+      ],
+      "Imports": [
+        "fBasics",
+        "stable",
+        "stabledist",
+        "stats",
+        "statip (>= 0.2.3)"
+      ],
+      "Suggests": [
+        "evd",
+        "knitr",
+        "mvtnorm",
+        "testthat",
+        "VGAM"
+      ],
+      "URL": "https://github.com/paulponcet/modeest",
+      "BugReports": "https://github.com/paulponcet/modeest/issues",
+      "RoxygenNote": "7.0.0",
+      "NeedsCompilation": "no",
+      "Author": "Paul Poncet [aut, cre]",
+      "Maintainer": "Paul Poncet <paulponcet@yahoo.fr>",
+      "Repository": "CRAN"
     },
     "modelr": {
       "Package": "modelr",
@@ -3391,6 +3762,54 @@
       "Maintainer": "Lionel Henry <lionel@posit.co>",
       "Repository": "CRAN"
     },
+    "rmutil": {
+      "Package": "rmutil",
+      "Version": "1.1.10",
+      "Source": "Repository",
+      "Title": "Utilities for Nonlinear Regression and Repeated Measurements Models",
+      "Authors@R": "c( person(\"Bruce\", \"Swihart\", email=\"bruce.swihart@gmail.com\", role=c(\"cre\", \"aut\")), person(\"Jim\"  , \"Lindsey\", email=\"jlindsey@gen.unimaas.nl\", role=\"aut\", comment=\"Jim created this package, Bruce is maintaining the CRAN version\"), person(\"K.\", \"Sikorski\", role=c(\"ctb\", \"cph\"), comment=\"Wrote TOMS614/INTHP, https://calgo.acm.org/\"), person(\"F.\", \"Stenger\", role=c(\"ctb\", \"cph\"), comment=\"Wrote TOMS614/INTHP, https://calgo.acm.org/\"), person(\"J.\", \"Schwing\", role=c(\"ctb\", \"cph\"), comment=\"Wrote TOMS614/INTHP, https://calgo.acm.org/\") )",
+      "Depends": [
+        "R (>= 1.4)"
+      ],
+      "Description": "A toolkit of functions for nonlinear regression and repeated measurements not to be used by itself but called by other Lindsey packages such as 'gnlm', 'stable', 'growth', 'repeated', and 'event'  (available at <https://www.commanster.eu/rcode.html>).",
+      "License": "GPL (>= 2)",
+      "URL": "https://www.commanster.eu/rcode.html",
+      "BugReports": "https://github.com/swihart/rmutil/issues",
+      "Encoding": "UTF-8",
+      "LazyLoad": "true",
+      "NeedsCompilation": "yes",
+      "Author": "Bruce Swihart [cre, aut], Jim Lindsey [aut] (Jim created this package, Bruce is maintaining the CRAN version), K. Sikorski [ctb, cph] (Wrote TOMS614/INTHP, https://calgo.acm.org/), F. Stenger [ctb, cph] (Wrote TOMS614/INTHP, https://calgo.acm.org/), J. Schwing [ctb, cph] (Wrote TOMS614/INTHP, https://calgo.acm.org/)",
+      "Maintainer": "Bruce Swihart <bruce.swihart@gmail.com>",
+      "Repository": "CRAN"
+    },
+    "rpart": {
+      "Package": "rpart",
+      "Version": "4.1.24",
+      "Source": "Repository",
+      "Priority": "recommended",
+      "Date": "2025-01-06",
+      "Authors@R": "c(person(\"Terry\", \"Therneau\", role = \"aut\", email = \"therneau@mayo.edu\"), person(\"Beth\", \"Atkinson\", role = c(\"aut\", \"cre\"), email = \"atkinson@mayo.edu\"), person(\"Brian\", \"Ripley\", role = \"trl\", email = \"ripley@stats.ox.ac.uk\", comment = \"producer of the initial R port, maintainer 1999-2017\"))",
+      "Description": "Recursive partitioning for classification,  regression and survival trees.  An implementation of most of the  functionality of the 1984 book by Breiman, Friedman, Olshen and Stone.",
+      "Title": "Recursive Partitioning and Regression Trees",
+      "Depends": [
+        "R (>= 2.15.0)",
+        "graphics",
+        "stats",
+        "grDevices"
+      ],
+      "Suggests": [
+        "survival"
+      ],
+      "License": "GPL-2 | GPL-3",
+      "LazyData": "yes",
+      "ByteCompile": "yes",
+      "NeedsCompilation": "yes",
+      "Author": "Terry Therneau [aut], Beth Atkinson [aut, cre], Brian Ripley [trl] (producer of the initial R port, maintainer 1999-2017)",
+      "Maintainer": "Beth Atkinson <atkinson@mayo.edu>",
+      "Repository": "CRAN",
+      "URL": "https://github.com/bethatkinson/rpart, https://cran.r-project.org/package=rpart",
+      "BugReports": "https://github.com/bethatkinson/rpart/issues"
+    },
     "rprojroot": {
       "Package": "rprojroot",
       "Version": "2.1.1",
@@ -3516,6 +3935,142 @@
       "NeedsCompilation": "no",
       "Author": "Hadley Wickham [aut], Thomas Lin Pedersen [cre, aut] (<https://orcid.org/0000-0002-5147-4711>), Dana Seidel [aut], Posit Software, PBC [cph, fnd] (03wc8by49)",
       "Maintainer": "Thomas Lin Pedersen <thomas.pedersen@posit.co>",
+      "Repository": "CRAN"
+    },
+    "spatial": {
+      "Package": "spatial",
+      "Version": "7.3-18",
+      "Source": "Repository",
+      "Priority": "recommended",
+      "Date": "2025-01-01",
+      "Depends": [
+        "R (>= 3.0.0)",
+        "graphics",
+        "stats",
+        "utils"
+      ],
+      "Suggests": [
+        "MASS"
+      ],
+      "Authors@R": "c(person(\"Brian\", \"Ripley\", role = c(\"aut\", \"cre\", \"cph\"), email = \"Brian.Ripley@R-project.org\"), person(\"Roger\", \"Bivand\", role = \"ctb\"), person(\"William\", \"Venables\", role = \"cph\"))",
+      "Description": "Functions for kriging and point pattern analysis.",
+      "Title": "Functions for Kriging and Point Pattern Analysis",
+      "LazyLoad": "yes",
+      "ByteCompile": "yes",
+      "License": "GPL-2 | GPL-3",
+      "URL": "http://www.stats.ox.ac.uk/pub/MASS4/",
+      "NeedsCompilation": "yes",
+      "Author": "Brian Ripley [aut, cre, cph], Roger Bivand [ctb], William Venables [cph]",
+      "Maintainer": "Brian Ripley <Brian.Ripley@R-project.org>",
+      "Repository": "CRAN"
+    },
+    "stable": {
+      "Package": "stable",
+      "Version": "1.1.7",
+      "Source": "Repository",
+      "Title": "Probability Functions and Generalized Regression Models for Stable Distributions",
+      "Authors@R": "c( person(\"Bruce\", \"Swihart\", email=\"bruce.swihart@gmail.com\", role=c(\"cre\", \"aut\")), person(\"Jim\"  , \"Lindsey\", email=\"jlindsey@gen.unimaas.nl\", role=\"aut\", comment=\"Jim created this package, Bruce is maintaining the CRAN version\"), person(\"Philippe\", \"Lambert\", email=\"phlambert@stat.ucl.ac.be\", role=\"aut\") )",
+      "Depends": [
+        "R (>= 1.4)",
+        "rmutil"
+      ],
+      "Description": "Density, distribution, quantile and hazard functions of a stable variate; generalized regression models for the parameters of a stable distribution. See the README for how to make equivalent calls to those of 'stabledist' (i.e., Nolan's 0-parameterization and  1-parameterization as detailed in Nolan (2020)).  See github for Lambert and Lindsey 1999 JRSS-C journal article,  which details the parameterization of the Buck (1995) stable.    See the Details section of the `?dstable` help file for context and  references.",
+      "License": "GPL (>= 2)",
+      "URL": "https://www.commanster.eu/rcode.html",
+      "BugReports": "https://github.com/swihart/stable/issues",
+      "Encoding": "UTF-8",
+      "LazyLoad": "true",
+      "RoxygenNote": "7.3.3",
+      "NeedsCompilation": "yes",
+      "Author": "Bruce Swihart [cre, aut], Jim Lindsey [aut] (Jim created this package, Bruce is maintaining the CRAN version), Philippe Lambert [aut]",
+      "Maintainer": "Bruce Swihart <bruce.swihart@gmail.com>",
+      "Repository": "CRAN"
+    },
+    "stabledist": {
+      "Package": "stabledist",
+      "Version": "0.7-2",
+      "Source": "Repository",
+      "Date": "2024-08-14",
+      "Title": "Stable Distribution Functions",
+      "Authors@R": "c( person(\"Diethelm\", \"Wuertz\", role=\"aut\", comment = \"original code\"), person(\"Martin\",\"Maechler\", role=c(\"aut\",\"cre\"), email=\"maechler@stat.math.ethz.ch\", comment = c(\"checks/tests; fixes, ..\", ORCID = \"0000-0002-8685-9910\")), person(\"Yohan\", \"Chalabi\", role=\"ctb\", comment= \"namespace; admin\"))",
+      "Maintainer": "Martin Maechler <maechler@stat.math.ethz.ch>",
+      "Depends": [
+        "R (>= 3.1.0)"
+      ],
+      "Imports": [
+        "stats"
+      ],
+      "Suggests": [
+        "Matrix",
+        "fBasics",
+        "FMStable",
+        "RUnit",
+        "Rmpfr",
+        "sfsmisc",
+        "libstable4u"
+      ],
+      "SuggestsNote": "'libstable4u', based on 'libstableR', is said to be uniformly better both accuracy and speed wise, at least in parts.",
+      "Description": "Density, Probability and Quantile functions, and random number generation for (skew) stable distributions, using the parametrizations of Nolan.",
+      "License": "GPL (>= 2)",
+      "URL": "https://r-forge.r-project.org/scm/viewvc.php/pkg/stabledist/?root=rmetrics",
+      "NeedsCompilation": "no",
+      "Author": "Diethelm Wuertz [aut] (original code), Martin Maechler [aut, cre] (checks/tests; fixes, .., <https://orcid.org/0000-0002-8685-9910>), Yohan Chalabi [ctb] (namespace; admin)",
+      "Repository": "CRAN"
+    },
+    "statip": {
+      "Package": "statip",
+      "Version": "0.2.3",
+      "Source": "Repository",
+      "Type": "Package",
+      "Title": "Statistical Functions for Probability Distributions and Regression",
+      "Authors@R": "c(person(\"Paul\", \"Poncet\", , \"paulponcet@yahoo.fr\", role = c(\"aut\", \"cre\")),  person(\"The R Core Team\", role = c(\"aut\", \"cph\"),  comment = \"C function 'BinDist' copied from package 'stats'\"),  person(\"The R Foundation\", role = \"cph\",  comment = \"C function 'BinDist' copied from package 'stats'\"),  person(\"Adrian\", \"Baddeley\", role = \"ctb\",  comment = \"C function 'BinDist' copied from package 'stats'\"))",
+      "Description": "A collection of miscellaneous statistical functions for  probability distributions: 'dbern()', 'pbern()', 'qbern()', 'rbern()' for  the Bernoulli distribution, and 'distr2name()', 'name2distr()' for  distribution names;  probability density estimation: 'densityfun()';  most frequent value estimation: 'mfv()', 'mfv1()';  other statistical measures of location: 'cv()' (coefficient of variation), 'midhinge()', 'midrange()', 'trimean()';  construction of histograms: 'histo()', 'find_breaks()';  calculation of the Hellinger distance: 'hellinger()';  use of classical kernels: 'kernelfun()', 'kernel_properties()';  univariate piecewise-constant regression: 'picor()'.",
+      "License": "GPL-3",
+      "LazyData": "TRUE",
+      "Depends": [
+        "R (>= 3.1.3)"
+      ],
+      "Imports": [
+        "clue",
+        "graphics",
+        "rpart",
+        "stats"
+      ],
+      "Suggests": [
+        "knitr",
+        "testthat"
+      ],
+      "URL": "https://github.com/paulponcet/statip",
+      "BugReports": "https://github.com/paulponcet/statip/issues",
+      "RoxygenNote": "7.0.0",
+      "NeedsCompilation": "yes",
+      "Author": "Paul Poncet [aut, cre], The R Core Team [aut, cph] (C function 'BinDist' copied from package 'stats'), The R Foundation [cph] (C function 'BinDist' copied from package 'stats'), Adrian Baddeley [ctb] (C function 'BinDist' copied from package 'stats')",
+      "Maintainer": "Paul Poncet <paulponcet@yahoo.fr>",
+      "Repository": "CRAN"
+    },
+    "statmod": {
+      "Package": "statmod",
+      "Version": "1.5.2",
+      "Source": "Repository",
+      "Date": "2026-05-17",
+      "Title": "Statistical Modeling",
+      "Authors@R": "c(person(given = \"Gordon\", family = \"Smyth\", role = c(\"cre\", \"aut\"), email = \"smyth@wehi.edu.au\"), person(given = \"Lizhong\", family = \"Chen\", role = \"aut\"), person(given = \"Yifang\", family = \"Hu\", role = \"ctb\"), person(given = \"Peter\", family = \"Dunn\", role = \"ctb\"), person(given = \"Belinda\", family = \"Phipson\", role = \"ctb\"), person(given = \"Yunshun\", family = \"Chen\", role = \"ctb\"))",
+      "Maintainer": "Gordon Smyth <smyth@wehi.edu.au>",
+      "Depends": [
+        "R (>= 3.0.0)"
+      ],
+      "Imports": [
+        "stats",
+        "graphics"
+      ],
+      "Suggests": [
+        "MASS",
+        "tweedie"
+      ],
+      "Description": "A collection of algorithms and functions to aid statistical modeling. Includes limiting dilution analysis (aka ELDA), growth curve comparisons, mixed linear models, heteroscedastic regression, inverse-Gaussian probability calculations, Gauss quadrature and a secure convergence algorithm for nonlinear models. Also includes advanced generalized linear model functions including Tweedie and Digamma distributional families, secure convergence and exact distributional calculations for unit deviances.",
+      "License": "GPL-2 | GPL-3",
+      "NeedsCompilation": "yes",
+      "Author": "Gordon Smyth [cre, aut], Lizhong Chen [aut], Yifang Hu [ctb], Peter Dunn [ctb], Belinda Phipson [ctb], Yunshun Chen [ctb]",
       "Repository": "CRAN"
     },
     "stringi": {
@@ -3807,6 +4362,41 @@
       "BugReports": "https://r-forge.r-project.org/tracker/?atid=633&group_id=156&func=browse",
       "NeedsCompilation": "no",
       "Author": "Diethelm Wuertz [aut] (original code), Tobias Setz [aut], Yohan Chalabi [aut], Martin Maechler [ctb] (ORCID: <https://orcid.org/0000-0002-8685-9910>), Joe W. Byers [ctb], Georgi N. Boshnakov [cre, aut] (ORCID: <https://orcid.org/0000-0003-2839-346X>)",
+      "Maintainer": "Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>",
+      "Repository": "CRAN"
+    },
+    "timeSeries": {
+      "Package": "timeSeries",
+      "Version": "4052.112",
+      "Source": "Repository",
+      "Title": "Financial Time Series Objects (Rmetrics)",
+      "Authors@R": "c(person(\"Diethelm\", \"Wuertz\", role=\"aut\", comment = \"original code\") , person(\"Tobias\", \"Setz\", role = c(\"aut\"), email = \"tobias.setz@live.com\") , person(\"Yohan\", \"Chalabi\", role = \"aut\") , person(\"Martin\",\"Maechler\", role=\"ctb\", email=\"maechler@stat.math.ethz.ch\", comment = c(ORCID = \"0000-0002-8685-9910\")) , person(given = c(\"Georgi\", \"N.\"), family = \"Boshnakov\",  role = c(\"cre\", \"aut\"), email = \"georgi.boshnakov@manchester.ac.uk\", comment = c(ORCID = \"0000-0003-2839-346X\")) )",
+      "Description": "'S4' classes and various tools for financial time series: Basic functions such as scaling and sorting, subsetting, mathematical operations and statistical functions.",
+      "Depends": [
+        "R (>= 2.10)",
+        "timeDate (>= 4041.110)",
+        "methods"
+      ],
+      "Imports": [
+        "graphics",
+        "grDevices",
+        "stats",
+        "utils"
+      ],
+      "Suggests": [
+        "RUnit",
+        "robustbase",
+        "xts",
+        "zoo",
+        "PerformanceAnalytics",
+        "fTrading"
+      ],
+      "LazyData": "yes",
+      "License": "GPL (>= 2)",
+      "URL": "https://geobosh.github.io/timeSeriesDoc/ (doc), https://CRAN.R-project.org/package=timeSeries, https://www.rmetrics.org",
+      "BugReports": "https://r-forge.r-project.org/tracker/?atid=633&group_id=156&func=browse",
+      "NeedsCompilation": "no",
+      "Author": "Diethelm Wuertz [aut] (original code), Tobias Setz [aut], Yohan Chalabi [aut], Martin Maechler [ctb] (ORCID: <https://orcid.org/0000-0002-8685-9910>), Georgi N. Boshnakov [cre, aut] (ORCID: <https://orcid.org/0000-0003-2839-346X>)",
       "Maintainer": "Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>",
       "Repository": "CRAN"
     },

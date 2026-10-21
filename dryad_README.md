@@ -237,28 +237,28 @@ Do not substitute pooled-read fractions for arithmetic means of specimen fractio
 
 `figure_file_map.csv` associates each image with support and source. Historical filenames such as `S04_logratio_*` or `S07_detailed_diet_*` can refer to analyses now displayed as S5 or Figure 4B; use the map rather than inferring figure numbering from filenames.
 
-| Figure | Data represented and interpretation |
-| --- | --- |
-| Figure 1 | Sample origins of museum and contemporary material. Overlapping symbols are not distinct localities or complete ranges. |
-| Figure 2 | Published host topology; separate museum/contemporary *A. bruennichi* rows; sampled origins; ≥100-read bacterial composition means and candidate screens. |
-| Figure 3 | Retained historical OTU2 any-read observations. The newer screen-positive timeline is a separate selection and is not silently substituted for the retained image. |
-| Figure 4 | Contemporary bacterial/prey composition aligned by specimen; complete-marker denominators, 29 profiles per marker and 30 fixed positions. |
-| Figure 5 | Paired ordinations and prey-order comparisons; 28 displayed profiles and 25 clear profiles for two-state tests in the 1,500-read run. |
-| S1 | Rarefaction context; current 1,500/1,693 contemporary depths and global 507/1,133 depths. |
-| S2 | Original processing outcomes, distinct from paired-profile eligibility. |
-| S3 | Read recovery and thresholded source `TotalOTU` counts by collection period. |
-| S4 | Species-pooled rarefied composition using global depths; museum/contemporary material pooled within species. |
-| S5 | Focal bacterial log-ratio with a +1 read pseudocount, 28 paired profiles and explicit mixed profiles. |
-| S6 | Bacterial-only dispersion display; 26 clear profiles at the current bacterial depth. Figure 5's paired dispersion sidecar contains 25 and is not its source. |
-| S7 | Three original focal OTU variants divided by combined focal reads; 28 paired profiles in 30 positions. The filename's “haplotypes” does not denote host haplotypes. |
-| S8 | Ten unordered sequence comparisons among five 101-base fragments. |
-| S9 | Paired bacterial–prey distance comparison; specimen-label permutations, not independent distance-pair replicates. |
+| Figure | Content | Creating script or software |
+| --- | --- | --- |
+| Figure 1 | Sampling map; specimen origins. | **ArcGIS** |
+| Figure 2 | Published host topology, sampled origins, bacterial composition and descriptive detection screens. | `scripts/02_host_phylogeny.py` |
+| Figure 3 | Historical DUSA-like any-read detections. | `scripts/03_historical_dusa.R` |
+| Figure 4 | Bacterial and prey composition by specimen; complete-marker denominators. | `scripts/04_bacteria_prey_composition.R` |
+| Figure 5 | Paired bacterial/prey ordinations and prey-order comparisons. | `scripts/05_community_comparison.R` |
+| S1 | Marker rarefaction curves. | `scripts/S01_rarefaction.R` |
+| S2 | Marker processing outcomes. | `scripts/S02_processing_success.R` |
+| S3 | Read recovery and thresholded TotalOTU counts by collection period. | `scripts/S03_dna_quality.R` |
+| S4 | Species-pooled bacterial and prey composition. | `scripts/S04_species_composition.R` |
+| S5 | Focal read-count log-ratio with a +1 read pseudocount. | `scripts/S05_S06_bacterial_profiles.R` |
+| S6 | Dispersion of the 26 clear bacterial profiles. | `scripts/S05_S06_bacterial_profiles.R` |
+| S7 | OTU2, OTU3 and OTU145 proportions within their combined focal reads. | `scripts/S07_symbiont_variants.R` |
+| S8 | Alignment and ten pairwise distances among five 101-base fragments. | `scripts/S08_sequence_distance.py` |
+| S9 | Paired bacterial–prey Mantel comparison. | `scripts/S09_prey_profiles.R` |
 
-Current selected sidecars take precedence over older generic outputs. Older files can retain different thresholds, transformations, groups and stochastic runs. A model table belongs to a PNG only when the selected source/run supports the link. The file map records missing or superseded sidecars rather than attaching an old result to a new image.
+Current-run support tables are in `figure_support/current/`. Older results in `figure_support/legacy/` can use different thresholds, transformations, groups and stochastic runs. The figure map identifies the associated analysis version and available support.
 
 ### Collection periods and source OTU counts
 
-S3 uses right-closed intervals: year ≤1900; 1900 < year ≤1950; 1950 < year ≤2000; 2000 < year ≤2020; year >2020. All 30 records in the last interval are contemporary specimens from 2021. No 1900 or 2020 observation is present. The retained image's first `<1900` label is narrower than the coded interval but changes no current specimen membership.
+S3 uses right-closed intervals: year ≤1900; 1900 < year ≤1950; 1950 < year ≤2000; 2000 < year ≤2020; year >2020. All 30 records in the last interval are contemporary specimens from 2021. No 1900 or 2020 observation is present. The scripted display labels the first interval `≤1900`.
 
 The read panels include 107 dated specimens. The bacterial-OTU panel includes 55 dated profiles with ≥507 bacterial reads; the prey-OTU panel includes 58 with ≥1,133 prey reads. Period sample counts are 10/20/29/18/30 for reads, 1/3/12/10/29 for bacterial OTU counts, and 2/2/10/15/29 for prey OTU counts.
 
@@ -270,7 +270,7 @@ S4 includes 56 bacterial profiles across 19 species and 48 valid prey profiles a
 
 Current contemporary analyses average Bray–Curtis dissimilarities across 100 subsamples to 1,500 bacterial or 1,693 prey reads. These distances are separate from unrarefied proportions. A paired Mantel run contains 28 specimens, generating 378 unordered distances. Those 378 pairs are derived comparisons from 28 specimens, not 378 biological replicates.
 
-The 21 October 1,500-read S9 run uses a Spearman Mantel statistic and 999 specimen-label permutations for positive association. Its retained run records seeds 100, 101 and 102 for bacterial distances, prey distances and Mantel, respectively. The plotted linear fit is descriptive, not the Mantel statistic. Consult the figure map for whether complete matching current-image sidecars are included; the legacy 27-specimen table is not this run.
+The 21 October 1,500-read S9 run uses a Spearman Mantel statistic and 999 specimen-label permutations for positive association. The archived selected run records seeds 100, 101 and 102 for bacterial distances, prey distances and Mantel, respectively. The accompanying `S09_prey_profiles.R` initializes seed 100 once before the sequential calculations; its stochastic realization can differ from that archived run. The plotted linear fit is descriptive, not the Mantel statistic. Consult the figure map for whether complete matching current-image sidecars are included; the legacy 27-specimen table is not this run.
 
 Figure 5 uses 25 clear paired profiles for the prey comparison, 999 PERMANOVA permutations and seven unpaired prey-order tests with Benjamini–Hochberg adjustment. Bacterial features define the profile groups; a bacterial PERMANOVA separation is not independent evidence of a group difference. Saved scores/statistics retain their selected run rather than certifying all older tables.
 
@@ -319,29 +319,30 @@ Restore deposited inputs to their expected project locations before running anal
 | `third_party/host_phylogeny/` | `output/species_symbionts/host_phylogeny/` |
 | `third_party/dusa_reference/` | `output/species_symbionts/reference_validation/` |
 
-Original count/FASTA and saved-support paths are recorded in `file_manifest.csv`. Copying a file under a new name does not make every script runnable from the deposit root. Run commands from the **code-project root**, following its data-placement instructions.
+Original count/FASTA and saved-support paths are recorded in `file_manifest.csv`. Run commands from the **code-project root**, following its data-placement instructions.
 
-| Make target | Purpose |
+Figure 1 was created in ArcGIS. The other figures are generated by the scripts listed above.
+
+| Make target | Figures generated |
 | --- | --- |
-| `make restore` | Restore the R package environment recorded by the code repository. |
-| `make main-figures` | Run Figures 1–5 in manuscript order, including data prerequisites. |
-| `make map` / `make figure1` | Run `scripts/01_map.R` to copy the retained sampling map. The original map-drawing script is unavailable. |
-| `make host-phylogeny` / `make figure2` | Run `scripts/02_host_phylogeny.py`: published host topology with local screening/composition summaries. |
-| `make history` / `make figure3` | Run `scripts/03_historical_dusa.R`: historical DUSA-like tables and timeline selection. |
-| `make composition` / `make figure4` | Run `bacteria` and `prey`, then `scripts/04_bacteria_prey_composition.R` for specimen-aligned bacterial/prey composition. |
-| `make community-comparison` / `make figure5` | Run `scripts/05_community_comparison.R`: paired ordinations and clear-profile prey comparisons. |
-| `make supplementary-figures` | Run supplementary analyses and copy retained S2–S4 images. |
-| `make rarefaction` | Run `scripts/S01_rarefaction.R`: current read-depth/rarefaction display. |
-| `make saved-figures` | Copy retained S2–S4 processing/collection-period/species-stack images. |
-| `make bacteria` | Run `scripts/S05_S06_bacterial_profiles.R`: bacterial profile states, focal log-ratio and dispersion outputs. |
-| `make variants` | Run `scripts/S07_symbiont_variants.R`: focal OTU variant composition. |
-| `make sequence-distance` | Run `scripts/S08_sequence_distance.py`: five-fragment comparison and pairwise distances. |
-| `make prey` | Run `scripts/S09_prey_profiles.R`: prey composition and paired distance comparison. |
-| `make all` / `make figures` | Run the main figures in order, followed by supplementary figures; consult the code README for saved-input requirements. |
+| `make restore` | Restore the R package environment. |
+| `make main-figures` | Generate Figures 2–5. |
+| `make figure2` | Figure 2. |
+| `make figure3` | Figure 3. |
+| `make figure4` | Figure 4 and its S5/S6/S9 analyses. |
+| `make figure5` | Figure 5. |
+| `make supplementary-figures` | Generate S1–S9. |
+| `make rarefaction` | S1. |
+| `make processing-success` | S2. |
+| `make dna-quality` | S3. |
+| `make species-composition` | S4. |
+| `make bacteria` | S5 and S6. |
+| `make variants` | S7. |
+| `make sequence-distance` | S8. |
+| `make prey` | S9. |
+| `make all` | Generate all R/Python figures. |
 
-Figure 4 uses bacterial and prey tables made by the S5/S6 and S9 scripts. Make handles these prerequisites; their supplementary outputs are produced during that step.
-
-Rebuilding a scientific figure and copying a retained image are distinct operations. Stochastic calculations can vary unless inputs, parameters, random-number settings and package versions match. Use selected saved objects and session records when exact numerical correspondence matters. The figure map identifies where current-image sidecars or complete historical methods remain unavailable.
+Stochastic calculations require matching inputs, parameters, random-number settings and package versions for exact numerical reproduction.
 
 ## Missing values, units and reuse cautions
 

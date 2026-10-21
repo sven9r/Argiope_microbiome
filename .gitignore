@@ -20,8 +20,11 @@ __pycache__/
 *.fq
 *.fq.gz
 
-# Figures and analytical results are written by make.
-/figures/
+# Figure 1 is the ArcGIS export; other figures and results are generated.
+/figures/*
+!/figures/main/
+/figures/main/*
+!/figures/main/Fig01_map.png
 /output/*
 !/output/species_symbionts/
 /output/species_symbionts/*
