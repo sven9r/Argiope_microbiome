@@ -7,12 +7,15 @@ suppressPackageStartupMessages({
   library(purrr)
   library(ggplot2)
   library(vegan)
+  library(broom)
   library(readr)
   library(tibble)
   library(forcats)
   library(ggrepel)
+  library(ggpubr)
   library(ggtext)
   library(patchwork)
+  library(rstatix)
 })
 
 init_dirs <- function() {
@@ -155,34 +158,26 @@ make_dominance_state <- function(bacteria, bacteria_taxa) {
       dusa_rel = dusa_reads / pmax(total_16S_reads, 1),
       mesoplasma_rel = mesoplasma_reads / pmax(total_16S_reads, 1),
       other_rel = pmax(other_reads / pmax(total_16S_reads, 1), 0),
+      focal_reads = dusa_reads + mesoplasma_reads,
+      dusa_focal_rel = if_else(focal_reads > 0, dusa_reads / focal_reads, NA_real_),
+      mesoplasma_focal_rel = if_else(focal_reads > 0, mesoplasma_reads / focal_reads, NA_real_),
       log10_dusa_mesoplasma = log10((dusa_reads + 1) / (mesoplasma_reads + 1))
     )
 
-  max_feat <- cont_long %>%
-    group_by(ID) %>%
-    slice_max(reads, n = 1, with_ties = FALSE) %>%
-    ungroup() %>%
+  # Retain the largest overall feature as descriptive metadata only.
+  # Focal grouping uses DUSA versus Mesoplasma; other bacteria never set the group.
+  largest_feature <- cont_long %>% group_by(ID) %>%
+    slice_max(reads, n = 1, with_ties = FALSE) %>% ungroup() %>%
+    select(ID, largest_bacterial_feature = OTU, largest_bacterial_feature_reads = reads)
+  state_tbl <- state_tbl %>% left_join(largest_feature, by = "ID") %>%
     mutate(
-      max_group = case_when(
-        OTU %in% otu_dusa ~ "DUSA_dominant",
-        OTU %in% otu_meso ~ "Mesoplasma_dominant",
-        TRUE ~ "Other_dominant"
-      )
-    ) %>%
-    select(ID, max_group)
-
-  state_tbl <- state_tbl %>%
-    left_join(max_feat, by = "ID") %>%
-    mutate(
-      ambiguous = (max_group == "Other_dominant") |
-        (dusa_rel >= 0.2 & mesoplasma_rel >= 0.2) |
-        abs(log10_dusa_mesoplasma) < 0.5,
-      dominance_state = case_when(
-        ambiguous ~ "ambiguous",
-        max_group == "DUSA_dominant" ~ "DUSA_dominant",
-        max_group == "Mesoplasma_dominant" ~ "Mesoplasma_dominant",
-        TRUE ~ "ambiguous"
-      ),
+      ambiguous = focal_reads <= 0 |
+        (dusa_focal_rel >= 0.2 & mesoplasma_focal_rel >= 0.2),
+      max_group = if_else(dusa_reads >= mesoplasma_reads, "DUSA_dominant", "Mesoplasma_dominant"),
+      dominance_state = if_else(ambiguous, "ambiguous", max_group),
+      profile_group_detail = case_when(
+        ambiguous ~ "Mixed", dominance_state == "DUSA_dominant" ~ "DUSA-like",
+        TRUE ~ "Mesoplasma"),
       is_TH81_or_TH110 = ID %in% c("TH81", "TH110")
     )
 
@@ -205,23 +200,67 @@ sample_display_label <- function(id) {
   )
 }
 
-# The deposited mapping keeps Arg labels stable when read thresholds change.
-make_fig04_arg_map <- function(state_tbl, cont_ab, min_bacteria_reads = 1500) {
-  labels <- readr::read_csv(here::here("data", "reference", "arg_sample_map.csv"), show_col_types = FALSE) %>%
-    transmute(ID, arg_label = union_arg_label)
-  state_tbl %>%
-    inner_join(cont_ab %>% select(ID, Number, BacteriaReads, DominantSymbiont, UnknownSymbiont), by = "ID") %>%
-    inner_join(labels, by = "ID") %>%
-    filter(BacteriaReads >= min_bacteria_reads) %>%
-    arrange(as.integer(sub("^Arg", "", arg_label)))
+# Order specimens by focal DUSA fraction, retaining the previous display identities.
+build_focal_arg_map <- function(state_tbl, previous_map) {
+  stopifnot(!anyDuplicated(previous_map$ID), !anyDuplicated(state_tbl$ID),
+            setequal(previous_map$ID, state_tbl$ID))
+  previous <- previous_map %>% transmute(ID, previous_arg_label =
+    if ("previous_arg_label" %in% names(previous_map)) previous_arg_label else arg_label)
+  state_tbl %>% mutate(focal_order_fraction = dusa_reads / (dusa_reads + mesoplasma_reads)) %>%
+    arrange(desc(focal_order_fraction), desc(dusa_reads), ID) %>%
+    left_join(previous, by = "ID") %>%
+    mutate(arg_label = paste0("Arg", row_number()), arg_order = row_number(),
+      ordering_rule = "Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID") %>%
+    select(ID, arg_label, previous_arg_label, arg_order, ordering_rule)
 }
 
-apply_fig04_arg_labels <- function(data, fig04_arg_map, fallback = "next_arg") {
-  labels <- readr::read_csv(here::here("data", "reference", "arg_sample_map.csv"), show_col_types = FALSE) %>%
-    transmute(ID, arg_label = union_arg_label)
-  result <- left_join(data, labels, by = "ID")
-  stopifnot(!anyNA(result$arg_label))
+# Arg labels follow focal DUSA fraction and stay fixed across marker filters.
+make_fig04_arg_map <- function(state_tbl, cont_ab, min_bacteria_reads = NULL) {
+  label_path <- here::here("data", "reference", "arg_sample_map.csv")
+  labels <- readr::read_csv(label_path, show_col_types = FALSE)
+  stopifnot(nrow(labels) == 30L, !anyDuplicated(labels$ID), !anyDuplicated(labels$arg_label),
+            setequal(labels$ID, cont_ab$ID),
+            identical(sort(as.integer(sub("^Arg", "", labels$arg_label))), 1:30))
+  expected <- build_focal_arg_map(state_tbl, labels)
+  stopifnot(identical(labels$ID[order(as.integer(sub("^Arg", "", labels$arg_label)))], expected$ID))
+  result <- state_tbl %>%
+    inner_join(cont_ab %>% select(ID, Number, BacteriaReads, DominantSymbiont, UnknownSymbiont), by = "ID") %>%
+    inner_join(labels, by = "ID") %>% arrange(as.integer(sub("^Arg", "", arg_label)))
+  if (!is.null(min_bacteria_reads)) result <- result %>% filter(BacteriaReads >= min_bacteria_reads)
   result
+}
+
+contemporary_analysis_cohort <- function(state, prey) {
+  result <- make_fig04_arg_map(state$state_tbl, state$cont_ab) %>%
+    left_join(prey %>% select(ID, PreyReads), by = "ID") %>%
+    mutate(eligible_16S = BacteriaReads >= 1500, eligible_COI = PreyReads >= 1693,
+           paired = eligible_16S & eligible_COI,
+           clear_paired = paired & dominance_state != "ambiguous")
+  stopifnot(nrow(result) == 30L, sum(result$eligible_16S) == 29L,
+            sum(result$eligible_COI) == 29L, sum(result$paired) == 28L,
+            sum(result$clear_paired) == 26L,
+            setequal(result$ID[!result$paired], c("TH84", "TH99")),
+            setequal(result$ID[result$paired & !result$clear_paired], c("TH81", "TH110")),
+            sum(result$paired & result$dominance_state == "DUSA_dominant") == 16L,
+            sum(result$paired & result$dominance_state == "Mesoplasma_dominant") == 10L)
+  result
+}
+
+apply_fig04_arg_labels <- function(data, fig04_arg_map, fallback = c("next_arg", "ID", "sample_display_label")) {
+  fallback <- match.arg(fallback)
+  next_arg_start <- max(as.integer(stringr::str_remove(fig04_arg_map$arg_label, "^Arg")), na.rm = TRUE)
+
+  data %>%
+    left_join(fig04_arg_map %>% select(ID, fig04_arg_label = arg_label), by = "ID") %>%
+    mutate(
+      arg_label = case_when(
+        !is.na(fig04_arg_label) ~ fig04_arg_label,
+        fallback == "next_arg" ~ paste0("Arg", next_arg_start + cumsum(is.na(fig04_arg_label))),
+        fallback == "sample_display_label" ~ sample_display_label(ID),
+        TRUE ~ as.character(ID)
+      )
+    ) %>%
+    select(-fig04_arg_label)
 }
 
 write_state_tables <- function(state) {

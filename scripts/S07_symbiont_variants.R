@@ -6,10 +6,11 @@ bacteria_taxa <- raw$bacteria_taxa
 
 state <- make_dominance_state(bacteria, bacteria_taxa)
 bac_otu <- state$bacteria_otu
+cohort <- contemporary_analysis_cohort(state, raw$prey)
 
-# Retain the original Arg1–Arg30 specimen identities.
-haplotype_sample_map <- readr::read_csv(here::here("data", "reference", "arg_sample_map.csv"), show_col_types = FALSE) %>%
-  transmute(ID, sample_label = union_arg_label)
+# One canonical display map is shared with Figure 4, Figure 5 and S5.
+haplotype_sample_map <- make_fig04_arg_map(state$state_tbl, state$cont_ab) %>%
+  select(ID, sample_label = arg_label)
 stopifnot(
   !anyDuplicated(haplotype_sample_map$ID),
   !anyDuplicated(haplotype_sample_map$sample_label),
@@ -133,6 +134,7 @@ contemporary_symbiont_proportions <- feature_totals %>%
   filter(focal_symbiont_reads > 0) %>%
   left_join(state$state_tbl %>% select(ID, dominance_state), by = "ID") %>%
   left_join(haplotype_sample_map, by = "ID") %>%
+  left_join(cohort %>% select(ID, S07_included = paired), by = "ID") %>%
   mutate(
     display_group = paste(if_else(symbiont_group == "DUSA", "DUSA-like", symbiont_group), OTU)
   ) %>%
@@ -161,57 +163,100 @@ readr::write_csv(
   here::here("output", "statistics", "09_symbiont_asv_haplotype_summary.csv")
 )
 
-# Display the paired cohort in 30 fixed specimen positions. Source counts for
-# all 30 specimens remain in the table above; exclusions are not represented as zeros.
-cohort <- haplotype_sample_map %>%
-  transmute(ID, arg_label = sample_label, position = as.integer(sub("^Arg", "", sample_label))) %>%
-  left_join(bacteria %>% select(ID, bacterial_reads = BacteriaReads), by = "ID") %>%
-  left_join(raw$prey %>% select(ID, prey_reads = PreyReads), by = "ID") %>%
-  arrange(position) %>% mutate(
-    included = bacterial_reads >= 1500 & prey_reads >= 1693,
-    exclusion_label = case_when(
-      bacterial_reads < 1500 ~ paste0("16S: ", format(bacterial_reads, big.mark = ",", trim = TRUE), " reads"),
-      prey_reads < 1693 ~ paste0("Prey: ", format(prey_reads, big.mark = ",", trim = TRUE), " reads"),
-      TRUE ~ ""))
-stopifnot(nrow(cohort) == 30L, sum(cohort$included) == 28L,
-          setequal(cohort$ID[!cohort$included], c("TH84", "TH99")))
-hap_colors <- c(`DUSA-like OTU2` = "#F47C20", `Mesoplasma OTU3` = "#EFDC24", `Mesoplasma OTU145` = "#287A78")
-hap_data <- contemporary_symbiont_proportions %>%
-  inner_join(cohort, by = "ID") %>%
-  mutate(display_group = factor(display_group, levels = names(hap_colors)),
-         plotted_fraction = if_else(included, rel_within_focal_symbionts, NA_real_))
-stopifnot(n_distinct(hap_data$ID[hap_data$included]) == 28L)
-S07 <- ggplot(hap_data %>% filter(included), aes(position, plotted_fraction, fill = display_group)) +
-  geom_col(color = "white", linewidth = .1, width = .85) +
-  scale_fill_manual(values = hap_colors, breaks = names(hap_colors)) +
-  scale_x_continuous(breaks = cohort$position, labels = cohort$arg_label, limits = c(.3, 30.7), expand = c(0, 0)) +
-  scale_y_continuous(labels = scales::percent_format(accuracy = 1), breaks = seq(0, 1, .2), expand = c(0, 0)) +
-  coord_cartesian(ylim = c(0, 1)) +
-  labs(x = "Contemporary A. bruennichi specimen", y = "Proportion of DUSA-like + Mesoplasma reads", fill = "16S sequence variant") +
-  theme_classic(base_size = 13) +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = .5, color = "black"),
-        axis.text.y = element_text(color = "black"), legend.position = "top",
-        legend.title = element_text(size = 12), legend.text = element_text(size = 12),
-        plot.margin = margin(8, 12, 8, 8))
-excluded <- cohort %>% filter(!included)
-width <- .85
-hatch <- bind_rows(lapply(excluded$position, function(x) {
-  slope <- 13; y0 <- seq(-slope * width, 100, by = 5)
-  low <- pmax(0, y0); high <- pmin(100, y0 + slope * width); keep <- high > low
-  tibble(x = x - width / 2 + (low[keep] - y0[keep]) / slope,
-         xend = x - width / 2 + (high[keep] - y0[keep]) / slope,
-         y = low[keep] / 100, yend = high[keep] / 100)
-}))
-S07 <- S07 +
-  geom_rect(data = excluded, aes(xmin = position - width / 2, xmax = position + width / 2, ymin = 0, ymax = 1),
-            inherit.aes = FALSE, fill = "#f6f6f6", color = "#b0b0b0", linewidth = .3) +
-  geom_segment(data = hatch, aes(x = x, xend = xend, y = y, yend = yend),
-               inherit.aes = FALSE, color = "#b0b0b0", linewidth = .3) +
-  geom_label(data = excluded, aes(x = position, y = .5, label = exclusion_label), inherit.aes = FALSE,
-             angle = 90, size = 2.5, fill = "white", color = "#444444", linewidth = 0,
-             label.padding = grid::unit(.08, "lines"))
-ggsave(here::here("figures", "supplement", "S07_symbiont_haplotypes.png"),
-       S07, width = 11, height = 5.4, dpi = 300, bg = "white")
-write_csv(cohort, here::here("output", "tables", "S07_symbiont_haplotypes_sample_map.csv"))
-write_csv(hap_data, here::here("output", "tables", "S07_symbiont_haplotypes_plot_data.csv"))
+if (nrow(contemporary_symbiont_proportions) > 0) {
+  sample_order <- state$state_tbl %>%
+    filter(ID %in% contemporary_symbiont_proportions$ID) %>%
+    left_join(haplotype_sample_map, by = "ID") %>%
+    arrange(as.integer(sub("^Arg", "", sample_label))) %>% pull(sample_label)
+
+  readr::write_csv(
+    haplotype_sample_map %>% mutate(plot_order = match(sample_label, sample_order)) %>% arrange(plot_order),
+    here::here("output", "tables", "S07_symbiont_haplotypes_sample_map.csv")
+  )
+  # Each bar retains the focal-read denominator used by the original figure.
+  stopifnot(
+    n_distinct(contemporary_symbiont_proportions$ID) == 30L,
+    n_distinct(contemporary_symbiont_proportions$ID[contemporary_symbiont_proportions$S07_included]) == 28L,
+    all(abs(contemporary_symbiont_proportions %>%
+      group_by(ID) %>% summarize(total = sum(rel_within_focal_symbionts), .groups = "drop") %>%
+      pull(total) - 1) < 1e-12)
+  )
+
+  plot_data <- contemporary_symbiont_proportions %>%
+    mutate(plot_order = match(sample_label, sample_order),
+           included = S07_included,
+           plotted_fraction = if_else(included, rel_within_focal_symbionts, NA_real_))
+  readr::write_csv(plot_data, here::here("output", "tables", "S07_symbiont_haplotypes_plot_data.csv"))
+
+  s08_contemporary_symbiont_asv <- plot_data %>% filter(included) %>%
+    mutate(
+      sample_label = factor(sample_label, levels = sample_order),
+      display_group = factor(
+        display_group,
+        levels = contemporary_symbiont_proportions %>%
+          distinct(symbiont_group, OTU, display_group) %>%
+          mutate(otu_number = as.integer(str_remove(OTU, "^OTU"))) %>%
+          arrange(symbiont_group, otu_number) %>%
+          pull(display_group)
+      )
+    ) %>%
+    ggplot(aes(sample_label, plotted_fraction, fill = display_group)) +
+    geom_col(color = "white", linewidth = 0.1, width = 0.85) +
+    scale_x_discrete(drop = FALSE) +
+    scale_fill_manual(values = c(
+      "DUSA-like OTU2" = "#ff6a0a",
+      "Mesoplasma OTU3" = "#eeee00",
+      "Mesoplasma OTU145" = "#287A78"
+    )) +
+    scale_y_continuous(labels = scales::percent_format(accuracy = 1),
+                       breaks = seq(0, 1, .2), expand = c(0, 0)) +
+    coord_cartesian(ylim = c(0, 1)) +
+    labs(
+      x = "Contemporary A. bruennichi sample",
+      y = "Proportion of DUSA-like + Mesoplasma reads",
+      fill = "16S sequence variant"
+    ) +
+    theme_classic(base_size = 13) +
+    theme(
+      axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5, color = "black"),
+      axis.text.y = element_text(color = "black"),
+      legend.position = "top",
+      legend.title = element_text(size = 12),
+      legend.text = element_text(size = 12),
+      plot.margin = margin(8, 12, 8, 8)
+    )
+
+  # Mark either failed marker in this paired comparison, retaining all30 fixed slots.
+  excluded <- cohort %>% filter(!paired) %>% mutate(
+    x = match(arg_label, sample_order),
+    label = if_else(!eligible_16S, paste0("16S: ", BacteriaReads, " reads"),
+                    paste0("Prey: ", PreyReads, " reads")))
+  hatch <- bind_rows(lapply(excluded$x, function(x) {
+    y0 <- seq(-.85, 1, by = .06); low <- pmax(0, y0); high <- pmin(1, y0 + .85)
+    keep <- high > low
+    left_edge <- x - .425
+    tibble(x = left_edge + low[keep] - y0[keep],
+           xend = left_edge + high[keep] - y0[keep], y = low[keep], yend = high[keep])
+  }))
+  s08_contemporary_symbiont_asv <- s08_contemporary_symbiont_asv +
+    geom_rect(data = excluded, aes(xmin = x - .425, xmax = x + .425, ymin = 0, ymax = 1),
+      inherit.aes = FALSE, fill = "#f6f6f6", color = "#b0b0b0", linewidth = .3) +
+    geom_segment(data = hatch, aes(x = x, xend = xend, y = y, yend = yend),
+      inherit.aes = FALSE, color = "#b0b0b0", linewidth = .3) +
+    geom_label(data = excluded, aes(x = x, y = .5, label = label), inherit.aes = FALSE,
+      angle = 90, size = 2.5, fill = "white", color = "#444444", linewidth = 0)
+  ggplot2::ggsave(
+    here::here("figures", "supplement", "S07_symbiont_haplotypes.png"),
+    s08_contemporary_symbiont_asv,
+    width = 11,
+    height = 5.4,
+    dpi = 300,
+    bg = "white"
+  )
+  ggplot2::ggsave(
+    here::here("figures", "supplement", "S07_symbiont_haplotypes.pdf"),
+    s08_contemporary_symbiont_asv, width = 11, height = 5.4, device = "pdf", useDingbats = FALSE, bg = "white"
+  )
+}
+
 log_line("S07_symbiont_variants completed")

@@ -6,7 +6,6 @@ prey_taxa <- raw$prey_taxa
 bacteria <- raw$bacteria
 bacteria_taxa <- raw$bacteria_taxa
 
-set.seed(100)
 state <- make_dominance_state(bacteria, bacteria_taxa)
 state_tbl <- state$state_tbl
 fig04_arg_map <- make_fig04_arg_map(state_tbl, state$cont_ab)
@@ -64,7 +63,7 @@ readr::write_csv(
   here::here("output", "tables", "S07_detailed_diet_stack_data.csv")
 )
 
-matched_ids <- intersect(fig05_prey_samples$ID, state$cont_ab$ID)
+matched_ids <- contemporary_analysis_cohort(state, prey) %>% filter(paired) %>% pull(ID)
 bac_m <- state$cont_ab %>%
   filter(ID %in% matched_ids) %>%
   select(ID, all_of(state$bacteria_otu)) %>%
@@ -83,7 +82,10 @@ common_ids <- sort(intersect(rownames(bac_m), rownames(prey_m)))
 bac_m <- bac_m[common_ids, , drop = FALSE]
 prey_m <- prey_m[common_ids, , drop = FALSE]
 
+RNGkind("Mersenne-Twister", "Inversion", "Rejection")
+set.seed(100)
 bac_dist <- vegan::avgdist(bac_m, sample = 1500, dmethod = "bray", iterations = 100)
+set.seed(101)
 prey_dist <- vegan::avgdist(prey_m, sample = 1693, dmethod = "bray", iterations = 100)
 
 bac_labels <- attr(bac_dist, "Labels")
@@ -94,11 +96,16 @@ if (!is.null(bac_labels) && !is.null(prey_labels)) {
   prey_dist <- as.dist(as.matrix(prey_dist)[keep, keep, drop = FALSE])
 }
 
+stopifnot(attr(bac_dist, "Size") == 28L, identical(attr(bac_dist, "Labels"), attr(prey_dist, "Labels")))
+set.seed(102)
 mantel_res <- vegan::mantel(bac_dist, prey_dist, method = "spearman", permutations = 999)
 readr::write_csv(
   tibble(
     version = "fig05_sample_set_abundance",
     n = attr(bac_dist, "Size"),
+    n_pairs = choose(attr(bac_dist, "Size"), 2),
+    bacterial_depth = 1500L, prey_depth = 1693L,
+    seed_distance_16S = 100L, seed_distance_COI = 101L, seed_mantel = 102L,
     mantel_r = unname(mantel_res$statistic),
     p_value = mantel_res$signif
   ),
@@ -113,16 +120,19 @@ prey_mat <- prey_mat[keep, keep, drop = FALSE]
 idx <- upper.tri(bac_mat)
 mantel_plot_dat <- tibble(
   prey_dissimilarity = prey_mat[idx],
-  microbiome_dissimilarity = bac_mat[idx]
+  bacterial_dissimilarity = bac_mat[idx]
 )
 
-s05_mantel <- ggplot(mantel_plot_dat, aes(prey_dissimilarity, microbiome_dissimilarity)) +
+readr::write_csv(mantel_plot_dat, here::here("output/tables/S09_pairwise_data.csv"))
+readr::write_csv(tibble(ID = rownames(bac_mat)), here::here("output/tables/S09_cohort.csv"))
+
+s05_mantel <- ggplot(mantel_plot_dat, aes(prey_dissimilarity, bacterial_dissimilarity)) +
   geom_point(alpha = 0.55, size = 2) +
   geom_smooth(method = "lm", se = FALSE, linewidth = 0.6, color = "black") +
   theme_classic() +
   labs(
     x = "Prey Bray-Curtis dissimilarity",
-    y = "Microbiome Bray-Curtis dissimilarity",
+    y = "Bacterial Bray-Curtis dissimilarity",
     title = sprintf(
       "Mantel: rho = %.3f, p = %.3f",
       unname(mantel_res$statistic),

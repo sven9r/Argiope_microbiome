@@ -1,31 +1,31 @@
-ID,union_arg_label
-TH109,Arg1
-TH82,Arg2
-TH86,Arg3
-TH90,Arg4
-TH89,Arg5
-TH97,Arg6
-TH94,Arg7
-TH83,Arg8
-TH108,Arg9
-TH96,Arg10
-TH104,Arg11
-TH91,Arg12
-TH95,Arg13
-TH92,Arg14
-TH100,Arg15
-TH81,Arg16
-TH110,Arg17
-TH107,Arg18
-TH103,Arg19
-TH106,Arg20
-TH105,Arg21
-TH85,Arg22
-TH84,Arg23
-TH88,Arg24
-TH87,Arg25
-TH93,Arg26
-TH101,Arg27
-TH98,Arg28
-TH99,Arg29
-TH102,Arg30
+ID,arg_label,previous_arg_label,arg_order,ordering_rule
+TH82,Arg1,Arg2,1,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH86,Arg2,Arg3,2,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH83,Arg3,Arg8,3,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH92,Arg4,Arg14,4,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH102,Arg5,Arg30,5,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH97,Arg6,Arg6,6,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH95,Arg7,Arg13,7,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH109,Arg8,Arg1,8,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH91,Arg9,Arg12,9,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH89,Arg10,Arg5,10,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH96,Arg11,Arg10,11,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH90,Arg12,Arg4,12,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH104,Arg13,Arg11,13,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH100,Arg14,Arg15,14,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH94,Arg15,Arg7,15,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH108,Arg16,Arg9,16,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH81,Arg17,Arg16,17,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH110,Arg18,Arg17,18,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH99,Arg19,Arg29,19,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH107,Arg20,Arg18,20,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH103,Arg21,Arg19,21,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH106,Arg22,Arg20,22,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH105,Arg23,Arg21,23,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH85,Arg24,Arg22,24,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH84,Arg25,Arg23,25,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH88,Arg26,Arg24,26,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH87,Arg27,Arg25,27,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH93,Arg28,Arg26,28,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH101,Arg29,Arg27,29,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"
+TH98,Arg30,Arg28,30,"Descending DUSA/(DUSA+Mesoplasma), then DUSA reads descending, then specimen ID"

@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := help
 .NOTPARALLEL:
-.PHONY: help restore figure2 figure3 figure4 figure5 main-figures supplementary-figures bacteria prey history variants composition community-comparison host-phylogeny sequence-distance rarefaction processing-success dna-quality species-composition figures all
+.PHONY: help restore figure2 figure3 figure4 figure5 main-figures supplementary-figures bacteria dispersion prey history variants composition community-comparison host-phylogeny sequence-distance rarefaction processing-success dna-quality species-composition figures all
 
 RSCRIPT ?= Rscript
 PYTHON ?= python3
@@ -17,7 +17,8 @@ help:
 	@echo "make processing-success     Supplementary Figure S2"
 	@echo "make dna-quality            Supplementary Figure S3"
 	@echo "make species-composition    Supplementary Figure S4"
-	@echo "make bacteria               Supplementary Figures S5 and S6"
+	@echo "make bacteria               Supplementary Figure S5"
+	@echo "make dispersion             Supplementary Figure S6"
 	@echo "make variants               Supplementary Figure S7"
 	@echo "make sequence-distance      Supplementary Figure S8"
 	@echo "make prey                   Supplementary Figure S9"
@@ -60,7 +61,9 @@ species-composition:
 	$(R) scripts/S04_species_composition.R
 
 bacteria:
-	$(R) scripts/S05_S06_bacterial_profiles.R
+	$(R) scripts/S05_bacterial_profiles.R
+
+dispersion: community-comparison
 
 variants:
 	$(R) scripts/S07_symbiont_variants.R
@@ -71,7 +74,7 @@ sequence-distance:
 prey:
 	$(R) scripts/S09_prey_profiles.R
 
-supplementary-figures: rarefaction processing-success dna-quality species-composition bacteria variants sequence-distance prey
+supplementary-figures: rarefaction processing-success dna-quality species-composition bacteria dispersion variants sequence-distance prey
 
 figures: main-figures supplementary-figures
 

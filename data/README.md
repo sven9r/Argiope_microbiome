@@ -23,7 +23,7 @@ The corresponding `*.OTu.fas` files preserve original OTU sequences. The `*.out_
 
 ## Figure inputs
 
-`reference/arg_sample_map.csv` preserves the original Arg1–Arg30 display identities. Use its original `ID` to join specimens. The display order does not change when a profile fails a read-depth cutoff.
+`reference/arg_sample_map.csv` records the current Arg1–Arg30 display identities. Use its original `ID` to join specimens. Labels follow descending DUSA-like focal fraction, then descending DUSA-like reads and specimen ID. The label is fixed across marker filters; `previous_arg_label` records the prior display label.
 
 Figure 1 (`figures/main/Fig01_map.png`) was created in ArcGIS. The R and Python scripts listed in the root README generate the other main and supplementary figures.
 

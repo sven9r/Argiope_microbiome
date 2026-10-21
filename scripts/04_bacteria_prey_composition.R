@@ -36,7 +36,7 @@ merge_paths <- c(
   detailed_prey_composition = "output/tables/S07_detailed_diet_stack_data.csv",
   prey_sample_set = "output/tables/S07_detailed_diet_sample_set.csv",
   owning_workbook = "data/Raw_data_COI_16S_2.xlsm",
-  bacterial_panel_script = "scripts/S05_S06_bacterial_profiles.R",
+  bacterial_panel_script = "scripts/S05_bacterial_profiles.R",
   prey_panel_script = "scripts/S09_prey_profiles.R",
   source_helpers = "scripts/00_setup.R"
 )
@@ -44,8 +44,7 @@ if (!all(file.exists(file.path(merge_root, merge_paths)))) {
   stop("Required source exports are missing. Run make bacteria prey first.")
 }
 merge_read <- function(name) readr::read_csv(file.path(merge_root, merge_paths[[name]]), show_col_types = FALSE)
-merge_canonical <- merge_read("canonical_sample_map") %>%
-  transmute(ID, arg_label = union_arg_label)
+merge_canonical <- merge_read("canonical_sample_map") %>% select(ID, arg_label)
 merge_states <- merge_read("bacterial_composition")
 merge_diet <- merge_read("detailed_prey_composition")
 merge_prey_set <- merge_read("prey_sample_set")
@@ -66,14 +65,14 @@ merge_samples <- merge_labels %>%
   left_join(merge_coi_raw %>% select(ID, prey_taxon = Taxon, prey_status = Status, prey_reads = PreyReads), by = "ID") %>%
   mutate(
     included_16S = bacterial_reads >= 1500,
-    included_prey = ID %in% merge_diet$ID,
+    included_prey = prey_reads >= 1693,
     matched = included_16S & included_prey,
     reason_16S_excluded = if_else(included_16S, "", paste0(bacterial_reads, " bacterial reads < 1500")),
     reason_prey_excluded = if_else(included_prey, "", paste0(prey_reads, " prey reads < 1693")),
     original_16S_panel = if_else(included_16S, "Figure 4A", ""),
     original_prey_panel = if_else(included_prey, "Former standalone detailed prey supplement; now Figure 4B", ""),
-    union_arg_label = paste0("Arg", row_number()),
-    matched_arg_label = if_else(matched, paste0("Arg", cumsum(matched)), "")
+    union_arg_label = arg_label,
+    matched_arg_label = if_else(matched, arg_label, "")
   )
 stopifnot(
   all(merge_samples$Taxon == "A. bruennichi"), all(merge_samples$prey_taxon == "A. bruennichi"),
@@ -148,8 +147,9 @@ merge_hatching <- function(excluded, slope = 13, step = 5) {
     low <- pmax(0, y0)
     high <- pmin(100, y0 + slope * .73)
     keep <- high > low
-    tibble(x = x - .365 + (low[keep] - y0[keep]) / slope,
-           xend = x - .365 + (high[keep] - y0[keep]) / slope, y = low[keep], yend = high[keep])
+    left_edge <- x - .365
+    tibble(x = left_edge + (low[keep] - y0[keep]) / slope,
+           xend = left_edge + (high[keep] - y0[keep]) / slope, y = low[keep], yend = high[keep])
   }))
 }
 
@@ -205,6 +205,8 @@ merge_union_plot <- merge_figure(merge_samples)
 merge_matched_plot <- merge_figure(merge_samples %>% filter(matched), matched_only = TRUE)
 ggsave(file.path(merge_output, "merged_figure4A_prey_union.png"), merge_union_plot, width = 16, height = 8.6, dpi = merge_dpi, bg = "white")
 ggsave(file.path(merge_output, "merged_figure4A_prey_matched.png"), merge_matched_plot, width = 16, height = 8.6, dpi = merge_dpi, bg = "white")
+ggsave(file.path(merge_root, "figures/main/fig04_bacteria_prey_composition.pdf"), merge_union_plot,
+       width = 16, height = 8.6, device = "pdf", useDingbats = FALSE, bg = "white")
 merge_main_dir <- file.path(merge_root, "figures", "main")
 dir.create(merge_main_dir, recursive = TRUE, showWarnings = FALSE)
 stopifnot(file.copy(file.path(merge_output, "merged_figure4A_prey_union.png"),
@@ -215,7 +217,7 @@ write_csv(merge_plot_data, file.path(merge_output, "plot_data.csv"), na = "")
 merge_provenance <- list(
   sources = lapply(merge_paths, function(path) list(path = path, sha256 = digest::digest(file = file.path(merge_root, path), algo = "sha256"))),
   script = "scripts/04_bacteria_prey_composition.R", cutoffs = list(`16S` = 1500, prey_COI = 1693),
-  sample_counts = list(union = 30, `16S` = 29, prey_COI = 29, matched = 28),
+  sample_counts = list(union = nrow(merge_samples), `16S` = sum(merge_samples$included_16S), prey_COI = sum(merge_samples$included_prey), matched = sum(merge_samples$matched)),
   validation = list(canonical_labels_unique = TRUE, shared_labels_match_by_ID = TRUE,
                     relative_abundances_sum_to_100 = TRUE, inclusion_matches_raw_workbook_cutoffs = TRUE,
                     exported_16S_counts_match_workbook = TRUE),
@@ -225,9 +227,9 @@ merge_provenance <- list(
   notes = c("The detailed prey panel is now Figure 4B; Mantel is Supplementary Figure 9. Legacy S07 data filenames are retained for provenance.",
             "Panels use per-specimen read percentages from the existing Figure 4A and S07 R exports; no averaging across specimens.",
             "Specimens are joined by ID and drawn in the same order in both panels.",
-            "Display labels are Arg1–Arg30 for the union and Arg1–Arg28 for the matched companion; identity mappings remain in sample_map.csv.",
+            "Display labels follow focal DUSA fraction and remain fixed in the matched companion; current and previous identities are retained in data/reference/arg_sample_map.csv.",
             "Residual categories are Other bacteria and Other prey orders; canonical colors and Blattodea are retained.")
 )
 jsonlite::write_json(merge_provenance, file.path(merge_output, "provenance.json"), pretty = TRUE, auto_unbox = TRUE, na = "null")
 
-cat("Merged Figure 4: 30 specimen positions, 29 bacterial profiles, 29 prey profiles, 28 matched.\n")
+cat("Figure 4: 30 specimen positions, 29 profiles per marker, 28 matched.\n")
