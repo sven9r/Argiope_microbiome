@@ -2,7 +2,7 @@
 """Rebuild Supplementary Figure S8 from retained local sequence sources.
 
 Requires Pillow and matplotlib (for portable font lookup). Run with:
-    python3 scripts/08_sequence_distance.py
+    python3 scripts/S08_sequence_distance.py
 
 The DUSA row is extracted from the saved CP070274.1 GenBank record, rather
 than being copied from OTU2. The saved extracted reference FASTA and the
@@ -109,7 +109,7 @@ def sequences_and_provenance():
     paths = [RAW, ALIGNMENT, REFERENCE, REFERENCE_FASTA]
     provenance = {
         "figure": str(FIGURE.relative_to(ROOT)),
-        "script": "scripts/08_sequence_distance.py",
+        "script": "scripts/S08_sequence_distance.py",
         "reference_accession": accession,
         "reference_gene": "16S ribosomal RNA",
         "reference_gene_genome_start_1based": gene_start,
@@ -273,7 +273,7 @@ def write_outputs(sequences, rows, provenance):
              "| Sequence pair | Mismatches | Distance |", "|---|---:|---:|"]
     lines += [f"| {r['label_a']} / {r['label_b']} | {r['mismatches']}/101 | {r['distance_percent']:.2f}% |" for r in rows]
     lines += ["", provenance["limitation"], "",
-              "Reproduce from the project root with `python3 scripts/08_sequence_distance.py` (Pillow required). No network download is performed.", "",
+              "Reproduce from the project root with `python3 scripts/S08_sequence_distance.py` (Pillow required). No network download is performed.", "",
               "- `figures/supplement/S08_symbiont_16S_distance.png`: final PNG, rendered directly at 300 dpi.",
               "- `output/tables/S08_symbiont_16S_distance_data.csv`: all ten unique pairwise comparisons.",
               "- `output/symbiont_16S_distance/aligned_sequences.fasta`: complete measured 101-bp fragments.",

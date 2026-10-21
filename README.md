@@ -7,15 +7,18 @@ Analysis code for bacterial 16S and prey COI data from museum and contemporary *
 | File in `scripts/` | Analysis and outputs |
 | --- | --- |
 | [00_setup.R](scripts/00_setup.R) | Shared workbook import, bacterial grouping, specimen identities and plotting functions. |
-| [01_bacterial_profiles.R](scripts/01_bacterial_profiles.R) | Contemporary bacterial read states, log-ratios (S5) and dispersion (S6). |
-| [02_prey_profiles.R](scripts/02_prey_profiles.R) | Prey-order composition and bacterial/prey Mantel comparison (S9). |
-| [03_historical_dusa.R](scripts/03_historical_dusa.R) | Historical DUSA-like read summaries and timeline (Figure 3). |
-| [04_symbiont_variants.R](scripts/04_symbiont_variants.R) | Focal OTU sequences and within-focal read proportions (S7). |
-| [05_composition.R](scripts/05_composition.R) | Aligned bacterial/prey composition panels (Figure 4). |
-| [06_community_comparison.R](scripts/06_community_comparison.R) | NMDS, PERMANOVA, dispersion and prey-order comparisons (Figure 5). |
-| [07_host_phylogeny.py](scripts/07_host_phylogeny.py) | Host-tree display, sampled origins, bacterial composition and detection summaries (Figure 2). |
-| [08_sequence_distance.py](scripts/08_sequence_distance.py) | Reference extraction and 101-base sequence comparisons (S8). |
-| [09_rarefaction.R](scripts/09_rarefaction.R) | Marker rarefaction curves and panel sample counts (S1). |
+| [01_map.R](scripts/01_map.R) | Figure 1: copies the retained sampling map; the original map-drawing script is unavailable. |
+| [02_host_phylogeny.py](scripts/02_host_phylogeny.py) | Figure 2: host-tree display, sampled origins, bacterial composition and detection summaries. |
+| [03_historical_dusa.R](scripts/03_historical_dusa.R) | Figure 3: historical DUSA-like read summaries and timeline. |
+| [04_bacteria_prey_composition.R](scripts/04_bacteria_prey_composition.R) | Figure 4: aligned bacterial/prey composition panels. |
+| [05_community_comparison.R](scripts/05_community_comparison.R) | Figure 5: NMDS, PERMANOVA, dispersion and prey-order comparisons. |
+| [S01_rarefaction.R](scripts/S01_rarefaction.R) | S1: marker rarefaction curves and panel sample counts. |
+| [S05_S06_bacterial_profiles.R](scripts/S05_S06_bacterial_profiles.R) | S5/S6: contemporary bacterial read states, log-ratios and dispersion. Also supplies Figure 4 bacterial data. |
+| [S07_symbiont_variants.R](scripts/S07_symbiont_variants.R) | S7: focal OTU sequences and within-focal read proportions. |
+| [S08_sequence_distance.py](scripts/S08_sequence_distance.py) | S8: reference extraction and 101-base sequence comparisons. |
+| [S09_prey_profiles.R](scripts/S09_prey_profiles.R) | S9: prey-order composition and bacterial/prey Mantel comparison. Also supplies Figure 4 prey data. |
+
+The five main-figure scripts follow manuscript order. S2–S4 use retained images. Figure 4 reads tables made by the S5/S6 and S9 scripts; `make composition` handles those prerequisites.
 
 
 ## Inputs
@@ -52,17 +55,20 @@ R will activate the project environment through `.Rprofile`. Restoring packages 
 | Command | What it runs or writes |
 | --- | --- |
 | `make restore` | Restores R packages from `renv.lock`; it does not install Python packages. |
-| `make saved-figures` | Copies retained Figure 1 and S2–S4 raster inputs to their publication paths. |
-| `make bacteria` | Recalculates bacterial states and S5/S6. |
-| `make prey` | Recalculates prey composition and S9. |
-| `make composition` | Runs `bacteria`, then `prey`, then merges Figure 4 by specimen ID. |
-| `make history` | Recalculates historical summaries and Figure 3. |
-| `make variants` | Recalculates focal-variant summaries and S7. |
-| `make community-comparison` | Runs Figure 5 with strict grouping, rarefied prey-order data, BH adjustment and starting seed 100. |
-| `make host-phylogeny` | Redraws Figure 2 from the saved summaries and published host tree. |
-| `make sequence-distance` | Checks the saved reference gene and alignment, exports pairwise distances and draws S8. |
+| `make main-figures` | Runs Figures 1–5 in manuscript order, including their data prerequisites. |
+| `make map` / `make figure1` | Runs `01_map.R` to copy the retained Figure 1 image. |
+| `make host-phylogeny` / `make figure2` | Runs `02_host_phylogeny.py` to redraw Figure 2 from saved summaries and the published host tree. |
+| `make history` / `make figure3` | Runs `03_historical_dusa.R` to recalculate historical summaries and Figure 3. |
+| `make composition` / `make figure4` | Runs `bacteria`, then `prey`, then `04_bacteria_prey_composition.R` to merge Figure 4 by specimen ID. |
+| `make community-comparison` / `make figure5` | Runs `05_community_comparison.R` with strict grouping, rarefied prey-order data, BH adjustment and starting seed 100. |
+| `make supplementary-figures` | Runs the supplementary analyses and copies retained S2–S4 images. |
 | `make rarefaction` | Recalculates S1, with contemporary cutoffs of 1,500 bacterial and 1,693 prey reads. |
-| `make all` | Runs the complete workflow above in the required order. |
+| `make saved-figures` | Copies only retained S2–S4 raster inputs to their publication paths. |
+| `make bacteria` | Recalculates bacterial states and S5/S6. |
+| `make variants` | Recalculates focal-variant summaries and S7. |
+| `make sequence-distance` | Checks the saved reference gene and alignment, exports pairwise distances and draws S8. |
+| `make prey` | Recalculates prey composition and S9. |
+| `make all` / `make figures` | Runs the main figures in order, followed by the supplementary figures. |
 
 Targets run sequentially because several share output tables. They are phony targets: invoking one runs it again, even if its outputs already exist. Repeated dependencies run once within a single Make invocation. No target deletes data or updates the lockfile.
 
@@ -81,6 +87,6 @@ S5 and S7 use the paired cohort. S7 retains all 30 display positions, with the t
 
 Figure 2 uses a descriptive screen: at least 100 bacterial reads, at least 10 focal reads and at least 1% focal reads. Its composition pies give eligible specimens equal weight. Figure 3 retains the historical any-read timeline selection; it is not the same screen-positive cohort.
 
-The workflow starts from the curated workbook and saved alignment/reference inputs. It does not reconstruct raw sequencing processing, the original map, S2–S4, host-tree inference or all original species-summary calculations. `saved-figures` copies the four retained images explicitly. Randomized analyses use recorded seeds for future reruns; previously saved manuscript results can differ. A complete fresh package installation has not been tested.
+The workflow starts from the curated workbook and saved alignment/reference inputs. It does not reconstruct raw sequencing processing, the original map, S2–S4, host-tree inference or all original species-summary calculations. `make map` copies Figure 1; `make saved-figures` copies S2–S4. Randomized analyses use recorded seeds for future reruns; previously saved manuscript results can differ. A complete fresh package installation has not been tested.
 
 Short-marker identity, candidate read detection and read-composition classes do not establish infection, bacterial strain identity or transmission. Raw sequencing accessions and complete upstream processing records remain to be supplied for a final data release.

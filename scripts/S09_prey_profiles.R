@@ -132,4 +132,4 @@ s05_mantel <- ggplot(mantel_plot_dat, aes(prey_dissimilarity, microbiome_dissimi
 
 save_supplement_figure(s05_mantel, "S09_mantel.png", width = 7, height = 6)
 
-log_line("02_prey_profiles completed")
+log_line("S09_prey_profiles completed")

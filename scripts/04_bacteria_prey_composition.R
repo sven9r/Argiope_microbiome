@@ -36,8 +36,8 @@ merge_paths <- c(
   detailed_prey_composition = "output/tables/S07_detailed_diet_stack_data.csv",
   prey_sample_set = "output/tables/S07_detailed_diet_sample_set.csv",
   owning_workbook = "data/Raw_data_COI_16S_2.xlsm",
-  bacterial_panel_script = "scripts/01_bacterial_profiles.R",
-  prey_panel_script = "scripts/02_prey_profiles.R",
+  bacterial_panel_script = "scripts/S05_S06_bacterial_profiles.R",
+  prey_panel_script = "scripts/S09_prey_profiles.R",
   source_helpers = "scripts/00_setup.R"
 )
 if (!all(file.exists(file.path(merge_root, merge_paths)))) {
@@ -214,7 +214,7 @@ write_csv(merge_plot_data, file.path(merge_output, "plot_data.csv"), na = "")
 
 merge_provenance <- list(
   sources = lapply(merge_paths, function(path) list(path = path, sha256 = digest::digest(file = file.path(merge_root, path), algo = "sha256"))),
-  script = "scripts/05_composition.R", cutoffs = list(`16S` = 1500, prey_COI = 1693),
+  script = "scripts/04_bacteria_prey_composition.R", cutoffs = list(`16S` = 1500, prey_COI = 1693),
   sample_counts = list(union = 30, `16S` = 29, prey_COI = 29, matched = 28),
   validation = list(canonical_labels_unique = TRUE, shared_labels_match_by_ID = TRUE,
                     relative_abundances_sum_to_100 = TRUE, inclusion_matches_raw_workbook_cutoffs = TRUE,

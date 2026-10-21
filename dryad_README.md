@@ -324,17 +324,22 @@ Original count/FASTA and saved-support paths are recorded in `file_manifest.csv`
 | Make target | Purpose |
 | --- | --- |
 | `make restore` | Restore the R package environment recorded by the code repository. |
-| `make saved-figures` | Retain source figures for the map and processing/collection-period/species-stack panels. |
-| `make bacteria` | Bacterial profile states, focal log-ratio and dispersion outputs. |
-| `make prey` | Prey composition and paired distance comparison. |
-| `make history` | Historical DUSA-like tables and timeline selection. |
-| `make variants` | Focal OTU variant composition. |
-| `make composition` | Specimen-aligned bacterial/prey composition. |
-| `make community-comparison` | Paired ordinations and clear-profile prey comparisons. |
-| `make host-phylogeny` | Published host topology with local screening/composition summaries. |
-| `make sequence-distance` | Five-fragment comparison and pairwise distances. |
-| `make rarefaction` | Current read-depth/rarefaction display. |
-| `make all` | Run the defined analysis/figure targets; consult the code README for dependencies and saved-input requirements. |
+| `make main-figures` | Run Figures 1–5 in manuscript order, including data prerequisites. |
+| `make map` / `make figure1` | Run `scripts/01_map.R` to copy the retained sampling map. The original map-drawing script is unavailable. |
+| `make host-phylogeny` / `make figure2` | Run `scripts/02_host_phylogeny.py`: published host topology with local screening/composition summaries. |
+| `make history` / `make figure3` | Run `scripts/03_historical_dusa.R`: historical DUSA-like tables and timeline selection. |
+| `make composition` / `make figure4` | Run `bacteria` and `prey`, then `scripts/04_bacteria_prey_composition.R` for specimen-aligned bacterial/prey composition. |
+| `make community-comparison` / `make figure5` | Run `scripts/05_community_comparison.R`: paired ordinations and clear-profile prey comparisons. |
+| `make supplementary-figures` | Run supplementary analyses and copy retained S2–S4 images. |
+| `make rarefaction` | Run `scripts/S01_rarefaction.R`: current read-depth/rarefaction display. |
+| `make saved-figures` | Copy retained S2–S4 processing/collection-period/species-stack images. |
+| `make bacteria` | Run `scripts/S05_S06_bacterial_profiles.R`: bacterial profile states, focal log-ratio and dispersion outputs. |
+| `make variants` | Run `scripts/S07_symbiont_variants.R`: focal OTU variant composition. |
+| `make sequence-distance` | Run `scripts/S08_sequence_distance.py`: five-fragment comparison and pairwise distances. |
+| `make prey` | Run `scripts/S09_prey_profiles.R`: prey composition and paired distance comparison. |
+| `make all` / `make figures` | Run the main figures in order, followed by supplementary figures; consult the code README for saved-input requirements. |
+
+Figure 4 uses bacterial and prey tables made by the S5/S6 and S9 scripts. Make handles these prerequisites; their supplementary outputs are produced during that step.
 
 Rebuilding a scientific figure and copying a retained image are distinct operations. Stochastic calculations can vary unless inputs, parameters, random-number settings and package versions match. Use selected saved objects and session records when exact numerical correspondence matters. The figure map identifies where current-image sidecars or complete historical methods remain unavailable.
 

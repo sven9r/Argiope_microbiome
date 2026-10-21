@@ -100,4 +100,4 @@ s04_betadisper <- tibble(distance_to_spatial_median = bd$distances, dominance_st
   labs(x = NULL, y = "Distance to spatial median")
 save_supplement_figure(s04_betadisper, "S06_betadispar.png", width = 6, height = 5)
 
-log_line("01_bacterial_profiles completed")
+log_line("S05_S06_bacterial_profiles completed")

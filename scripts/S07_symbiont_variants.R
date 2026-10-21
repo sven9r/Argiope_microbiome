@@ -214,4 +214,4 @@ ggsave(here::here("figures", "supplement", "S07_symbiont_haplotypes.png"),
        S07, width = 11, height = 5.4, dpi = 300, bg = "white")
 write_csv(cohort, here::here("output", "tables", "S07_symbiont_haplotypes_sample_map.csv"))
 write_csv(hap_data, here::here("output", "tables", "S07_symbiont_haplotypes_plot_data.csv"))
-log_line("04_symbiont_variants completed")
+log_line("S07_symbiont_variants completed")

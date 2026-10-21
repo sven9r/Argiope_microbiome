@@ -55,7 +55,7 @@ write_csv(cohort %>% filter(paired), file.path(out, "display_cohort.csv"))
 write_csv(cohort %>% filter(in_model), file.path(out, "model_cohort.csv"))
 source_files <- c(workbook = workbook, figure4_map = map_path,
                   reference_state_helper = file.path(root, "scripts/00_setup.R"),
-                  analysis_source = file.path(root, "scripts/06_community_comparison.R"))
+                  analysis_source = file.path(root, "scripts/05_community_comparison.R"))
 stopifnot(all(file.exists(source_files)))
 write_csv(tibble(source = names(source_files), path = substring(source_files, nchar(root) + 2L), md5 = unname(tools::md5sum(source_files))), file.path(out, "input_hashes.csv"))
 # Fit the declared analysis after saving and checking the specimen cohort.
