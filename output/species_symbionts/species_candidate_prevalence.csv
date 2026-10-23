@@ -1,701 +1,701 @@
-species,Status,group,n_specimens,n_group_OTUs_in_curated_matrix,n_group_OTUs_not_in_curated_matrix,n_eligible_ge100,n_positive,prevalence,n_eligible_ge507,n_positive_ge507,n_eligible_ge2506,n_positive_ge2506,mean_relative_abundance,max_relative_abundance,positive_IDs,n_unfiltered_positive,group_has_raw_control_reads
-A. aemula,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. aemula,Museum,Mesoplasma,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. aemula,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Chlamydiales_unresolved,2,1,0,2,1,0.5,1,0,0,0,0.16738197424892703,0.33476394849785407,TH13,1,False
-A. aemula,Museum,Spiroplasma,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Unnamed_Candidatus,2,18,1,2,1,0.5,1,1,0,0,0.26805555555555555,0.5361111111111111,TH14,1,True
-A. aemula,Museum,Wolbachia,2,5,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. aemula,Museum,Serratia_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Blattabacterium,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Buchnera,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Rickettsia,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,1,0,0,0,0.002777777777777778,0.005555555555555556,,0,False
-A. aemula,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Aquicella_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aemula,Museum,Rickettsiella,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. aetherea,Museum,Mesoplasma,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. aetherea,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Spiroplasma,2,3,0,2,1,0.5,1,1,0,0,0.4453125,0.890625,TH15,1,False
-A. aetherea,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. aetherea,Museum,Wolbachia,2,5,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. aetherea,Museum,Serratia_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Blattabacterium,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Buchnera,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Rickettsia,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Aquicella_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. aetherea,Museum,Rickettsiella,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. amoena,Museum,Mesoplasma,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. amoena,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Spiroplasma,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. amoena,Museum,Wolbachia,2,5,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. amoena,Museum,Serratia_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Blattabacterium,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Buchnera,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Rickettsia,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Aquicella_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. amoena,Museum,Rickettsiella,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. anasuja,Museum,Mesoplasma,2,2,0,2,1,0.5,0,0,0,0,0.15544041450777202,0.31088082901554404,TH20,1,True
-A. anasuja,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Spiroplasma,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. anasuja,Museum,Wolbachia,2,5,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. anasuja,Museum,Serratia_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Blattabacterium,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Buchnera,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Rickettsia,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. anasuja,Museum,Aquicella_hint,2,1,0,2,1,0.5,0,0,0,0,0.025906735751295335,0.05181347150259067,TH20,0,False
-A. anasuja,Museum,Rickettsiella,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. appensa,Museum,Mesoplasma,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. appensa,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Spiroplasma,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. appensa,Museum,Wolbachia,2,5,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. appensa,Museum,Serratia_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Blattabacterium,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Buchnera,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Rickettsia,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Aquicella_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. appensa,Museum,Rickettsiella,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. argentata,Museum,DUSA-like OTU2,4,1,0,4,0,0.0,0,0,0,0,0.0007645259938837921,0.0030581039755351682,,0,True
-A. argentata,Museum,Mesoplasma,4,2,0,4,0,0.0,0,0,0,0,0.0007645259938837921,0.0030581039755351682,,0,True
-A. argentata,Museum,Coxiellaceae_hint,4,1,0,4,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. argentata,Museum,Chlamydiales_unresolved,4,1,0,4,0,0.0,0,0,0,0,0.0030581039755351682,0.012232415902140673,,0,False
-A. argentata,Museum,Spiroplasma,4,3,0,4,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. argentata,Museum,Unnamed_Candidatus,4,18,1,4,0,0.0,0,0,0,0,0.010629452035810305,0.02416918429003021,,0,True
-A. argentata,Museum,Wolbachia,4,5,0,4,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. argentata,Museum,Symbiopectobacterium,4,1,0,4,1,0.25,0,0,0,0,0.012232415902140673,0.04892966360856269,A2,0,True
-A. argentata,Museum,Serratia_unresolved,4,1,0,4,2,0.5,0,0,0,0,0.02342958052716923,0.034031413612565446,A2;TH24,0,False
-A. argentata,Museum,Spiroplasma_hint,4,1,0,4,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. argentata,Museum,Rickettsiales_unresolved,4,2,0,4,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. argentata,Museum,Blattabacterium,4,2,0,4,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. argentata,Museum,Rickettsiella_hint,4,2,0,4,1,0.25,0,0,0,0,0.025232611100266773,0.09787234042553192,A1,1,False
-A. argentata,Museum,Buchnera,4,3,0,4,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. argentata,Museum,Rickettsia,4,1,0,4,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. argentata,Museum,Serratia_symbiotica,4,1,0,4,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. argentata,Museum,Chlamydiales_hint,4,1,0,4,0,0.0,0,0,0,0,0.005235602094240838,0.020942408376963352,,0,False
-A. argentata,Museum,DUSA close sequence relatives,4,1,0,4,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. argentata,Museum,Aquicella_hint,4,1,0,4,1,0.25,0,0,0,0,0.009174311926605505,0.03669724770642202,A2,0,False
-A. argentata,Museum,Rickettsiella,4,1,0,4,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,DUSA-like OTU2,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. aurantia,Museum,Mesoplasma,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. aurantia,Museum,Coxiellaceae_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Chlamydiales_unresolved,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Spiroplasma,2,3,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Unnamed_Candidatus,2,18,1,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. aurantia,Museum,Wolbachia,2,5,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Symbiopectobacterium,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. aurantia,Museum,Serratia_unresolved,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Spiroplasma_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Rickettsiales_unresolved,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Blattabacterium,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Rickettsiella_hint,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Buchnera,2,3,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Rickettsia,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Serratia_symbiotica,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Chlamydiales_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,DUSA close sequence relatives,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Aquicella_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. aurantia,Museum,Rickettsiella,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,DUSA-like OTU2,2,1,0,2,1,0.5,0,0,0,0,0.13559322033898305,0.2711864406779661,TH28,1,True
-A. australis,Museum,Mesoplasma,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. australis,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Spiroplasma,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. australis,Museum,Wolbachia,2,5,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. australis,Museum,Serratia_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.004076086956521739,0.008152173913043478,,0,False
-A. australis,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Blattabacterium,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Buchnera,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Rickettsia,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Aquicella_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. australis,Museum,Rickettsiella,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,DUSA-like OTU2,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. blanda,Museum,Mesoplasma,2,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. blanda,Museum,Coxiellaceae_hint,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Chlamydiales_unresolved,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Spiroplasma,2,3,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Unnamed_Candidatus,2,18,1,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. blanda,Museum,Wolbachia,2,5,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Symbiopectobacterium,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. blanda,Museum,Serratia_unresolved,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Spiroplasma_hint,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Rickettsiales_unresolved,2,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Blattabacterium,2,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Rickettsiella_hint,2,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Buchnera,2,3,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Rickettsia,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Serratia_symbiotica,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Chlamydiales_hint,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,DUSA close sequence relatives,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Aquicella_hint,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. blanda,Museum,Rickettsiella,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. boesenbergi,Museum,Mesoplasma,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. boesenbergi,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Spiroplasma,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,0,0,0,0,0.009615384615384616,0.019230769230769232,,0,True
-A. boesenbergi,Museum,Wolbachia,2,5,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. boesenbergi,Museum,Serratia_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Spiroplasma_hint,2,1,0,2,1,0.5,0,0,0,0,0.37595419847328243,0.7519083969465649,TH31,1,False
-A. boesenbergi,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Blattabacterium,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Buchnera,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Rickettsia,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Aquicella_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. boesenbergi,Museum,Rickettsiella,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,DUSA-like OTU2,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. bougainvilla,Museum,Mesoplasma,2,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. bougainvilla,Museum,Coxiellaceae_hint,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Chlamydiales_unresolved,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Spiroplasma,2,3,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Unnamed_Candidatus,2,18,1,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. bougainvilla,Museum,Wolbachia,2,5,0,1,1,1.0,1,1,0,0,0.932746196957566,0.932746196957566,TH33,1,False
-A. bougainvilla,Museum,Symbiopectobacterium,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. bougainvilla,Museum,Serratia_unresolved,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Spiroplasma_hint,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Rickettsiales_unresolved,2,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Blattabacterium,2,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Rickettsiella_hint,2,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Buchnera,2,3,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Rickettsia,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Serratia_symbiotica,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Chlamydiales_hint,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,DUSA close sequence relatives,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Aquicella_hint,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bougainvilla,Museum,Rickettsiella,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. bruennichi,Museum,DUSA-like OTU2,12,1,0,9,6,0.6666666666666666,5,5,1,1,0.20671031265821035,0.7659574468085106,TH4;TH6;TH8;TH10;TH11;TH12,4,True
-A. bruennichi,Museum,Mesoplasma,12,2,0,9,3,0.3333333333333333,5,3,1,1,0.1402525368669477,0.9468149038461539,TH8;TH11;TH12,2,True
-A. bruennichi,Museum,Coxiellaceae_hint,12,1,0,9,0,0.0,5,0,1,0,0.0,0.0,,0,False
-A. bruennichi,Museum,Chlamydiales_unresolved,12,1,0,9,0,0.0,5,0,1,0,0.0,0.0,,0,False
-A. bruennichi,Museum,Spiroplasma,12,3,0,9,1,0.1111111111111111,5,0,1,0,0.08111533586818759,0.7300380228136882,TH9,1,False
-A. bruennichi,Museum,Unnamed_Candidatus,12,18,1,9,1,0.1111111111111111,5,1,1,0,0.015116828705617223,0.11078199052132702,TH12,1,True
-A. bruennichi,Museum,Wolbachia,12,5,0,9,0,0.0,5,0,1,0,0.0,0.0,,0,False
-A. bruennichi,Museum,Symbiopectobacterium,12,1,0,9,1,0.1111111111111111,5,1,1,0,0.04219325961032122,0.379739336492891,TH12,1,True
-A. bruennichi,Museum,Serratia_unresolved,12,1,0,9,0,0.0,5,0,1,0,0.011108044695364016,0.06481481481481481,,0,False
-A. bruennichi,Museum,Spiroplasma_hint,12,1,0,9,1,0.1111111111111111,5,1,1,0,0.011124275934702476,0.10011848341232228,TH12,1,False
-A. bruennichi,Museum,Rickettsiales_unresolved,12,2,0,9,0,0.0,5,0,1,0,0.0,0.0,,0,False
-A. bruennichi,Museum,Blattabacterium,12,2,0,9,0,0.0,5,0,1,0,0.0,0.0,,0,False
-A. bruennichi,Museum,Rickettsiella_hint,12,2,0,9,0,0.0,5,0,1,0,0.0,0.0,,0,False
-A. bruennichi,Museum,Buchnera,12,3,0,9,0,0.0,5,0,1,0,0.0,0.0,,0,False
-A. bruennichi,Museum,Rickettsia,12,1,0,9,0,0.0,5,0,1,0,0.00032912058978409685,0.002962085308056872,,0,False
-A. bruennichi,Museum,Serratia_symbiotica,12,1,0,9,0,0.0,5,0,1,0,0.0,0.0,,0,False
-A. bruennichi,Museum,Chlamydiales_hint,12,1,0,9,0,0.0,5,0,1,0,0.00015518311607697082,0.0013966480446927375,,0,False
-A. bruennichi,Museum,DUSA close sequence relatives,12,1,0,9,0,0.0,5,0,1,0,6.582411795681939e-05,0.0005924170616113745,,0,False
-A. bruennichi,Museum,Aquicella_hint,12,1,0,9,0,0.0,5,0,1,0,0.0,0.0,,0,False
-A. bruennichi,Museum,Rickettsiella,12,1,0,9,0,0.0,5,0,1,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. brunnescentia,Museum,Mesoplasma,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. brunnescentia,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Spiroplasma,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,1,0,0,0,0.0013003901170351106,0.002600780234070221,,0,True
-A. brunnescentia,Museum,Wolbachia,2,5,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. brunnescentia,Museum,Serratia_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Blattabacterium,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Buchnera,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Rickettsia,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Aquicella_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. brunnescentia,Museum,Rickettsiella,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. catenulata,Museum,Mesoplasma,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. catenulata,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Spiroplasma,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,1,0,0,0,0.0024232633279483036,0.004846526655896607,,0,True
-A. catenulata,Museum,Wolbachia,2,5,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. catenulata,Museum,Serratia_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Blattabacterium,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Buchnera,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Rickettsia,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,1,0,0,0,0.004038772213247173,0.008077544426494346,,0,False
-A. catenulata,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Aquicella_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. catenulata,Museum,Rickettsiella,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,DUSA-like OTU2,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. chloreis,Museum,Mesoplasma,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. chloreis,Museum,Coxiellaceae_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Chlamydiales_unresolved,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Spiroplasma,2,3,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Unnamed_Candidatus,2,18,1,1,1,1.0,0,0,0,0,0.047619047619047616,0.047619047619047616,TH39,0,True
-A. chloreis,Museum,Wolbachia,2,5,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Symbiopectobacterium,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. chloreis,Museum,Serratia_unresolved,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Spiroplasma_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Rickettsiales_unresolved,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Blattabacterium,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Rickettsiella_hint,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Buchnera,2,3,0,1,1,1.0,0,0,0,0,0.17063492063492064,0.17063492063492064,TH39,1,False
-A. chloreis,Museum,Rickettsia,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Serratia_symbiotica,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Chlamydiales_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,DUSA close sequence relatives,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Aquicella_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. chloreis,Museum,Rickettsiella,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. coquereli,Museum,Mesoplasma,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. coquereli,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Spiroplasma,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Unnamed_Candidatus,2,18,1,2,1,0.5,0,0,0,0,0.04649005086402572,0.07038123167155426,TH42,0,True
-A. coquereli,Museum,Wolbachia,2,5,0,2,0,0.0,0,0,0,0,0.001466275659824047,0.002932551319648094,,0,False
-A. coquereli,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. coquereli,Museum,Serratia_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Blattabacterium,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Buchnera,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Rickettsia,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,0,0,0,0,0.004398826979472141,0.008797653958944282,,0,False
-A. coquereli,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Aquicella_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. coquereli,Museum,Rickettsiella,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,DUSA-like OTU2,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. dang,Museum,Mesoplasma,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. dang,Museum,Coxiellaceae_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Chlamydiales_unresolved,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Spiroplasma,2,3,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Unnamed_Candidatus,2,18,1,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. dang,Museum,Wolbachia,2,5,0,1,0,0.0,0,0,0,0,0.016091954022988506,0.016091954022988506,,0,False
-A. dang,Museum,Symbiopectobacterium,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. dang,Museum,Serratia_unresolved,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Spiroplasma_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Rickettsiales_unresolved,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Blattabacterium,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Rickettsiella_hint,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Buchnera,2,3,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Rickettsia,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Serratia_symbiotica,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Chlamydiales_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,DUSA close sequence relatives,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Aquicella_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. dang,Museum,Rickettsiella,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. flavipalpis,Museum,Mesoplasma,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. flavipalpis,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,Spiroplasma,2,3,0,2,1,0.5,1,1,0,0,0.005541346973572037,0.011082693947144074,TH46,0,False
-A. flavipalpis,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. flavipalpis,Museum,Wolbachia,2,5,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,Symbiopectobacterium,2,1,0,2,1,0.5,1,1,0,0,0.01278772378516624,0.02557544757033248,TH46,0,True
-A. flavipalpis,Museum,Serratia_unresolved,2,1,0,2,1,0.5,1,0,0,0,0.0782122905027933,0.1564245810055866,TH45,1,False
-A. flavipalpis,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,Blattabacterium,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,Buchnera,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,Rickettsia,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,Aquicella_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. flavipalpis,Museum,Rickettsiella,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. jinghongensis,Museum,Mesoplasma,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. jinghongensis,Museum,Coxiellaceae_hint,2,1,0,2,1,0.5,1,1,0,0,0.4529569892473118,0.9059139784946236,TH47,1,False
-A. jinghongensis,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Spiroplasma,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. jinghongensis,Museum,Wolbachia,2,5,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. jinghongensis,Museum,Serratia_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Blattabacterium,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Buchnera,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Rickettsia,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,1,0,0,0,0.006067961165048544,0.012135922330097087,,0,False
-A. jinghongensis,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Aquicella_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. jinghongensis,Museum,Rickettsiella,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,True
-A. lobata,Museum,Mesoplasma,2,2,0,2,1,0.5,2,1,0,0,0.021904761904761906,0.04380952380952381,TH49,1,True
-A. lobata,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,Spiroplasma,2,3,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,Unnamed_Candidatus,2,18,1,2,1,0.5,2,1,0,0,0.09432933478735006,0.18865866957470012,TH50,1,True
-A. lobata,Museum,Wolbachia,2,5,0,2,2,1.0,2,2,0,0,0.01178117048346056,0.013086150490730643,TH49;TH50,0,False
-A. lobata,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,True
-A. lobata,Museum,Serratia_unresolved,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,Spiroplasma_hint,2,1,0,2,1,0.5,2,1,0,0,0.010359869138495093,0.020719738276990186,TH50,0,False
-A. lobata,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,Blattabacterium,2,2,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,Buchnera,2,3,0,2,0,0.0,2,0,0,0,0.0016357688113413304,0.003271537622682661,,0,False
-A. lobata,Museum,Rickettsia,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,Aquicella_hint,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. lobata,Museum,Rickettsiella,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. luzona,Museum,Mesoplasma,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. luzona,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Spiroplasma,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,1,0,0,0,0.0004780114722753346,0.0009560229445506692,,0,True
-A. luzona,Museum,Wolbachia,2,5,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. luzona,Museum,Serratia_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0038240917782026767,0.0076481835564053535,,0,False
-A. luzona,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Blattabacterium,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Buchnera,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Rickettsia,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Aquicella_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. luzona,Museum,Rickettsiella,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. magnifica,Museum,Mesoplasma,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. magnifica,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Spiroplasma,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Unnamed_Candidatus,2,18,1,2,1,0.5,1,1,0,0,0.03295880149812734,0.06591760299625468,TH53,1,True
-A. magnifica,Museum,Wolbachia,2,5,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. magnifica,Museum,Serratia_unresolved,2,1,0,2,1,0.5,1,0,0,0,0.03508771929824561,0.07017543859649122,TH54,0,False
-A. magnifica,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Blattabacterium,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Buchnera,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Rickettsia,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Aquicella_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. magnifica,Museum,Rickettsiella,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. minuta,Museum,Mesoplasma,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. minuta,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Spiroplasma,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. minuta,Museum,Wolbachia,2,5,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. minuta,Museum,Serratia_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.007518796992481203,0.015037593984962405,,0,False
-A. minuta,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Blattabacterium,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Buchnera,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Rickettsia,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Aquicella_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. minuta,Museum,Rickettsiella,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,DUSA-like OTU2,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. picta,Museum,Mesoplasma,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. picta,Museum,Coxiellaceae_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Chlamydiales_unresolved,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Spiroplasma,2,3,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Unnamed_Candidatus,2,18,1,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. picta,Museum,Wolbachia,2,5,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Symbiopectobacterium,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. picta,Museum,Serratia_unresolved,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Spiroplasma_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Rickettsiales_unresolved,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Blattabacterium,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Rickettsiella_hint,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Buchnera,2,3,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Rickettsia,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Serratia_symbiotica,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Chlamydiales_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,DUSA close sequence relatives,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Aquicella_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. picta,Museum,Rickettsiella,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. pictula,Museum,Mesoplasma,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. pictula,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Spiroplasma,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,0,0,0,0,0.0,0.0,,1,True
-A. pictula,Museum,Wolbachia,2,5,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. pictula,Museum,Serratia_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Blattabacterium,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Buchnera,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Rickettsia,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Aquicella_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pictula,Museum,Rickettsiella,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,DUSA-like OTU2,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. protensa,Museum,Mesoplasma,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. protensa,Museum,Coxiellaceae_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,Chlamydiales_unresolved,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,Spiroplasma,2,3,0,1,1,1.0,0,0,0,0,0.48360655737704916,0.48360655737704916,TH63,1,False
-A. protensa,Museum,Unnamed_Candidatus,2,18,1,1,1,1.0,0,0,0,0,0.10245901639344263,0.10245901639344263,TH63,0,True
-A. protensa,Museum,Wolbachia,2,5,0,1,1,1.0,0,0,0,0,0.0778688524590164,0.0778688524590164,TH63,0,False
-A. protensa,Museum,Symbiopectobacterium,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. protensa,Museum,Serratia_unresolved,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,Spiroplasma_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,Rickettsiales_unresolved,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,Blattabacterium,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,Rickettsiella_hint,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,Buchnera,2,3,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,Rickettsia,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,Serratia_symbiotica,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,Chlamydiales_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,DUSA close sequence relatives,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,Aquicella_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. protensa,Museum,Rickettsiella,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. pulchella,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,True
-A. pulchella,Museum,Mesoplasma,2,2,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,True
-A. pulchella,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. pulchella,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. pulchella,Museum,Spiroplasma,2,3,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. pulchella,Museum,Unnamed_Candidatus,2,18,1,2,1,0.5,2,1,0,0,0.009982082581182012,0.014354066985645933,TH66,0,True
-A. pulchella,Museum,Wolbachia,2,5,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. pulchella,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,True
-A. pulchella,Museum,Serratia_unresolved,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. pulchella,Museum,Spiroplasma_hint,2,1,0,2,1,0.5,2,1,0,0,0.01291866028708134,0.02583732057416268,TH66,0,False
-A. pulchella,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. pulchella,Museum,Blattabacterium,2,2,0,2,2,1.0,2,2,0,0,0.18672634665843496,0.1935483870967742,TH65;TH66,2,False
-A. pulchella,Museum,Rickettsiella_hint,2,2,0,2,1,0.5,2,1,0,0,0.1076555023923445,0.215311004784689,TH66,1,False
-A. pulchella,Museum,Buchnera,2,3,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. pulchella,Museum,Rickettsia,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. pulchella,Museum,Serratia_symbiotica,2,1,0,2,1,0.5,2,1,0,0,0.014832535885167464,0.02966507177033493,TH66,0,False
-A. pulchella,Museum,Chlamydiales_hint,2,1,0,2,1,0.5,2,1,0,0,0.013265600569062591,0.015311004784688996,TH66,0,False
-A. pulchella,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. pulchella,Museum,Aquicella_hint,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. pulchella,Museum,Rickettsiella,2,1,0,2,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,DUSA-like OTU2,1,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. pulchelloides,Museum,Mesoplasma,1,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. pulchelloides,Museum,Coxiellaceae_hint,1,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Chlamydiales_unresolved,1,1,0,1,0,0.0,1,0,0,0,0.0048449612403100775,0.0048449612403100775,,0,False
-A. pulchelloides,Museum,Spiroplasma,1,3,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Unnamed_Candidatus,1,18,1,1,1,1.0,1,1,0,0,0.27228682170542634,0.27228682170542634,TH67,1,True
-A. pulchelloides,Museum,Wolbachia,1,5,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Symbiopectobacterium,1,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. pulchelloides,Museum,Serratia_unresolved,1,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Spiroplasma_hint,1,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Rickettsiales_unresolved,1,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Blattabacterium,1,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Rickettsiella_hint,1,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Buchnera,1,3,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Rickettsia,1,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Serratia_symbiotica,1,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Chlamydiales_hint,1,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,DUSA close sequence relatives,1,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Aquicella_hint,1,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. pulchelloides,Museum,Rickettsiella,1,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,DUSA-like OTU2,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. ranomafanensis,Museum,Mesoplasma,2,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. ranomafanensis,Museum,Coxiellaceae_hint,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,Chlamydiales_unresolved,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,Spiroplasma,2,3,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,Unnamed_Candidatus,2,18,1,1,0,0.0,1,0,0,0,0.0018018018018018018,0.0018018018018018018,,0,True
-A. ranomafanensis,Museum,Wolbachia,2,5,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,Symbiopectobacterium,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. ranomafanensis,Museum,Serratia_unresolved,2,1,0,1,1,1.0,1,1,0,0,0.021621621621621623,0.021621621621621623,TH69,0,False
-A. ranomafanensis,Museum,Spiroplasma_hint,2,1,0,1,1,1.0,1,1,0,0,0.6756756756756757,0.6756756756756757,TH69,1,False
-A. ranomafanensis,Museum,Rickettsiales_unresolved,2,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,Blattabacterium,2,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,Rickettsiella_hint,2,2,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,Buchnera,2,3,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,Rickettsia,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,Serratia_symbiotica,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,Chlamydiales_hint,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,DUSA close sequence relatives,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,Aquicella_hint,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. ranomafanensis,Museum,Rickettsiella,2,1,0,1,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,DUSA-like OTU2,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. reinwardti,Museum,Mesoplasma,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. reinwardti,Museum,Coxiellaceae_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Chlamydiales_unresolved,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Spiroplasma,2,3,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Unnamed_Candidatus,2,18,1,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. reinwardti,Museum,Wolbachia,2,5,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Symbiopectobacterium,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A. reinwardti,Museum,Serratia_unresolved,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Spiroplasma_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Rickettsiales_unresolved,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Blattabacterium,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Rickettsiella_hint,2,2,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Buchnera,2,3,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Rickettsia,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Serratia_symbiotica,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Chlamydiales_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,DUSA close sequence relatives,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Aquicella_hint,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. reinwardti,Museum,Rickettsiella,2,1,0,1,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A. sector,Museum,DUSA-like OTU2,2,1,0,2,1,0.5,2,1,2,1,0.0602866779089376,0.1205733558178752,TH73,1,True
-A. sector,Museum,Mesoplasma,2,2,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,True
-A. sector,Museum,Coxiellaceae_hint,2,1,0,2,1,0.5,2,1,2,1,0.4396750622921896,0.8790050590219224,TH73,1,False
-A. sector,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Spiroplasma,2,3,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,2,0,2,0,0.0012077294685990338,0.0024154589371980675,,0,True
-A. sector,Museum,Wolbachia,2,5,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,True
-A. sector,Museum,Serratia_unresolved,2,1,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Blattabacterium,2,2,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Buchnera,2,3,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Rickettsia,2,1,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Aquicella_hint,2,1,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. sector,Museum,Rickettsiella,2,1,0,2,0,0.0,2,0,2,0,0.0,0.0,,0,False
-A. trifasciata,Museum,DUSA-like OTU2,5,1,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,True
-A. trifasciata,Museum,Mesoplasma,5,2,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,True
-A. trifasciata,Museum,Coxiellaceae_hint,5,1,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. trifasciata,Museum,Chlamydiales_unresolved,5,1,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. trifasciata,Museum,Spiroplasma,5,3,0,5,2,0.4,2,1,0,0,0.1588876685290419,0.6589147286821705,TH74;TH78,2,False
-A. trifasciata,Museum,Unnamed_Candidatus,5,18,1,5,2,0.4,2,1,0,0,0.013752435107671246,0.043121149897330596,TH74;TH75,0,True
-A. trifasciata,Museum,Wolbachia,5,5,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. trifasciata,Museum,Symbiopectobacterium,5,1,0,5,2,0.4,2,1,0,0,0.08644372049730735,0.21722846441947566,TH75;TH77,2,True
-A. trifasciata,Museum,Serratia_unresolved,5,1,0,5,2,0.4,2,2,0,0,0.014900692628778498,0.04930966469428008,TH75;TH78,0,False
-A. trifasciata,Museum,Spiroplasma_hint,5,1,0,5,1,0.2,2,1,0,0,0.007364009135264196,0.03353057199211045,TH75,0,False
-A. trifasciata,Museum,Rickettsiales_unresolved,5,2,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. trifasciata,Museum,Blattabacterium,5,2,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. trifasciata,Museum,Rickettsiella_hint,5,2,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. trifasciata,Museum,Buchnera,5,3,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. trifasciata,Museum,Rickettsia,5,1,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. trifasciata,Museum,Serratia_symbiotica,5,1,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. trifasciata,Museum,Chlamydiales_hint,5,1,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. trifasciata,Museum,DUSA close sequence relatives,5,1,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. trifasciata,Museum,Aquicella_hint,5,1,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. trifasciata,Museum,Rickettsiella,5,1,0,5,0,0.0,2,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. versicolor,Museum,Mesoplasma,2,2,0,2,0,0.0,1,0,0,0,0.0007898894154818325,0.001579778830963665,,0,True
-A. versicolor,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Spiroplasma,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Unnamed_Candidatus,2,18,1,2,1,0.5,1,1,0,0,0.016587677725118485,0.03317535545023697,TH80,0,True
-A. versicolor,Museum,Wolbachia,2,5,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,True
-A. versicolor,Museum,Serratia_unresolved,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Blattabacterium,2,2,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Rickettsiella_hint,2,2,0,2,1,0.5,1,1,0,0,0.008688783570300158,0.017377567140600316,TH80,0,False
-A. versicolor,Museum,Buchnera,2,3,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Rickettsia,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Aquicella_hint,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A. versicolor,Museum,Rickettsiella,2,1,0,2,0,0.0,1,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,DUSA-like OTU2,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A.modesta,Museum,Mesoplasma,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A.modesta,Museum,Coxiellaceae_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Chlamydiales_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Spiroplasma,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Unnamed_Candidatus,2,18,1,2,0,0.0,0,0,0,0,0.007518796992481203,0.015037593984962405,,0,True
-A.modesta,Museum,Wolbachia,2,5,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Symbiopectobacterium,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,True
-A.modesta,Museum,Serratia_unresolved,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Spiroplasma_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Rickettsiales_unresolved,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Blattabacterium,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Rickettsiella_hint,2,2,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Buchnera,2,3,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Rickettsia,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Serratia_symbiotica,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Chlamydiales_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,DUSA close sequence relatives,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Aquicella_hint,2,1,0,2,0,0.0,0,0,0,0,0.0,0.0,,0,False
-A.modesta,Museum,Rickettsiella,2,1,0,2,1,0.5,0,0,0,0,0.030726256983240222,0.061452513966480445,TH58,0,False
-A. bruennichi,Contemporary,DUSA-like OTU2,30,1,0,30,26,0.8666666666666667,29,26,28,25,0.4789376460252151,0.986360818350899,TH81;TH82;TH83;TH84;TH85;TH86;TH87;TH88;TH89;TH90;TH91;TH92;TH94;TH95;TH96;TH97;TH100;TH102;TH103;TH104;TH105;TH106;TH107;TH108;TH109;TH110,26,True
-A. bruennichi,Contemporary,Mesoplasma,30,2,0,30,15,0.5,29,14,28,14,0.38685965418652274,0.9995098039215686,TH81;TH84;TH85;TH87;TH88;TH93;TH98;TH99;TH101;TH103;TH105;TH106;TH107;TH108;TH110,14,True
-A. bruennichi,Contemporary,Coxiellaceae_hint,30,1,0,30,0,0.0,29,0,28,0,0.0,0.0,,0,False
-A. bruennichi,Contemporary,Chlamydiales_unresolved,30,1,0,30,2,0.06666666666666667,29,2,28,2,0.012152894409206947,0.33657513348588863,TH90;TH92,2,False
-A. bruennichi,Contemporary,Spiroplasma,30,3,0,30,3,0.1,29,3,28,2,0.02378777220111786,0.5824825362708221,TH84;TH96;TH102,3,False
-A. bruennichi,Contemporary,Unnamed_Candidatus,30,18,1,30,7,0.23333333333333334,29,6,28,5,0.024072245555539985,0.31921251538055895,TH83;TH90;TH95;TH97;TH99;TH102;TH103,10,True
-A. bruennichi,Contemporary,Wolbachia,30,5,0,30,3,0.1,29,3,28,3,0.0045661599524816545,0.03296703296703297,TH81;TH83;TH104,1,False
-A. bruennichi,Contemporary,Symbiopectobacterium,30,1,0,30,3,0.1,29,3,28,2,0.00335538144642315,0.036795626576955426,TH83;TH100;TH102,3,True
-A. bruennichi,Contemporary,Serratia_unresolved,30,1,0,30,5,0.16666666666666666,29,4,28,4,0.009619091036804032,0.14341654429760156,TH81;TH89;TH91;TH99;TH100,3,False
-A. bruennichi,Contemporary,Spiroplasma_hint,30,1,0,30,0,0.0,29,0,28,0,0.00035573585001430865,0.004298764105319721,,0,False
-A. bruennichi,Contemporary,Rickettsiales_unresolved,30,2,0,30,1,0.03333333333333333,29,1,28,1,0.0029340949427342517,0.07703383729301656,TH104,1,False
-A. bruennichi,Contemporary,Blattabacterium,30,2,0,30,0,0.0,29,0,28,0,0.0,0.0,,0,False
-A. bruennichi,Contemporary,Rickettsiella_hint,30,2,0,30,0,0.0,29,0,28,0,1.3214358428215689e-05,0.0002098635886673662,,0,False
-A. bruennichi,Contemporary,Buchnera,30,3,0,30,1,0.03333333333333333,29,1,28,1,0.002997450775858854,0.038461538461538464,TH104,1,False
-A. bruennichi,Contemporary,Rickettsia,30,1,0,30,0,0.0,29,0,28,0,0.0007103008597559945,0.008085779574617683,,0,False
-A. bruennichi,Contemporary,Serratia_symbiotica,30,1,0,30,0,0.0,29,0,28,0,0.00017817532812608986,0.0023128679562657694,,0,False
-A. bruennichi,Contemporary,Chlamydiales_hint,30,1,0,30,0,0.0,29,0,28,0,0.0,0.0,,0,False
-A. bruennichi,Contemporary,DUSA close sequence relatives,30,1,0,30,0,0.0,29,0,28,0,0.0001521777934430553,0.0012236906510034262,,0,False
-A. bruennichi,Contemporary,Aquicella_hint,30,1,0,30,0,0.0,29,0,28,0,0.0,0.0,,0,False
-A. bruennichi,Contemporary,Rickettsiella,30,1,0,30,0,0.0,29,0,28,0,0.0,0.0,,0,False
+species,Status,group,n_specimens,n_group_OTUs_in_curated_matrix,n_group_OTUs_not_in_curated_matrix,n_eligible_ge100,n_positive,n_threshold_positive,n_unconfirmed,prevalence,n_eligible_ge507,n_positive_ge507,n_eligible_ge2506,n_positive_ge2506,mean_relative_abundance,max_relative_abundance,positive_IDs,threshold_positive_IDs,unconfirmed_IDs,n_unfiltered_positive,group_has_raw_control_reads
+A. aemula,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. aemula,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. aemula,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Chlamydiales_unresolved,2,1,0,2,1,1,0,0.5,1,0,0,0,0.16738197424892703,0.33476394849785407,TH13,TH13,,1,False
+A. aemula,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Unnamed_Candidatus,2,18,1,2,1,1,0,0.5,1,1,0,0,0.26805555555555555,0.5361111111111111,TH14,TH14,,1,True
+A. aemula,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. aemula,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Buchnera,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.002777777777777778,0.005555555555555556,,,,0,False
+A. aemula,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aemula,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. aetherea,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. aetherea,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Spiroplasma,2,3,0,2,1,1,0,0.5,1,1,0,0,0.4453125,0.890625,TH15,TH15,,1,False
+A. aetherea,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. aetherea,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. aetherea,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Buchnera,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. aetherea,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. amoena,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. amoena,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. amoena,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. amoena,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Buchnera,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. amoena,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. anasuja,Museum,Mesoplasma,2,2,0,2,1,1,0,0.5,0,0,0,0,0.15544041450777202,0.31088082901554404,TH20,TH20,,1,True
+A. anasuja,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. anasuja,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. anasuja,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Buchnera,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. anasuja,Museum,Aquicella_hint,2,1,0,2,1,1,0,0.5,0,0,0,0,0.025906735751295335,0.05181347150259067,TH20,TH20,,0,False
+A. anasuja,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. appensa,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. appensa,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. appensa,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. appensa,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Buchnera,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. appensa,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. argentata,Museum,DUSA-like OTU2,4,1,0,4,0,0,0,0.0,0,0,0,0,0.0007645259938837921,0.0030581039755351682,,,,0,True
+A. argentata,Museum,Mesoplasma,4,2,0,4,0,0,0,0.0,0,0,0,0,0.0007645259938837921,0.0030581039755351682,,,,0,True
+A. argentata,Museum,Coxiellaceae_hint,4,1,0,4,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. argentata,Museum,Chlamydiales_unresolved,4,1,0,4,0,0,0,0.0,0,0,0,0,0.0030581039755351682,0.012232415902140673,,,,0,False
+A. argentata,Museum,Spiroplasma,4,3,0,4,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. argentata,Museum,Unnamed_Candidatus,4,18,1,4,0,0,0,0.0,0,0,0,0,0.010629452035810305,0.02416918429003021,,,,0,True
+A. argentata,Museum,Wolbachia,4,5,0,4,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. argentata,Museum,Symbiopectobacterium,4,1,0,4,1,1,0,0.25,0,0,0,0,0.012232415902140673,0.04892966360856269,A2,A2,,0,True
+A. argentata,Museum,Serratia_unresolved,4,1,0,4,2,2,0,0.5,0,0,0,0,0.02342958052716923,0.034031413612565446,A2;TH24,A2;TH24,,0,False
+A. argentata,Museum,Spiroplasma_hint,4,1,0,4,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. argentata,Museum,Rickettsiales_unresolved,4,2,0,4,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. argentata,Museum,Blattabacterium,4,2,0,4,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. argentata,Museum,Rickettsiella_hint,4,2,0,4,1,1,0,0.25,0,0,0,0,0.025232611100266773,0.09787234042553192,A1,A1,,1,False
+A. argentata,Museum,Buchnera,4,3,0,4,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. argentata,Museum,Rickettsia,4,1,0,4,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. argentata,Museum,Serratia_symbiotica,4,1,0,4,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. argentata,Museum,Chlamydiales_hint,4,1,0,4,0,0,0,0.0,0,0,0,0,0.005235602094240838,0.020942408376963352,,,,0,False
+A. argentata,Museum,DUSA close sequence relatives,4,1,0,4,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. argentata,Museum,Aquicella_hint,4,1,0,4,1,1,0,0.25,0,0,0,0,0.009174311926605505,0.03669724770642202,A2,A2,,0,False
+A. argentata,Museum,Rickettsiella,4,1,0,4,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,DUSA-like OTU2,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. aurantia,Museum,Mesoplasma,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. aurantia,Museum,Coxiellaceae_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Chlamydiales_unresolved,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Spiroplasma,2,3,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Unnamed_Candidatus,2,18,1,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. aurantia,Museum,Wolbachia,2,5,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Symbiopectobacterium,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. aurantia,Museum,Serratia_unresolved,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Spiroplasma_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Rickettsiales_unresolved,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Blattabacterium,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Rickettsiella_hint,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Buchnera,2,3,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Rickettsia,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Serratia_symbiotica,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Chlamydiales_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,DUSA close sequence relatives,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Aquicella_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. aurantia,Museum,Rickettsiella,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,DUSA-like OTU2,2,1,0,2,0,1,1,0.0,0,0,0,0,0.13559322033898305,0.2711864406779661,,TH28,TH28,1,True
+A. australis,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. australis,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. australis,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. australis,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.004076086956521739,0.008152173913043478,,,,0,False
+A. australis,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Buchnera,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. australis,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,DUSA-like OTU2,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. blanda,Museum,Mesoplasma,2,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. blanda,Museum,Coxiellaceae_hint,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Chlamydiales_unresolved,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Spiroplasma,2,3,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Unnamed_Candidatus,2,18,1,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. blanda,Museum,Wolbachia,2,5,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Symbiopectobacterium,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. blanda,Museum,Serratia_unresolved,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Spiroplasma_hint,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Rickettsiales_unresolved,2,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Blattabacterium,2,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Rickettsiella_hint,2,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Buchnera,2,3,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Rickettsia,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Serratia_symbiotica,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Chlamydiales_hint,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,DUSA close sequence relatives,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Aquicella_hint,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. blanda,Museum,Rickettsiella,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. boesenbergi,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. boesenbergi,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,0,0,0,0,0.009615384615384616,0.019230769230769232,,,,0,True
+A. boesenbergi,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. boesenbergi,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Spiroplasma_hint,2,1,0,2,1,1,0,0.5,0,0,0,0,0.37595419847328243,0.7519083969465649,TH31,TH31,,1,False
+A. boesenbergi,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Buchnera,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. boesenbergi,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,DUSA-like OTU2,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. bougainvilla,Museum,Mesoplasma,2,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. bougainvilla,Museum,Coxiellaceae_hint,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Chlamydiales_unresolved,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Spiroplasma,2,3,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Unnamed_Candidatus,2,18,1,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. bougainvilla,Museum,Wolbachia,2,5,0,1,1,1,0,1.0,1,1,0,0,0.932746196957566,0.932746196957566,TH33,TH33,,1,False
+A. bougainvilla,Museum,Symbiopectobacterium,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. bougainvilla,Museum,Serratia_unresolved,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Spiroplasma_hint,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Rickettsiales_unresolved,2,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Blattabacterium,2,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Rickettsiella_hint,2,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Buchnera,2,3,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Rickettsia,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Serratia_symbiotica,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Chlamydiales_hint,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,DUSA close sequence relatives,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Aquicella_hint,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bougainvilla,Museum,Rickettsiella,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. bruennichi,Museum,DUSA-like OTU2,12,1,0,9,6,6,0,0.6666666666666666,5,5,1,1,0.20671031265821035,0.7659574468085106,TH4;TH6;TH8;TH10;TH11;TH12,TH4;TH6;TH8;TH10;TH11;TH12,,4,True
+A. bruennichi,Museum,Mesoplasma,12,2,0,9,3,3,0,0.3333333333333333,5,3,1,1,0.1402525368669477,0.9468149038461539,TH8;TH11;TH12,TH8;TH11;TH12,,2,True
+A. bruennichi,Museum,Coxiellaceae_hint,12,1,0,9,0,0,0,0.0,5,0,1,0,0.0,0.0,,,,0,False
+A. bruennichi,Museum,Chlamydiales_unresolved,12,1,0,9,0,0,0,0.0,5,0,1,0,0.0,0.0,,,,0,False
+A. bruennichi,Museum,Spiroplasma,12,3,0,9,1,1,0,0.1111111111111111,5,0,1,0,0.08111533586818759,0.7300380228136882,TH9,TH9,,1,False
+A. bruennichi,Museum,Unnamed_Candidatus,12,18,1,9,1,1,0,0.1111111111111111,5,1,1,0,0.015116828705617223,0.11078199052132702,TH12,TH12,,1,True
+A. bruennichi,Museum,Wolbachia,12,5,0,9,0,0,0,0.0,5,0,1,0,0.0,0.0,,,,0,False
+A. bruennichi,Museum,Symbiopectobacterium,12,1,0,9,1,1,0,0.1111111111111111,5,1,1,0,0.04219325961032122,0.379739336492891,TH12,TH12,,1,True
+A. bruennichi,Museum,Serratia_unresolved,12,1,0,9,0,0,0,0.0,5,0,1,0,0.011108044695364016,0.06481481481481481,,,,0,False
+A. bruennichi,Museum,Spiroplasma_hint,12,1,0,9,1,1,0,0.1111111111111111,5,1,1,0,0.011124275934702476,0.10011848341232228,TH12,TH12,,1,False
+A. bruennichi,Museum,Rickettsiales_unresolved,12,2,0,9,0,0,0,0.0,5,0,1,0,0.0,0.0,,,,0,False
+A. bruennichi,Museum,Blattabacterium,12,2,0,9,0,0,0,0.0,5,0,1,0,0.0,0.0,,,,0,False
+A. bruennichi,Museum,Rickettsiella_hint,12,2,0,9,0,0,0,0.0,5,0,1,0,0.0,0.0,,,,0,False
+A. bruennichi,Museum,Buchnera,12,3,0,9,0,0,0,0.0,5,0,1,0,0.0,0.0,,,,0,False
+A. bruennichi,Museum,Rickettsia,12,1,0,9,0,0,0,0.0,5,0,1,0,0.00032912058978409685,0.002962085308056872,,,,0,False
+A. bruennichi,Museum,Serratia_symbiotica,12,1,0,9,0,0,0,0.0,5,0,1,0,0.0,0.0,,,,0,False
+A. bruennichi,Museum,Chlamydiales_hint,12,1,0,9,0,0,0,0.0,5,0,1,0,0.00015518311607697082,0.0013966480446927375,,,,0,False
+A. bruennichi,Museum,DUSA close sequence relatives,12,1,0,9,0,0,0,0.0,5,0,1,0,6.582411795681939e-05,0.0005924170616113745,,,,0,False
+A. bruennichi,Museum,Aquicella_hint,12,1,0,9,0,0,0,0.0,5,0,1,0,0.0,0.0,,,,0,False
+A. bruennichi,Museum,Rickettsiella,12,1,0,9,0,0,0,0.0,5,0,1,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. brunnescentia,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. brunnescentia,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,1,0,0,0,0.0013003901170351106,0.002600780234070221,,,,0,True
+A. brunnescentia,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. brunnescentia,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Buchnera,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. brunnescentia,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. catenulata,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. catenulata,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,1,0,0,0,0.0024232633279483036,0.004846526655896607,,,,0,True
+A. catenulata,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. catenulata,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Buchnera,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.004038772213247173,0.008077544426494346,,,,0,False
+A. catenulata,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. catenulata,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,DUSA-like OTU2,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. chloreis,Museum,Mesoplasma,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. chloreis,Museum,Coxiellaceae_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Chlamydiales_unresolved,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Spiroplasma,2,3,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Unnamed_Candidatus,2,18,1,1,1,1,0,1.0,0,0,0,0,0.047619047619047616,0.047619047619047616,TH39,TH39,,0,True
+A. chloreis,Museum,Wolbachia,2,5,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Symbiopectobacterium,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. chloreis,Museum,Serratia_unresolved,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Spiroplasma_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Rickettsiales_unresolved,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Blattabacterium,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Rickettsiella_hint,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Buchnera,2,3,0,1,1,1,0,1.0,0,0,0,0,0.17063492063492064,0.17063492063492064,TH39,TH39,,1,False
+A. chloreis,Museum,Rickettsia,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Serratia_symbiotica,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Chlamydiales_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,DUSA close sequence relatives,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Aquicella_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. chloreis,Museum,Rickettsiella,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. coquereli,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. coquereli,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Unnamed_Candidatus,2,18,1,2,1,1,0,0.5,0,0,0,0,0.04649005086402572,0.07038123167155426,TH42,TH42,,0,True
+A. coquereli,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,0,0,0,0,0.001466275659824047,0.002932551319648094,,,,0,False
+A. coquereli,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. coquereli,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Buchnera,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.004398826979472141,0.008797653958944282,,,,0,False
+A. coquereli,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. coquereli,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,DUSA-like OTU2,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. dang,Museum,Mesoplasma,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. dang,Museum,Coxiellaceae_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Chlamydiales_unresolved,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Spiroplasma,2,3,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Unnamed_Candidatus,2,18,1,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. dang,Museum,Wolbachia,2,5,0,1,0,0,0,0.0,0,0,0,0,0.016091954022988506,0.016091954022988506,,,,0,False
+A. dang,Museum,Symbiopectobacterium,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. dang,Museum,Serratia_unresolved,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Spiroplasma_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Rickettsiales_unresolved,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Blattabacterium,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Rickettsiella_hint,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Buchnera,2,3,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Rickettsia,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Serratia_symbiotica,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Chlamydiales_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,DUSA close sequence relatives,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Aquicella_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. dang,Museum,Rickettsiella,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. flavipalpis,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. flavipalpis,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,Spiroplasma,2,3,0,2,1,1,0,0.5,1,1,0,0,0.005541346973572037,0.011082693947144074,TH46,TH46,,0,False
+A. flavipalpis,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. flavipalpis,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,Symbiopectobacterium,2,1,0,2,1,1,0,0.5,1,1,0,0,0.01278772378516624,0.02557544757033248,TH46,TH46,,0,True
+A. flavipalpis,Museum,Serratia_unresolved,2,1,0,2,1,1,0,0.5,1,0,0,0,0.0782122905027933,0.1564245810055866,TH45,TH45,,1,False
+A. flavipalpis,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,Buchnera,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. flavipalpis,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. jinghongensis,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. jinghongensis,Museum,Coxiellaceae_hint,2,1,0,2,1,1,0,0.5,1,1,0,0,0.4529569892473118,0.9059139784946236,TH47,TH47,,1,False
+A. jinghongensis,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. jinghongensis,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. jinghongensis,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Buchnera,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.006067961165048544,0.012135922330097087,,,,0,False
+A. jinghongensis,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. jinghongensis,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,True
+A. lobata,Museum,Mesoplasma,2,2,0,2,1,1,0,0.5,2,1,0,0,0.021904761904761906,0.04380952380952381,TH49,TH49,,1,True
+A. lobata,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,Unnamed_Candidatus,2,18,1,2,1,1,0,0.5,2,1,0,0,0.09432933478735006,0.18865866957470012,TH50,TH50,,1,True
+A. lobata,Museum,Wolbachia,2,5,0,2,2,2,0,1.0,2,2,0,0,0.01178117048346056,0.013086150490730643,TH49;TH50,TH49;TH50,,0,False
+A. lobata,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,True
+A. lobata,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,Spiroplasma_hint,2,1,0,2,1,1,0,0.5,2,1,0,0,0.010359869138495093,0.020719738276990186,TH50,TH50,,0,False
+A. lobata,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,Buchnera,2,3,0,2,0,0,0,0.0,2,0,0,0,0.0016357688113413304,0.003271537622682661,,,,0,False
+A. lobata,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. lobata,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. luzona,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. luzona,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,1,0,0,0,0.0004780114722753346,0.0009560229445506692,,,,0,True
+A. luzona,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. luzona,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0038240917782026767,0.0076481835564053535,,,,0,False
+A. luzona,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Buchnera,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. luzona,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. magnifica,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. magnifica,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Unnamed_Candidatus,2,18,1,2,1,1,0,0.5,1,1,0,0,0.03295880149812734,0.06591760299625468,TH53,TH53,,1,True
+A. magnifica,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. magnifica,Museum,Serratia_unresolved,2,1,0,2,1,1,0,0.5,1,0,0,0,0.03508771929824561,0.07017543859649122,TH54,TH54,,0,False
+A. magnifica,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Buchnera,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. magnifica,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. minuta,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. minuta,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. minuta,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. minuta,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.007518796992481203,0.015037593984962405,,,,0,False
+A. minuta,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Buchnera,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. minuta,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,DUSA-like OTU2,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. picta,Museum,Mesoplasma,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. picta,Museum,Coxiellaceae_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Chlamydiales_unresolved,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Spiroplasma,2,3,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Unnamed_Candidatus,2,18,1,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. picta,Museum,Wolbachia,2,5,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Symbiopectobacterium,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. picta,Museum,Serratia_unresolved,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Spiroplasma_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Rickettsiales_unresolved,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Blattabacterium,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Rickettsiella_hint,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Buchnera,2,3,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Rickettsia,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Serratia_symbiotica,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Chlamydiales_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,DUSA close sequence relatives,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Aquicella_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. picta,Museum,Rickettsiella,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. pictula,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. pictula,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,1,True
+A. pictula,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. pictula,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Buchnera,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pictula,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,DUSA-like OTU2,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. protensa,Museum,Mesoplasma,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. protensa,Museum,Coxiellaceae_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,Chlamydiales_unresolved,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,Spiroplasma,2,3,0,1,1,1,0,1.0,0,0,0,0,0.48360655737704916,0.48360655737704916,TH63,TH63,,1,False
+A. protensa,Museum,Unnamed_Candidatus,2,18,1,1,1,1,0,1.0,0,0,0,0,0.10245901639344263,0.10245901639344263,TH63,TH63,,0,True
+A. protensa,Museum,Wolbachia,2,5,0,1,1,1,0,1.0,0,0,0,0,0.0778688524590164,0.0778688524590164,TH63,TH63,,0,False
+A. protensa,Museum,Symbiopectobacterium,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. protensa,Museum,Serratia_unresolved,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,Spiroplasma_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,Rickettsiales_unresolved,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,Blattabacterium,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,Rickettsiella_hint,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,Buchnera,2,3,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,Rickettsia,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,Serratia_symbiotica,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,Chlamydiales_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,DUSA close sequence relatives,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,Aquicella_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. protensa,Museum,Rickettsiella,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. pulchella,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,True
+A. pulchella,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,True
+A. pulchella,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. pulchella,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. pulchella,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. pulchella,Museum,Unnamed_Candidatus,2,18,1,2,1,1,0,0.5,2,1,0,0,0.009982082581182012,0.014354066985645933,TH66,TH66,,0,True
+A. pulchella,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. pulchella,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,True
+A. pulchella,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. pulchella,Museum,Spiroplasma_hint,2,1,0,2,1,1,0,0.5,2,1,0,0,0.01291866028708134,0.02583732057416268,TH66,TH66,,0,False
+A. pulchella,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. pulchella,Museum,Blattabacterium,2,2,0,2,2,2,0,1.0,2,2,0,0,0.18672634665843496,0.1935483870967742,TH65;TH66,TH65;TH66,,2,False
+A. pulchella,Museum,Rickettsiella_hint,2,2,0,2,1,1,0,0.5,2,1,0,0,0.1076555023923445,0.215311004784689,TH66,TH66,,1,False
+A. pulchella,Museum,Buchnera,2,3,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. pulchella,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. pulchella,Museum,Serratia_symbiotica,2,1,0,2,1,1,0,0.5,2,1,0,0,0.014832535885167464,0.02966507177033493,TH66,TH66,,0,False
+A. pulchella,Museum,Chlamydiales_hint,2,1,0,2,1,1,0,0.5,2,1,0,0,0.013265600569062591,0.015311004784688996,TH66,TH66,,0,False
+A. pulchella,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. pulchella,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. pulchella,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,DUSA-like OTU2,1,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. pulchelloides,Museum,Mesoplasma,1,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. pulchelloides,Museum,Coxiellaceae_hint,1,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Chlamydiales_unresolved,1,1,0,1,0,0,0,0.0,1,0,0,0,0.0048449612403100775,0.0048449612403100775,,,,0,False
+A. pulchelloides,Museum,Spiroplasma,1,3,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Unnamed_Candidatus,1,18,1,1,1,1,0,1.0,1,1,0,0,0.27228682170542634,0.27228682170542634,TH67,TH67,,1,True
+A. pulchelloides,Museum,Wolbachia,1,5,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Symbiopectobacterium,1,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. pulchelloides,Museum,Serratia_unresolved,1,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Spiroplasma_hint,1,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Rickettsiales_unresolved,1,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Blattabacterium,1,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Rickettsiella_hint,1,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Buchnera,1,3,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Rickettsia,1,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Serratia_symbiotica,1,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Chlamydiales_hint,1,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,DUSA close sequence relatives,1,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Aquicella_hint,1,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. pulchelloides,Museum,Rickettsiella,1,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,DUSA-like OTU2,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. ranomafanensis,Museum,Mesoplasma,2,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. ranomafanensis,Museum,Coxiellaceae_hint,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,Chlamydiales_unresolved,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,Spiroplasma,2,3,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,Unnamed_Candidatus,2,18,1,1,0,0,0,0.0,1,0,0,0,0.0018018018018018018,0.0018018018018018018,,,,0,True
+A. ranomafanensis,Museum,Wolbachia,2,5,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,Symbiopectobacterium,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. ranomafanensis,Museum,Serratia_unresolved,2,1,0,1,1,1,0,1.0,1,1,0,0,0.021621621621621623,0.021621621621621623,TH69,TH69,,0,False
+A. ranomafanensis,Museum,Spiroplasma_hint,2,1,0,1,1,1,0,1.0,1,1,0,0,0.6756756756756757,0.6756756756756757,TH69,TH69,,1,False
+A. ranomafanensis,Museum,Rickettsiales_unresolved,2,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,Blattabacterium,2,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,Rickettsiella_hint,2,2,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,Buchnera,2,3,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,Rickettsia,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,Serratia_symbiotica,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,Chlamydiales_hint,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,DUSA close sequence relatives,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,Aquicella_hint,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. ranomafanensis,Museum,Rickettsiella,2,1,0,1,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,DUSA-like OTU2,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. reinwardti,Museum,Mesoplasma,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. reinwardti,Museum,Coxiellaceae_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Chlamydiales_unresolved,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Spiroplasma,2,3,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Unnamed_Candidatus,2,18,1,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. reinwardti,Museum,Wolbachia,2,5,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Symbiopectobacterium,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A. reinwardti,Museum,Serratia_unresolved,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Spiroplasma_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Rickettsiales_unresolved,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Blattabacterium,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Rickettsiella_hint,2,2,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Buchnera,2,3,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Rickettsia,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Serratia_symbiotica,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Chlamydiales_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,DUSA close sequence relatives,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Aquicella_hint,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. reinwardti,Museum,Rickettsiella,2,1,0,1,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A. sector,Museum,DUSA-like OTU2,2,1,0,2,1,1,0,0.5,2,1,2,1,0.0602866779089376,0.1205733558178752,TH73,TH73,,1,True
+A. sector,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,True
+A. sector,Museum,Coxiellaceae_hint,2,1,0,2,1,1,0,0.5,2,1,2,1,0.4396750622921896,0.8790050590219224,TH73,TH73,,1,False
+A. sector,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,2,0,2,0,0.0012077294685990338,0.0024154589371980675,,,,0,True
+A. sector,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,True
+A. sector,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Buchnera,2,3,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. sector,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,2,0,2,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,DUSA-like OTU2,5,1,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,True
+A. trifasciata,Museum,Mesoplasma,5,2,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,True
+A. trifasciata,Museum,Coxiellaceae_hint,5,1,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,Chlamydiales_unresolved,5,1,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,Spiroplasma,5,3,0,5,2,2,0,0.4,2,1,0,0,0.1588876685290419,0.6589147286821705,TH74;TH78,TH74;TH78,,2,False
+A. trifasciata,Museum,Unnamed_Candidatus,5,18,1,5,2,2,0,0.4,2,1,0,0,0.013752435107671246,0.043121149897330596,TH74;TH75,TH74;TH75,,0,True
+A. trifasciata,Museum,Wolbachia,5,5,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,Symbiopectobacterium,5,1,0,5,2,2,0,0.4,2,1,0,0,0.08644372049730735,0.21722846441947566,TH75;TH77,TH75;TH77,,2,True
+A. trifasciata,Museum,Serratia_unresolved,5,1,0,5,2,2,0,0.4,2,2,0,0,0.014900692628778498,0.04930966469428008,TH75;TH78,TH75;TH78,,0,False
+A. trifasciata,Museum,Spiroplasma_hint,5,1,0,5,1,1,0,0.2,2,1,0,0,0.007364009135264196,0.03353057199211045,TH75,TH75,,0,False
+A. trifasciata,Museum,Rickettsiales_unresolved,5,2,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,Blattabacterium,5,2,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,Rickettsiella_hint,5,2,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,Buchnera,5,3,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,Rickettsia,5,1,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,Serratia_symbiotica,5,1,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,Chlamydiales_hint,5,1,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,DUSA close sequence relatives,5,1,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,Aquicella_hint,5,1,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. trifasciata,Museum,Rickettsiella,5,1,0,5,0,0,0,0.0,2,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. versicolor,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0007898894154818325,0.001579778830963665,,,,0,True
+A. versicolor,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Unnamed_Candidatus,2,18,1,2,1,1,0,0.5,1,1,0,0,0.016587677725118485,0.03317535545023697,TH80,TH80,,0,True
+A. versicolor,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,True
+A. versicolor,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Rickettsiella_hint,2,2,0,2,1,1,0,0.5,1,1,0,0,0.008688783570300158,0.017377567140600316,TH80,TH80,,0,False
+A. versicolor,Museum,Buchnera,2,3,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A. versicolor,Museum,Rickettsiella,2,1,0,2,0,0,0,0.0,1,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,DUSA-like OTU2,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A.modesta,Museum,Mesoplasma,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A.modesta,Museum,Coxiellaceae_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Chlamydiales_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Spiroplasma,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Unnamed_Candidatus,2,18,1,2,0,0,0,0.0,0,0,0,0,0.007518796992481203,0.015037593984962405,,,,0,True
+A.modesta,Museum,Wolbachia,2,5,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Symbiopectobacterium,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,True
+A.modesta,Museum,Serratia_unresolved,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Spiroplasma_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Rickettsiales_unresolved,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Blattabacterium,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Rickettsiella_hint,2,2,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Buchnera,2,3,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Rickettsia,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Serratia_symbiotica,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Chlamydiales_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,DUSA close sequence relatives,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Aquicella_hint,2,1,0,2,0,0,0,0.0,0,0,0,0,0.0,0.0,,,,0,False
+A.modesta,Museum,Rickettsiella,2,1,0,2,1,1,0,0.5,0,0,0,0,0.030726256983240222,0.061452513966480445,TH58,TH58,,0,False
+A. bruennichi,Contemporary,DUSA-like OTU2,30,1,0,30,26,26,0,0.8666666666666667,29,26,28,25,0.4789376460252151,0.986360818350899,TH81;TH82;TH83;TH84;TH85;TH86;TH87;TH88;TH89;TH90;TH91;TH92;TH94;TH95;TH96;TH97;TH100;TH102;TH103;TH104;TH105;TH106;TH107;TH108;TH109;TH110,TH81;TH82;TH83;TH84;TH85;TH86;TH87;TH88;TH89;TH90;TH91;TH92;TH94;TH95;TH96;TH97;TH100;TH102;TH103;TH104;TH105;TH106;TH107;TH108;TH109;TH110,,26,True
+A. bruennichi,Contemporary,Mesoplasma,30,2,0,30,15,15,0,0.5,29,14,28,14,0.38685965418652274,0.9995098039215686,TH81;TH84;TH85;TH87;TH88;TH93;TH98;TH99;TH101;TH103;TH105;TH106;TH107;TH108;TH110,TH81;TH84;TH85;TH87;TH88;TH93;TH98;TH99;TH101;TH103;TH105;TH106;TH107;TH108;TH110,,14,True
+A. bruennichi,Contemporary,Coxiellaceae_hint,30,1,0,30,0,0,0,0.0,29,0,28,0,0.0,0.0,,,,0,False
+A. bruennichi,Contemporary,Chlamydiales_unresolved,30,1,0,30,2,2,0,0.06666666666666667,29,2,28,2,0.012152894409206947,0.33657513348588863,TH90;TH92,TH90;TH92,,2,False
+A. bruennichi,Contemporary,Spiroplasma,30,3,0,30,3,3,0,0.1,29,3,28,2,0.02378777220111786,0.5824825362708221,TH84;TH96;TH102,TH84;TH96;TH102,,3,False
+A. bruennichi,Contemporary,Unnamed_Candidatus,30,18,1,30,7,7,0,0.23333333333333334,29,6,28,5,0.024072245555539985,0.31921251538055895,TH83;TH90;TH95;TH97;TH99;TH102;TH103,TH83;TH90;TH95;TH97;TH99;TH102;TH103,,10,True
+A. bruennichi,Contemporary,Wolbachia,30,5,0,30,3,3,0,0.1,29,3,28,3,0.0045661599524816545,0.03296703296703297,TH81;TH83;TH104,TH81;TH83;TH104,,1,False
+A. bruennichi,Contemporary,Symbiopectobacterium,30,1,0,30,3,3,0,0.1,29,3,28,2,0.00335538144642315,0.036795626576955426,TH83;TH100;TH102,TH83;TH100;TH102,,3,True
+A. bruennichi,Contemporary,Serratia_unresolved,30,1,0,30,5,5,0,0.16666666666666666,29,4,28,4,0.009619091036804032,0.14341654429760156,TH81;TH89;TH91;TH99;TH100,TH81;TH89;TH91;TH99;TH100,,3,False
+A. bruennichi,Contemporary,Spiroplasma_hint,30,1,0,30,0,0,0,0.0,29,0,28,0,0.00035573585001430865,0.004298764105319721,,,,0,False
+A. bruennichi,Contemporary,Rickettsiales_unresolved,30,2,0,30,1,1,0,0.03333333333333333,29,1,28,1,0.0029340949427342517,0.07703383729301656,TH104,TH104,,1,False
+A. bruennichi,Contemporary,Blattabacterium,30,2,0,30,0,0,0,0.0,29,0,28,0,0.0,0.0,,,,0,False
+A. bruennichi,Contemporary,Rickettsiella_hint,30,2,0,30,0,0,0,0.0,29,0,28,0,1.3214358428215689e-05,0.0002098635886673662,,,,0,False
+A. bruennichi,Contemporary,Buchnera,30,3,0,30,1,1,0,0.03333333333333333,29,1,28,1,0.002997450775858854,0.038461538461538464,TH104,TH104,,1,False
+A. bruennichi,Contemporary,Rickettsia,30,1,0,30,0,0,0,0.0,29,0,28,0,0.0007103008597559945,0.008085779574617683,,,,0,False
+A. bruennichi,Contemporary,Serratia_symbiotica,30,1,0,30,0,0,0,0.0,29,0,28,0,0.00017817532812608986,0.0023128679562657694,,,,0,False
+A. bruennichi,Contemporary,Chlamydiales_hint,30,1,0,30,0,0,0,0.0,29,0,28,0,0.0,0.0,,,,0,False
+A. bruennichi,Contemporary,DUSA close sequence relatives,30,1,0,30,0,0,0,0.0,29,0,28,0,0.0001521777934430553,0.0012236906510034262,,,,0,False
+A. bruennichi,Contemporary,Aquicella_hint,30,1,0,30,0,0,0,0.0,29,0,28,0,0.0,0.0,,,,0,False
+A. bruennichi,Contemporary,Rickettsiella,30,1,0,30,0,0,0,0.0,29,0,28,0,0.0,0.0,,,,0,False

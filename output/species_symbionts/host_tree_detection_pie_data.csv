@@ -1,176 +1,176 @@
-species,Status,group,n_eligible,n_screen_positive,n_trace_only,n_no_candidate_reads
-A. argentata,Museum,DUSA-like OTU2,4,0,1,3
-A. argentata,Museum,DUSA close sequence relatives,4,0,0,4
-A. argentata,Museum,Mesoplasma,4,0,1,3
-A. argentata,Museum,Wolbachia,4,0,0,4
-A. argentata,Museum,Spiroplasma,4,0,0,4
-A. blanda,Museum,DUSA-like OTU2,1,0,0,1
-A. blanda,Museum,DUSA close sequence relatives,1,0,0,1
-A. blanda,Museum,Mesoplasma,1,0,0,1
-A. blanda,Museum,Wolbachia,1,0,0,1
-A. blanda,Museum,Spiroplasma,1,0,0,1
-A. trifasciata,Museum,DUSA-like OTU2,5,0,0,5
-A. trifasciata,Museum,DUSA close sequence relatives,5,0,0,5
-A. trifasciata,Museum,Mesoplasma,5,0,0,5
-A. trifasciata,Museum,Wolbachia,5,0,0,5
-A. trifasciata,Museum,Spiroplasma,5,2,0,3
-A. sector,Museum,DUSA-like OTU2,2,1,0,1
-A. sector,Museum,DUSA close sequence relatives,2,0,0,2
-A. sector,Museum,Mesoplasma,2,0,0,2
-A. sector,Museum,Wolbachia,2,0,0,2
-A. sector,Museum,Spiroplasma,2,0,0,2
-A. australis,Museum,DUSA-like OTU2,2,1,0,1
-A. australis,Museum,DUSA close sequence relatives,2,0,0,2
-A. australis,Museum,Mesoplasma,2,0,0,2
-A. australis,Museum,Wolbachia,2,0,0,2
-A. australis,Museum,Spiroplasma,2,0,0,2
-A. lobata,Museum,DUSA-like OTU2,2,0,0,2
-A. lobata,Museum,DUSA close sequence relatives,2,0,0,2
-A. lobata,Museum,Mesoplasma,2,1,0,1
-A. lobata,Museum,Wolbachia,2,2,0,0
-A. lobata,Museum,Spiroplasma,2,0,0,2
-A. flavipalpis,Museum,DUSA-like OTU2,2,0,0,2
-A. flavipalpis,Museum,DUSA close sequence relatives,2,0,0,2
-A. flavipalpis,Museum,Mesoplasma,2,0,0,2
-A. flavipalpis,Museum,Wolbachia,2,0,0,2
-A. flavipalpis,Museum,Spiroplasma,2,1,0,1
-A. aurantia,Museum,DUSA-like OTU2,1,0,0,1
-A. aurantia,Museum,DUSA close sequence relatives,1,0,0,1
-A. aurantia,Museum,Mesoplasma,1,0,0,1
-A. aurantia,Museum,Wolbachia,1,0,0,1
-A. aurantia,Museum,Spiroplasma,1,0,0,1
-A. bruennichi,Museum,DUSA-like OTU2,9,6,0,3
-A. bruennichi,Museum,DUSA close sequence relatives,9,0,1,8
-A. bruennichi,Museum,Mesoplasma,9,3,1,5
-A. bruennichi,Museum,Wolbachia,9,0,0,9
-A. bruennichi,Museum,Spiroplasma,9,1,0,8
-A. bruennichi,Contemporary,DUSA-like OTU2,30,26,4,0
-A. bruennichi,Contemporary,DUSA close sequence relatives,30,0,7,23
-A. bruennichi,Contemporary,Mesoplasma,30,15,10,5
-A. bruennichi,Contemporary,Wolbachia,30,3,13,14
-A. bruennichi,Contemporary,Spiroplasma,30,3,4,23
-A. catenulata,Museum,DUSA-like OTU2,2,0,0,2
-A. catenulata,Museum,DUSA close sequence relatives,2,0,0,2
-A. catenulata,Museum,Mesoplasma,2,0,0,2
-A. catenulata,Museum,Wolbachia,2,0,0,2
-A. catenulata,Museum,Spiroplasma,2,0,0,2
-A. ranomafanensis,Museum,DUSA-like OTU2,1,0,0,1
-A. ranomafanensis,Museum,DUSA close sequence relatives,1,0,0,1
-A. ranomafanensis,Museum,Mesoplasma,1,0,0,1
-A. ranomafanensis,Museum,Wolbachia,1,0,0,1
-A. ranomafanensis,Museum,Spiroplasma,1,0,0,1
-A. amoena,Museum,DUSA-like OTU2,2,0,0,2
-A. amoena,Museum,DUSA close sequence relatives,2,0,0,2
-A. amoena,Museum,Mesoplasma,2,0,0,2
-A. amoena,Museum,Wolbachia,2,0,0,2
-A. amoena,Museum,Spiroplasma,2,0,0,2
-A. boesenbergi,Museum,DUSA-like OTU2,2,0,0,2
-A. boesenbergi,Museum,DUSA close sequence relatives,2,0,0,2
-A. boesenbergi,Museum,Mesoplasma,2,0,0,2
-A. boesenbergi,Museum,Wolbachia,2,0,0,2
-A. boesenbergi,Museum,Spiroplasma,2,0,0,2
-A. aemula,Museum,DUSA-like OTU2,2,0,0,2
-A. aemula,Museum,DUSA close sequence relatives,2,0,0,2
-A. aemula,Museum,Mesoplasma,2,0,0,2
-A. aemula,Museum,Wolbachia,2,0,0,2
-A. aemula,Museum,Spiroplasma,2,0,0,2
-A. reinwardti,Museum,DUSA-like OTU2,1,0,0,1
-A. reinwardti,Museum,DUSA close sequence relatives,1,0,0,1
-A. reinwardti,Museum,Mesoplasma,1,0,0,1
-A. reinwardti,Museum,Wolbachia,1,0,0,1
-A. reinwardti,Museum,Spiroplasma,1,0,0,1
-A. anasuja,Museum,DUSA-like OTU2,2,0,0,2
-A. anasuja,Museum,DUSA close sequence relatives,2,0,0,2
-A. anasuja,Museum,Mesoplasma,2,1,0,1
-A. anasuja,Museum,Wolbachia,2,0,0,2
-A. anasuja,Museum,Spiroplasma,2,0,0,2
-A. minuta,Museum,DUSA-like OTU2,2,0,0,2
-A. minuta,Museum,DUSA close sequence relatives,2,0,0,2
-A. minuta,Museum,Mesoplasma,2,0,0,2
-A. minuta,Museum,Wolbachia,2,0,0,2
-A. minuta,Museum,Spiroplasma,2,0,0,2
-A. picta,Museum,DUSA-like OTU2,1,0,0,1
-A. picta,Museum,DUSA close sequence relatives,1,0,0,1
-A. picta,Museum,Mesoplasma,1,0,0,1
-A. picta,Museum,Wolbachia,1,0,0,1
-A. picta,Museum,Spiroplasma,1,0,0,1
-A. aetherea,Museum,DUSA-like OTU2,2,0,0,2
-A. aetherea,Museum,DUSA close sequence relatives,2,0,0,2
-A. aetherea,Museum,Mesoplasma,2,0,0,2
-A. aetherea,Museum,Wolbachia,2,0,0,2
-A. aetherea,Museum,Spiroplasma,2,1,0,1
-A.modesta,Museum,DUSA-like OTU2,2,0,0,2
-A.modesta,Museum,DUSA close sequence relatives,2,0,0,2
-A.modesta,Museum,Mesoplasma,2,0,0,2
-A.modesta,Museum,Wolbachia,2,0,0,2
-A.modesta,Museum,Spiroplasma,2,0,0,2
-A. dang,Museum,DUSA-like OTU2,1,0,0,1
-A. dang,Museum,DUSA close sequence relatives,1,0,0,1
-A. dang,Museum,Mesoplasma,1,0,0,1
-A. dang,Museum,Wolbachia,1,0,1,0
-A. dang,Museum,Spiroplasma,1,0,0,1
-A. protensa,Museum,DUSA-like OTU2,1,0,0,1
-A. protensa,Museum,DUSA close sequence relatives,1,0,0,1
-A. protensa,Museum,Mesoplasma,1,0,0,1
-A. protensa,Museum,Wolbachia,1,1,0,0
-A. protensa,Museum,Spiroplasma,1,1,0,0
-A. jinghongensis,Museum,DUSA-like OTU2,2,0,0,2
-A. jinghongensis,Museum,DUSA close sequence relatives,2,0,0,2
-A. jinghongensis,Museum,Mesoplasma,2,0,0,2
-A. jinghongensis,Museum,Wolbachia,2,0,0,2
-A. jinghongensis,Museum,Spiroplasma,2,0,0,2
-A. luzona,Museum,DUSA-like OTU2,2,0,0,2
-A. luzona,Museum,DUSA close sequence relatives,2,0,0,2
-A. luzona,Museum,Mesoplasma,2,0,0,2
-A. luzona,Museum,Wolbachia,2,0,0,2
-A. luzona,Museum,Spiroplasma,2,0,0,2
-A. pulchella,Museum,DUSA-like OTU2,2,0,0,2
-A. pulchella,Museum,DUSA close sequence relatives,2,0,0,2
-A. pulchella,Museum,Mesoplasma,2,0,0,2
-A. pulchella,Museum,Wolbachia,2,0,0,2
-A. pulchella,Museum,Spiroplasma,2,0,0,2
-A. versicolor,Museum,DUSA-like OTU2,2,0,0,2
-A. versicolor,Museum,DUSA close sequence relatives,2,0,0,2
-A. versicolor,Museum,Mesoplasma,2,0,1,1
-A. versicolor,Museum,Wolbachia,2,0,0,2
-A. versicolor,Museum,Spiroplasma,2,0,0,2
-A. appensa,Museum,DUSA-like OTU2,2,0,0,2
-A. appensa,Museum,DUSA close sequence relatives,2,0,0,2
-A. appensa,Museum,Mesoplasma,2,0,0,2
-A. appensa,Museum,Wolbachia,2,0,0,2
-A. appensa,Museum,Spiroplasma,2,0,0,2
-A. bougainvilla,Museum,DUSA-like OTU2,1,0,0,1
-A. bougainvilla,Museum,DUSA close sequence relatives,1,0,0,1
-A. bougainvilla,Museum,Mesoplasma,1,0,0,1
-A. bougainvilla,Museum,Wolbachia,1,1,0,0
-A. bougainvilla,Museum,Spiroplasma,1,0,0,1
-A. brunnescentia,Museum,DUSA-like OTU2,2,0,0,2
-A. brunnescentia,Museum,DUSA close sequence relatives,2,0,0,2
-A. brunnescentia,Museum,Mesoplasma,2,0,0,2
-A. brunnescentia,Museum,Wolbachia,2,0,0,2
-A. brunnescentia,Museum,Spiroplasma,2,0,0,2
-A. chloreis,Museum,DUSA-like OTU2,1,0,0,1
-A. chloreis,Museum,DUSA close sequence relatives,1,0,0,1
-A. chloreis,Museum,Mesoplasma,1,0,0,1
-A. chloreis,Museum,Wolbachia,1,0,0,1
-A. chloreis,Museum,Spiroplasma,1,0,0,1
-A. coquereli,Museum,DUSA-like OTU2,2,0,0,2
-A. coquereli,Museum,DUSA close sequence relatives,2,0,0,2
-A. coquereli,Museum,Mesoplasma,2,0,0,2
-A. coquereli,Museum,Wolbachia,2,0,1,1
-A. coquereli,Museum,Spiroplasma,2,0,0,2
-A. magnifica,Museum,DUSA-like OTU2,2,0,0,2
-A. magnifica,Museum,DUSA close sequence relatives,2,0,0,2
-A. magnifica,Museum,Mesoplasma,2,0,0,2
-A. magnifica,Museum,Wolbachia,2,0,0,2
-A. magnifica,Museum,Spiroplasma,2,0,0,2
-A. pictula,Museum,DUSA-like OTU2,2,0,0,2
-A. pictula,Museum,DUSA close sequence relatives,2,0,0,2
-A. pictula,Museum,Mesoplasma,2,0,0,2
-A. pictula,Museum,Wolbachia,2,0,0,2
-A. pictula,Museum,Spiroplasma,2,0,0,2
-A. pulchelloides,Museum,DUSA-like OTU2,1,0,0,1
-A. pulchelloides,Museum,DUSA close sequence relatives,1,0,0,1
-A. pulchelloides,Museum,Mesoplasma,1,0,0,1
-A. pulchelloides,Museum,Wolbachia,1,0,0,1
-A. pulchelloides,Museum,Spiroplasma,1,0,0,1
+species,Status,group,n_eligible,n_screen_positive,n_counted_positive,n_trace_only,n_below_screen_trace_only,n_unconfirmed,n_no_candidate_reads
+A. argentata,Museum,DUSA-like OTU2,4,0,0,1,1,0,3
+A. argentata,Museum,DUSA close sequence relatives,4,0,0,0,0,0,4
+A. argentata,Museum,Mesoplasma,4,0,0,1,1,0,3
+A. argentata,Museum,Wolbachia,4,0,0,0,0,0,4
+A. argentata,Museum,Spiroplasma,4,0,0,0,0,0,4
+A. blanda,Museum,DUSA-like OTU2,1,0,0,0,0,0,1
+A. blanda,Museum,DUSA close sequence relatives,1,0,0,0,0,0,1
+A. blanda,Museum,Mesoplasma,1,0,0,0,0,0,1
+A. blanda,Museum,Wolbachia,1,0,0,0,0,0,1
+A. blanda,Museum,Spiroplasma,1,0,0,0,0,0,1
+A. trifasciata,Museum,DUSA-like OTU2,5,0,0,0,0,0,5
+A. trifasciata,Museum,DUSA close sequence relatives,5,0,0,0,0,0,5
+A. trifasciata,Museum,Mesoplasma,5,0,0,0,0,0,5
+A. trifasciata,Museum,Wolbachia,5,0,0,0,0,0,5
+A. trifasciata,Museum,Spiroplasma,5,2,2,0,0,0,3
+A. sector,Museum,DUSA-like OTU2,2,1,1,0,0,0,1
+A. sector,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. sector,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. sector,Museum,Wolbachia,2,0,0,0,0,0,2
+A. sector,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. australis,Museum,DUSA-like OTU2,2,1,0,1,0,1,1
+A. australis,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. australis,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. australis,Museum,Wolbachia,2,0,0,0,0,0,2
+A. australis,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. lobata,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. lobata,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. lobata,Museum,Mesoplasma,2,1,1,0,0,0,1
+A. lobata,Museum,Wolbachia,2,2,2,0,0,0,0
+A. lobata,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. flavipalpis,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. flavipalpis,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. flavipalpis,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. flavipalpis,Museum,Wolbachia,2,0,0,0,0,0,2
+A. flavipalpis,Museum,Spiroplasma,2,1,1,0,0,0,1
+A. aurantia,Museum,DUSA-like OTU2,1,0,0,0,0,0,1
+A. aurantia,Museum,DUSA close sequence relatives,1,0,0,0,0,0,1
+A. aurantia,Museum,Mesoplasma,1,0,0,0,0,0,1
+A. aurantia,Museum,Wolbachia,1,0,0,0,0,0,1
+A. aurantia,Museum,Spiroplasma,1,0,0,0,0,0,1
+A. bruennichi,Museum,DUSA-like OTU2,9,6,6,0,0,0,3
+A. bruennichi,Museum,DUSA close sequence relatives,9,0,0,1,1,0,8
+A. bruennichi,Museum,Mesoplasma,9,3,3,1,1,0,5
+A. bruennichi,Museum,Wolbachia,9,0,0,0,0,0,9
+A. bruennichi,Museum,Spiroplasma,9,1,1,0,0,0,8
+A. bruennichi,Contemporary,DUSA-like OTU2,30,26,26,4,4,0,0
+A. bruennichi,Contemporary,DUSA close sequence relatives,30,0,0,7,7,0,23
+A. bruennichi,Contemporary,Mesoplasma,30,15,15,10,10,0,5
+A. bruennichi,Contemporary,Wolbachia,30,3,3,13,13,0,14
+A. bruennichi,Contemporary,Spiroplasma,30,3,3,4,4,0,23
+A. catenulata,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. catenulata,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. catenulata,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. catenulata,Museum,Wolbachia,2,0,0,0,0,0,2
+A. catenulata,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. ranomafanensis,Museum,DUSA-like OTU2,1,0,0,0,0,0,1
+A. ranomafanensis,Museum,DUSA close sequence relatives,1,0,0,0,0,0,1
+A. ranomafanensis,Museum,Mesoplasma,1,0,0,0,0,0,1
+A. ranomafanensis,Museum,Wolbachia,1,0,0,0,0,0,1
+A. ranomafanensis,Museum,Spiroplasma,1,0,0,0,0,0,1
+A. amoena,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. amoena,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. amoena,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. amoena,Museum,Wolbachia,2,0,0,0,0,0,2
+A. amoena,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. boesenbergi,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. boesenbergi,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. boesenbergi,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. boesenbergi,Museum,Wolbachia,2,0,0,0,0,0,2
+A. boesenbergi,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. aemula,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. aemula,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. aemula,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. aemula,Museum,Wolbachia,2,0,0,0,0,0,2
+A. aemula,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. reinwardti,Museum,DUSA-like OTU2,1,0,0,0,0,0,1
+A. reinwardti,Museum,DUSA close sequence relatives,1,0,0,0,0,0,1
+A. reinwardti,Museum,Mesoplasma,1,0,0,0,0,0,1
+A. reinwardti,Museum,Wolbachia,1,0,0,0,0,0,1
+A. reinwardti,Museum,Spiroplasma,1,0,0,0,0,0,1
+A. anasuja,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. anasuja,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. anasuja,Museum,Mesoplasma,2,1,1,0,0,0,1
+A. anasuja,Museum,Wolbachia,2,0,0,0,0,0,2
+A. anasuja,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. minuta,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. minuta,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. minuta,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. minuta,Museum,Wolbachia,2,0,0,0,0,0,2
+A. minuta,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. picta,Museum,DUSA-like OTU2,1,0,0,0,0,0,1
+A. picta,Museum,DUSA close sequence relatives,1,0,0,0,0,0,1
+A. picta,Museum,Mesoplasma,1,0,0,0,0,0,1
+A. picta,Museum,Wolbachia,1,0,0,0,0,0,1
+A. picta,Museum,Spiroplasma,1,0,0,0,0,0,1
+A. aetherea,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. aetherea,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. aetherea,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. aetherea,Museum,Wolbachia,2,0,0,0,0,0,2
+A. aetherea,Museum,Spiroplasma,2,1,1,0,0,0,1
+A.modesta,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A.modesta,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A.modesta,Museum,Mesoplasma,2,0,0,0,0,0,2
+A.modesta,Museum,Wolbachia,2,0,0,0,0,0,2
+A.modesta,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. dang,Museum,DUSA-like OTU2,1,0,0,0,0,0,1
+A. dang,Museum,DUSA close sequence relatives,1,0,0,0,0,0,1
+A. dang,Museum,Mesoplasma,1,0,0,0,0,0,1
+A. dang,Museum,Wolbachia,1,0,0,1,1,0,0
+A. dang,Museum,Spiroplasma,1,0,0,0,0,0,1
+A. protensa,Museum,DUSA-like OTU2,1,0,0,0,0,0,1
+A. protensa,Museum,DUSA close sequence relatives,1,0,0,0,0,0,1
+A. protensa,Museum,Mesoplasma,1,0,0,0,0,0,1
+A. protensa,Museum,Wolbachia,1,1,1,0,0,0,0
+A. protensa,Museum,Spiroplasma,1,1,1,0,0,0,0
+A. jinghongensis,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. jinghongensis,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. jinghongensis,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. jinghongensis,Museum,Wolbachia,2,0,0,0,0,0,2
+A. jinghongensis,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. luzona,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. luzona,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. luzona,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. luzona,Museum,Wolbachia,2,0,0,0,0,0,2
+A. luzona,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. pulchella,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. pulchella,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. pulchella,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. pulchella,Museum,Wolbachia,2,0,0,0,0,0,2
+A. pulchella,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. versicolor,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. versicolor,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. versicolor,Museum,Mesoplasma,2,0,0,1,1,0,1
+A. versicolor,Museum,Wolbachia,2,0,0,0,0,0,2
+A. versicolor,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. appensa,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. appensa,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. appensa,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. appensa,Museum,Wolbachia,2,0,0,0,0,0,2
+A. appensa,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. bougainvilla,Museum,DUSA-like OTU2,1,0,0,0,0,0,1
+A. bougainvilla,Museum,DUSA close sequence relatives,1,0,0,0,0,0,1
+A. bougainvilla,Museum,Mesoplasma,1,0,0,0,0,0,1
+A. bougainvilla,Museum,Wolbachia,1,1,1,0,0,0,0
+A. bougainvilla,Museum,Spiroplasma,1,0,0,0,0,0,1
+A. brunnescentia,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. brunnescentia,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. brunnescentia,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. brunnescentia,Museum,Wolbachia,2,0,0,0,0,0,2
+A. brunnescentia,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. chloreis,Museum,DUSA-like OTU2,1,0,0,0,0,0,1
+A. chloreis,Museum,DUSA close sequence relatives,1,0,0,0,0,0,1
+A. chloreis,Museum,Mesoplasma,1,0,0,0,0,0,1
+A. chloreis,Museum,Wolbachia,1,0,0,0,0,0,1
+A. chloreis,Museum,Spiroplasma,1,0,0,0,0,0,1
+A. coquereli,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. coquereli,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. coquereli,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. coquereli,Museum,Wolbachia,2,0,0,1,1,0,1
+A. coquereli,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. magnifica,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. magnifica,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. magnifica,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. magnifica,Museum,Wolbachia,2,0,0,0,0,0,2
+A. magnifica,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. pictula,Museum,DUSA-like OTU2,2,0,0,0,0,0,2
+A. pictula,Museum,DUSA close sequence relatives,2,0,0,0,0,0,2
+A. pictula,Museum,Mesoplasma,2,0,0,0,0,0,2
+A. pictula,Museum,Wolbachia,2,0,0,0,0,0,2
+A. pictula,Museum,Spiroplasma,2,0,0,0,0,0,2
+A. pulchelloides,Museum,DUSA-like OTU2,1,0,0,0,0,0,1
+A. pulchelloides,Museum,DUSA close sequence relatives,1,0,0,0,0,0,1
+A. pulchelloides,Museum,Mesoplasma,1,0,0,0,0,0,1
+A. pulchelloides,Museum,Wolbachia,1,0,0,0,0,0,1
+A. pulchelloides,Museum,Spiroplasma,1,0,0,0,0,0,1

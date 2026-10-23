@@ -167,6 +167,10 @@ NAMES={'DUSA-like OTU2':'DUSA-like OTU2','DUSA close sequence relatives':'Close 
 def read(path):
     with path.open() as f:return list(csv.DictReader(f))
 
+def counted_positive(row):
+    return row.get('counted_positive', row['screen_positive']) == 'True'
+
+
 def bucket(group):
     if group in KEYS:return group
     if any(x in group.lower() for x in ('hint','unresolved','unnamed','nonbacterial')):
@@ -234,7 +238,7 @@ def publication_host_tree(tree, rows, tip_rows, yy, xx, depth, composition, stat
             country_audit.append({'species':species,'Status':status,'recorded_country':country,
                 'display_code':LOCALITIES[country],'flag_country': 'France' if country=='French Guiana' else
                     ('Federated States of Micronesia' if country=='Micronesia' else country),
-                'flag_resolution_source': 'Specimen-origin clarification, 2026-10-08: Micronesia denotes the Federated States of Micronesia.'
+                'flag_resolution_source': 'User clarification, 2026-10-08: recorded Micronesia uses the Federated States of Micronesia flag.'
                     if country=='Micronesia' else 'Recorded specimen country',
                 'n_sampled':len(samples),'n_eligible_ge100':n_eligible,
                 'dagger_below_depth_only':n_eligible==0,
@@ -254,7 +258,7 @@ def publication_host_tree(tree, rows, tip_rows, yy, xx, depth, composition, stat
         for group in selected:
             key=(species,status,group);r=stats[key];old=prior_detection[key]
             assert int(old['n_eligible'])==int(r['n_eligible_ge100'])
-            assert int(old['n_screen_positive'])==int(r['n_positive'])
+            assert int(old.get('n_counted_positive',old['n_screen_positive']))==int(r['n_positive'])
             assert int(old['n_trace_only'])==traces.get(key,0)
     assert len(prior_composition)==len(rows)
     assert len(prior_detection)==len(rows)*len(selected)
@@ -302,8 +306,8 @@ def publication_host_tree(tree, rows, tip_rows, yy, xx, depth, composition, stat
     ax.set_xlim(-.4,41.45);ax.set_ylim(Y(len(rows)-.4),-2.0);ax.set_aspect('equal');ax.axis('off')
     composition_handles=[Patch(facecolor=color,label=NAMES[group]) for group,color in COLORS.items()]
     fig.legend(handles=composition_handles,loc='lower center',bbox_to_anchor=(.5,.058),ncol=4,frameon=False,fontsize=9.4)
-    detection_handles=[Patch(facecolor='#697f91',label='Screen-positive'),
-        Patch(facecolor=trace_color('#666666'),edgecolor='#8b9398',hatch='////',label='Trace-only'),
+    detection_handles=[Patch(facecolor='#697f91',label='Detection'),
+        Patch(facecolor=trace_color('#666666'),edgecolor='#8b9398',hatch='////',label='Trace'),
         Patch(facecolor='#e1e4e6',label='No candidate reads'),
         Patch(facecolor='white',edgecolor='#78848b',linestyle='--',label='† Below-depth-only country')]
     fig.legend(handles=detection_handles,loc='lower center',bbox_to_anchor=(.5,.031),ncol=4,frameon=False,fontsize=9.4)
@@ -319,19 +323,25 @@ def publication_host_tree(tree, rows, tip_rows, yy, xx, depth, composition, stat
     audit={'figure':'figures/main/fig02_host_phylogeny.png','sample_strata':len(rows),
         'specimens':len(specimens),'mapped_species':len(tip_rows),'unplaced_species':len(rows)-mapped_row_count,
         'composition_cells_verified_unchanged':len(rows)*len(KEYS),
-        'detection_pies_verified_unchanged':len(rows)*len(selected),
-        'total_microbiome_pie_radius':.48,
+        'detection_pies_verified_against_source':len(rows)*len(selected),
+        'positive_call_QC_exclusions':[{'ID':r['ID'],'species':r['species'],'group':r['group'],
+            'curated_group_reads':int(r['curated_group_reads']),
+            'curated_16s_reads':int(r['curated_16s_reads']),
+            'reason':r['positive_call_exclusion_reason']} for r in observed
+            if r.get('positive_call_exclusion_reason')],
+        'trace_category':'All eligible specimens with candidate reads not counted positive; unconfirmed low-depth observations are included, with threshold-only traces and unconfirmed counts recorded separately in the source table.',
+        'total_microbiome_pie_radius':.48,'previous_pie_radius':.33,
         'flags_describe':'All recorded specimen countries; dagger marks countries with no eligible profile.',
         'country_metadata_limits':{'French Guiana':'French national flag; GF locality code.'},
-        'country_metadata_resolutions':{'Micronesia':{
+        'country_metadata_user_resolutions':{'Micronesia':{
             'source_wording':'Micronesia','display_country':'Federated States of Micronesia','display_code':'FM',
-            'resolution_source':'Specimen-origin clarification dated 2026-10-08.',
+            'resolution_source':'User supplied the national flag and authorized this source-origin interpretation on 2026-10-08.',
             'resolution_date':'2026-10-08'}},
         'input_sha256':{name:hashlib.sha256((OUT/name).read_bytes()).hexdigest() for name in inputs},
         'output_sha256':hashlib.sha256(target.read_bytes()).hexdigest()}
     (OUT/'main_figure_2_audit.json').write_text(json.dumps(audit,indent=2)+'\n')
     print(target)
-    print('MAIN FIGURE 2:',len(rows),'sample strata;',len(specimens),'specimens; all composition and detection values unchanged')
+    print('MAIN FIGURE 2:',len(rows),'sample strata;',len(specimens),'specimens; composition unchanged; detection values match counted calls and trace reads')
 
 
 def host_tree():
@@ -352,7 +362,7 @@ def host_tree():
     traces={}
     for r in observed:
         key=(r['species'],r['Status'],r['group'])
-        if r['eligible_ge100']=='True' and int(r['curated_group_reads'])>0 and r['screen_positive']=='False':
+        if r['eligible_ge100']=='True' and int(r['curated_group_reads'])>0 and not counted_positive(r):
             traces[key]=traces.get(key,0)+1
     selected=['DUSA-like OTU2','DUSA close sequence relatives','Mesoplasma','Wolbachia','Spiroplasma']
     unknown=sorted({s for s,status in depth if status=='Museum'}-set(matched))

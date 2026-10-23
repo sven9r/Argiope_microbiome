@@ -1,14 +1,10 @@
-# DUSA-like bacteria across *Argiope*: historical detections and contrasting *Mesoplasma* profiles in *A. bruennichi*
+# DUSA-like bacteria across *Argiope*? Historical detections and contrasting *Mesoplasma* profiles in *A. bruennichi*
 
-Dataset DOI: [10.5061/dryad.tht76hfg6](https://doi.org/10.5061/dryad.tht76hfg6).
-
-Dataset creators listed in the Dryad draft: Sven Weber and Tim Hörrmann.
-
-Data documentation prepared **21 October 2026**. This README accompanies the Dryad draft dataset. The draft selects CC0 1.0 for publication of the study data; the final dataset citation and linked publication should follow the released record.
+Dataset creators: Sven Weber, Tim Hörrmann and Anja Carina Melcher.
 
 ## Dataset description
 
-The dataset contains short-marker bacterial and prey sequences, specimen-level read counts and collection metadata for 112 *Argiope* spiders. Museum material provides comparative host and historical coverage; contemporary *A. bruennichi* provides paired bacterial and prey profiles from one German collection. The focal bacterial features are DUSA-like OTU2 and the source-annotated *Mesoplasma* OTU3 and OTU145.
+The dataset contains paired-end bacterial 16S and prey COI sequencing reads, curated specimen-level read counts, representative marker sequences and collection metadata for 112 *Argiope* spiders. Museum material provides comparative host and historical coverage; contemporary *A. bruennichi* provides paired bacterial and prey profiles from one German collection. The focal bacterial features are DUSA-like OTU2 and the source-annotated *Mesoplasma* OTU3 and OTU145.
 
 Read counts, observed detections, descriptive screening categories and predominant bacterial profiles are separate measurements. A short sequence detection does not establish tissue infection, bacterial function, transmission or absolute bacterial abundance. Prey COI reads do not directly measure prey biomass or the bacteria carried by prey.
 
@@ -40,11 +36,38 @@ The working manuscript identifies the museum source as the arachnological collec
 
 Use each specimen's recorded `Country`, `Location` and `Year` for its source context. Country and locality text are preserved as recorded, including spelling variants and territory names. These are sampled origins, not complete host distributions. Locality precision and coordinate uncertainty are not encoded in the curated count tables. A sampling map cannot supply missing specimen coordinates.
 
-The metadata include adult, subadult and juvenile annotations. Recorded sex is `female` or `NA`; missing sex annotations should remain missing even though the manuscript describes female sampling. Five specimens have unknown collection years: A1, A2, TH52, TH79 and TH80.
+The metadata include adult, subadult and juvenile annotations. Recorded sex is `female` or `NA`; missing sex annotations should remain missing even though the manuscript describes female sampling. Five specimens have unknown collection years.
+
+## Sequencing read archives
+
+The sequencing reads are supplied as two marker-specific ZIP archives. Each contains 250 gzipped FASTQ files (125 forward/reverse library pairs), `SampleSheet.csv` and `config.xml`.
+
+| Archive | Marker | Read pairs | Observed read lengths | ZIP size |
+| --- | --- | ---: | --- | ---: |
+| `2022-12-15-fastq-Tim_16S.zip` | Bacterial 16S | 1,063,141 | 35–151 bases | 215,303,883 bytes |
+| `2022-12-15-fastq-Tim_COI.zip` | Prey COI | 1,199,028 | 138–151 bases | 244,441,222 bytes |
+
+These totals include specimen, additional, control and undetermined libraries. Each marker covers 112 specimen libraries, seven additional c-suffix libraries, five separately named control libraries and one `Undetermined` library. The 125 library pairs are not 125 biological specimens. `SampleSheet.csv` identifies the 124 named libraries and their index sequences; `Undetermined` contains reads not assigned to one of those libraries.
+
+FASTQ filenames identify the library, sample-sheet index (`S`), lane (`L001`), forward or reverse read (`R1`/`R2`) and file segment (`001`). Pair forward and reverse files by their shared basename. Keep c-suffix and control libraries distinct. The common `museum` filename suffix does not establish a specimen's collection stratum; use the specimen metadata for museum versus contemporary status.
+
+Each FASTQ record contains an identifier, nucleotide sequence, `+` separator and per-base quality string. Read counts and mate identifiers agree in every R1/R2 pair. ZIP CRCs, gzip integrity, all FASTQ record structures and sequence/quality lengths were checked on 23 October 2026. The archives were not edited or repacked.
+
+The retained run folders are `221208_M01755_0795_000000000-DJGM8` for 16S and `221213_M01755_0796_000000000-DJHPJ` for COI. The sample sheets specify MiSeq, GenerateFASTQ and 151 forward plus 151 reverse cycles. The 15 December date in the archive names is distinct from those run dates. Observed reads have variable lengths; the files are described as supplied demultiplexed paired-end reads rather than assumed to be untrimmed.
+
+Archive SHA-256 values, library counts and read summaries are in `metadata/sequence_archives.csv` inside `Argiope_analysis_data.zip`. The 101-base focal bacterial fragments and 71-base prey OTU representatives in the analysis archive are processed sequence representatives, not the lengths of the paired-end read files.
 
 ## File organization
 
-All paths below are relative to the deposit package root. `file_manifest.csv` is the complete inventory, with byte size, SHA-256, original project path, source checksum and export operation. It also identifies the worksheet behind each worksheet export. A `source_project_path` beginning `Argiope_microbiome/` refers to the accompanying code repository; its version is recorded in `provenance/code_version.json`.
+Three data archives are provided in Dryad:
+
+| File | Contents |
+| --- | --- |
+| `2022-12-15-fastq-Tim_16S.zip` | Demultiplexed bacterial 16S paired-end FASTQ reads, sample sheet and sequencing configuration. |
+| `2022-12-15-fastq-Tim_COI.zip` | Demultiplexed prey COI paired-end FASTQ reads, sample sheet and sequencing configuration. |
+| `Argiope_analysis_data.zip` | Curated count and taxonomy tables, collection metadata, original OTU-count tables, representative sequences, reference inputs, figure-support tables and manuscript figures. |
+
+All paths below are relative to the root of `Argiope_analysis_data.zip` after extraction. `file_manifest.csv` inventories the files inside that analysis archive, with byte size, SHA-256, original project path, source checksum and export operation. It also identifies the worksheet behind each worksheet export. A `source_project_path` beginning `Argiope_microbiome/` refers to the accompanying code repository; its version is recorded in `provenance/code_version.json`.
 
 | File or directory                   | Contents and intended use                                                                                                                                                                                  |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,9 +88,7 @@ All paths below are relative to the deposit package root. `file_manifest.csv` is
 | `column_dictionary.csv`             | File-specific column definitions, observed storage types, missing tokens and explicitly unresolved definitions.                                                                                            |
 | `figure_file_map.csv`               | Figure filename, associated support files, original source and version limitations.                                                                                                                        |
 | `package_checks.json`               | Export dimensions, marker row-sum checks and package scope.                                                                                                                                                |
-| `provenance/code_version.json`      | Code repository, commit and SHA-256 values for the scientific sources and specimen-label map.                                                                                                              |
-| `METHODS_AND_GAPS.md`               | Detailed methods evidence and limits of reproducibility.                                                                                                                                                   |
-| `THIRD_PARTY_SOURCES.md`            | Attribution, accessions and recorded terms for reused material.                                                                                                                                            |
+| `THIRD_PARTY_SOURCES.md`            | Attribution, accessions and recorded terms for reused material. |
 
 Analysis code is maintained separately from the data deposit. The package contains neither installed software libraries nor repository inventory, cleanup, document-synchronization or packaging helpers.
 
@@ -152,7 +173,7 @@ The workbook also retains `Tabelle Methodenteil`, a secondary source worksheet. 
 
 These matrices retain the larger original feature universe. Their totals are not interchangeable with `BacteriaReads` or `PreyReads`, which sum only curated features. Both original marker FASTAs are included so that feature IDs remain connected to their measured sequences.
 
-`raw_counts/library_identity_map.csv` records marker, original library label, normalized specimen ID, library role and the scope of design verification. The additional c-suffix labels are TH10c, TH18c, TH36c, TH40c, TH50c, TH58c and TH65c. Source metadata map them to existing specimens. Their experimental level—PCR, extraction, tissue or another repeat—has not been established from laboratory records.
+`raw_counts/library_identity_map.csv` records marker, original library label, normalized specimen ID, library role and the scope of design verification. The seven additional c-suffix libraries map to existing specimens in the source metadata. Their experimental level—PCR, extraction, tissue or another repeat—has not been established from laboratory records.
 
 For all seven mapped specimens and both markers, curated retained-feature counts equal the original **base TH library**, rather than the sum of base and c-suffix libraries. Do not add c-suffix columns to the curated profiles when reproducing the present analysis.
 
@@ -180,7 +201,7 @@ The working methods report extraction and PCR negatives. Physical control identi
 3. Within each marker, join OTU counts to its own taxonomy table by `OTU`. Do not join bacterial taxonomy to prey counts with the same identifier.
 4. Original raw labels such as `TH01` normalize to curated `TH1`. A terminal `c` can be removed for specimen identity lookup only. Keep the original library label and role; normalization is not permission to merge counts.
 5. FASTA headers use source spelling such as `OTu2`; normalize case only when matching to `OTU2`. Retain a record of normalization. Do not truncate or renumber feature IDs.
-6. Use `metadata/arg_sample_map.csv` for the current Arg1–Arg30 display identities, joining on `ID`. It contains 30 unique specimens and labels: TH82 = Arg1, TH102 = Arg5, TH81 = Arg17, TH110 = Arg18, TH99 = Arg19 and TH84 = Arg25. Labels are ordered by descending OTU2/(OTU2+OTU3+OTU145), then descending OTU2 reads and specimen ID. `previous_arg_label` records the prior label. The current matched companion retains these labels, with gaps where specimens are excluded. Legacy maps can use a different order; biological joins always use `ID`.
+6. Use `metadata/arg_sample_map.csv` for the 30 fixed Arg display identities, joining on `ID`. Labels are ordered by descending OTU2/(OTU2+OTU3+OTU145), then descending OTU2 reads and specimen ID. `previous_arg_label` records the prior label. The matched companion retains these identities with gaps for excluded specimens; biological joins always use `ID`.
 7. For distance-based analyses, restrict both markers to the same eligible specimen IDs and put matrices in exactly the same row order before comparing them.
 
 A1/A2 remain specimen records in these joins. `MuseumID`, row order, country, host species and the displayed Arg label do not replace `ID` as the specimen key.
@@ -200,17 +221,17 @@ The same curated profiles support several questions. There is no single universa
 | Paired contemporary comparison        |                                        1,500 |                           1,693 | 28 of 30                           |
 | Clear two-state paired comparison     | Same paired depths and explicit profile rule |                            Same | 26: 16 DUSA-like + 10 *Mesoplasma* |
 
-TH84 has 4,375 bacterial and 746 prey reads and fails the paired prey cutoff. TH99 has 182 bacterial and 3,207 prey reads and fails the paired bacterial cutoff. TH102 has 1,861 bacterial and 4,061 prey reads and is retained at 1,500 bacterial reads. Older 2,506-read analyses excluded TH102 and used a 27-specimen paired cohort; their outputs are not the current 28-specimen analysis.
+One contemporary profile fails each marker cutoff, giving 29 eligible profiles per marker and 28 paired profiles. The excluded identities and marker-specific reasons are recorded in the sample maps. Older 2,506-read bacterial analyses used a different 27-specimen paired cohort.
 
 Figure 4 retains 30 specimen positions and marker-specific eligibility, giving 29 eligible profiles per panel and 28 with both markers. Figure 5, S5 and the current paired S7 display use the 28-specimen intersection; S7 retains 30 fixed display positions. Failed-marker or paired-exclusion hatches are missing/excluded information, not zero proportions.
 
 ### Candidate detection screen
 
-A profile is eligible for descriptive screening when its complete curated bacterial total is ≥100 reads. A candidate group passes when it also has **at least ten candidate reads and at least 1% of the complete curated bacterial total**. `Trace-only` means candidate reads are present in an eligible profile but one or both candidate thresholds fail. `No candidate reads` means zero recorded reads in an eligible profile. Below-eligibility profiles are separate.
+A profile is eligible for descriptive screening when its complete curated bacterial total is ≥100 reads. The numerical screen additionally requires **at least ten candidate reads and at least 1% of the complete curated bacterial total** (`screen_positive`). Figure 2 uses `counted_positive`, which also applies the recorded author quality-control decisions. An unconfirmed observation can meet the numerical screen while remaining excluded from the positive-call count. Observed read counts and composition are retained. `Trace-only` includes below-screen observations and unconfirmed observations; `No candidate reads` means zero recorded candidate reads in an eligible profile. The tables record these components separately.
 
 Group membership is explicit in `figure_support/species_symbionts/candidate_group_definitions.csv`; DUSA-like is OTU2 and *Mesoplasma* is OTU3 + OTU145. OTU287 remains a separate close sequence relative. Named, `_hint`, `_unresolved` and unnamed-Candidatus categories preserve different evidence levels. The catalogue is an operational annotation of retained labels, not a new comprehensive database search.
 
-Candidate screens are independent: one specimen can pass both the DUSA-like and *Mesoplasma* screens. These descriptive fractions are not validated infection prevalence or mutually exclusive dominance classes.
+Candidate screens are independent: one specimen can pass both the DUSA-like and *Mesoplasma* screens. Reported positive fractions use the quality-controlled calls and their stated eligible denominator. These are not validated infection prevalence or mutually exclusive dominance classes.
 
 ### Relative profile groups and log-ratio
 
@@ -223,7 +244,7 @@ The contemporary rule uses only the focal DUSA-like and Mesoplasma reads:
 
 Other bacterial reads and the largest overall OTU do not determine these groups. The log-ratio shown in S5 is log10[(OTU2 + 1)/(OTU3 + OTU145 + 1)]; its pseudocount is a plotting definition, not a separate grouping threshold.
 
-The 28 paired specimens comprise 16 DUSA-like, ten Mesoplasma and two mixed profiles (TH81/Arg17 and TH110/Arg18). Figure 5 and S6 test the same 26 clear paired profiles. TH102/Arg5 is a DUSA-like focal profile; TH99/Arg19 and TH84/Arg25 fail the paired bacterial and prey thresholds, respectively.
+The 28 paired specimens comprise 16 DUSA-like, ten Mesoplasma and two mixed profiles. Figure 5 and S6 test the same 26 clear paired profiles; mixed profiles remain in the paired displays.
 
 ### Percentage denominators
 
@@ -233,7 +254,7 @@ The 28 paired specimens comprise 16 DUSA-like, ten Mesoplasma and two mixed prof
 | Per-specimen prey composition        | All 368 curated prey features in that specimen; percent 0–100 in detailed composition tables.                            |
 | Figure 2 composition                 | Arithmetic mean of eligible per-specimen bacterial fractions within species × collection stratum; equal specimen weight. |
 | Candidate screen fraction            | Candidate-group reads / complete curated bacterial total for that specimen.                                              |
-| Candidate screen-positive proportion | Number passing / number eligible within the stated species × collection stratum.                                         |
+| Candidate screen-positive proportion | Number of counted positive calls / number eligible within the stated species × collection stratum.                                         |
 | Focal-variant composition, S7        | OTU-specific reads / `(OTU2 + OTU3 + OTU145)` for that specimen. Other bacteria are excluded.                            |
 | Within-group variant fraction        | OTU reads / the named focal group's reads; undefined when that group has no reads.                                       |
 | Global species stacks, S4            | Counts rarefied to 507 bacterial or 1,133 prey reads, pooled within host species and normalized to 100%.                 |
@@ -265,10 +286,10 @@ The creating scripts are in the [code repository](https://github.com/sven9r/Argi
 
 | File below `figure_support/script_exports/` | Rows and definitions                                                                                                                                                                                                                 |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `S02_processing/processing_outcomes.csv`    | 12 processing-category counts by marker and collection stratum. `n` is specimens. COI categories come from the workbook; the original 16S processing record gives 30/82 preselected and 1/55 rejected contemporary/museum specimens. |
+| `S02_processing/processing_outcomes.csv`    | 12 processing-category counts by marker and collection stratum. `n` is specimens. COI categories come from the workbook. Bacterial pre-selection includes 30/82 contemporary/museum specimens, of which 1/55 fall below 507 bacterial reads. |
 | `S03_dna_quality/panel_data.csv`            | 327 plotted specimen observations across four panels. A/B use bacterial/prey reads; C/D use thresholded bacterial/prey `TotalOTU`. `period` is the collection interval and `value` is the named metric.                              |
-| `S03_dna_quality/kruskal.csv`               | Four Kruskal–Wallis results, with panel, metric, sample size, chi-squared statistic, degrees of freedom and unadjusted probability.                                                                                                  |
-| `S03_dna_quality/dunn_bonferroni.csv`       | 30 pairwise comparisons for panels A–C. `Z` uses group1-minus-group2 orientation; probabilities are two-sided and Bonferroni-adjusted within each panel's ten comparisons. `letter1`/`letter2` are the displayed compact letters.    |
+| `S03_dna_quality/kruskal.csv`               | Two Kruskal–Wallis results for read-recovery panels A/B, with sample size, statistic, degrees of freedom and unadjusted probability. Panels C/D are descriptive.                                                                                                  |
+| `S03_dna_quality/dunn_bonferroni.csv`       | 20 pairwise comparisons for panels A/B. `Z` uses group1-minus-group2 orientation; probabilities are two-sided and Bonferroni-adjusted within each panel's ten comparisons. `letter1`/`letter2` are the displayed compact letters.    |
 | `S04_species_composition/plot_data.csv`     | 155 species/category compositions. `rarefied_reads` is the category pool; `pooled_rarefied_reads` is the complete species denominator; `relative_read_percent` is 100 times their ratio.                                             |
 | `S04_species_composition/sample_counts.csv` | 31 species/marker sample counts: 19 bacterial and 12 prey species, totaling 56 and 48 specimens, respectively.                                                                                                                       |
 | `figure4/plot_data.csv`                     | 330 specimen/marker/category rows across 30 positions. `included` identifies the eligible marker profiles; excluded profiles have no plotted percentage.                                                                             |
@@ -288,7 +309,7 @@ S3 uses right-closed intervals: year ≤1900; 1900 < year ≤1950; 1950 < year �
 
 The read panels include 107 dated specimens. The bacterial-OTU panel includes 55 dated profiles with ≥507 bacterial reads; the prey-OTU panel includes 58 with ≥1,133 prey reads. Period sample counts are 10/20/29/18/30 for reads, 1/3/12/10/29 for bacterial OTU counts, and 2/2/10/15/29 for prey OTU counts.
 
-The four Kruskal–Wallis statistics, all 30 Dunn/Bonferroni comparisons and the original compact letters are reproduced by `S03_dna_quality.R` and included in the script-export tables. The OTU panels use thresholded unrarefied `TotalOTU`.
+`S03_dna_quality.R` calculates the two Kruskal–Wallis tests and 20 Dunn/Bonferroni comparisons for bacterial/prey read-recovery panels A/B. Both read panels use a shared 0–20,000-read axis. Panels C/D show thresholded unrarefied `TotalOTU` descriptively, without inferential annotations. The current plot data and A/B test results are included in the script-export tables.
 
 S4 includes 56 bacterial profiles across 19 species and 48 valid prey profiles across 12 species. Its *A. bruennichi* labels are **34 bacterial and 35 prey profiles**.
 
@@ -311,7 +332,7 @@ Figure 5 uses 26 clear paired profiles for the prey comparison, 999 PERMANOVA pe
 | `retained_16s_fasttree_unrooted.nwk`  | Unrooted bacterial tree from 102 alignment columns with ≥80% non-gap coverage.                                              |
 | `S08_measured_101bp_fragments.fasta`  | Five complete 101-base fragments: reference, OTU2, OTU287, OTU3 and OTU145.                                                 |
 
-OTU116 is absent from the retained alignment/tree and current curated matrix but preserved in original evidence. Its unusual length and source Streptophyta hint motivated exclusion. Of the remaining 457 sequences, 47 lack a curated count column; that absence does not mean zero original reads. Twelve shared TH2 count cells are zero in the curated workbook and nonzero in the raw table; the difference table preserves them without inventing their curation rationale.
+OTU116 is absent from the retained alignment/tree and current curated matrix but preserved in original evidence. Its unusual length and source Streptophyta hint motivated exclusion. Of the remaining 457 sequences, 47 lack a curated count column; that absence does not mean zero original reads. Twelve count cells for one specimen are zero in the curated workbook and nonzero in the original OTU-count table; the difference table preserves them without inventing their curation rationale.
 
 The DUSA reference is [CP070274.1](https://www.ncbi.nlm.nih.gov/nuccore/CP070274.1). Its annotated 16S gene is extracted in gene orientation from `complement(553873..555402)` of the genome and is 1,530 bases long. OTU2 uniquely matches gene positions 1060–1160, inclusive. Genome and oriented-gene coordinates are different coordinate systems.
 
@@ -323,11 +344,11 @@ The 457-tip bacterial tree is distinct from the published host tree. Short ampli
 
 The working methods describe gut-tissue removal after 0.15% sodium hypochlorite treatment, an ethanol rinse and drying; Qiagen Puregene extraction with overnight Proteinase K digestion and GlycoBlue; short-marker PCRs; dual indexing in a second PCR; AMPure XP cleanup; and Illumina MiSeq 300-cycle sequencing. These are reported methods. Counts and FASTAs do not independently certify each laboratory step.
 
-Reported primer pairs are 16S_Museum_F1 / 16S_Museum_R1 and NoSpid_edit_F1 / Laurelin_edit_R1. The latter correspond to Spidprey_F / Spidprey_R in Melcher et al. (2024), [doi:10.1111/een.13382](https://doi.org/10.1111/een.13382). COI sequences are 71 bases after primer removal. The original 16S table reports 122 bp, whereas the verified focal retained fragment is 101 bases. Original primer-design provenance and the length definition remain unresolved; neither value should be silently substituted for the other.
+Reported primer pairs are 16S_Museum_F1 / 16S_Museum_R1 and NoSpid_edit_F1 / Laurelin_edit_R1. The latter correspond to Spidprey_F / Spidprey_R in Melcher et al. (2024), [doi:10.1111/een.13382](https://doi.org/10.1111/een.13382). COI sequences are 71 bases after primer removal. The original 16S table reports 122 bp, whereas the verified focal retained fragment is 101 bases. 
 
 The reported processing lineage is CASAVA demultiplexing without index mismatches; PEAR merging at ≥50-base overlap and Q20; retention when ≥90% of bases exceed Q30; FASTX conversion; sed primer trimming; USEARCH zOTU processing; and BLASTn annotation. Exact versions, command lines, database snapshots, denoising/chimera settings and the control-exclusion rule have not been recovered as a complete executable workflow.
 
-The deposit starts at retained counts, annotations and representatives. No FASTQs are included. Public raw-read accessions and their specimen linkage have not been verified. CP070274.1 is a third-party reference, not this study's raw-read accession.
+The two sequencing ZIPs provide the demultiplexed paired-end FASTQs; `Argiope_analysis_data.zip` provides the retained counts, annotations and representatives used by the figure scripts. The sample sheets identify named sequencing libraries, and the analysis metadata link specimen libraries to biological records. A complete historical FASTQ-to-OTU command history and a separate public sequence-archive study accession have not been recovered. CP070274.1 is a third-party reference accession.
 
 ## Software and reproduction
 
@@ -400,9 +421,9 @@ Cheng and Kuntner's host-tree dataset is [doi:10.5061/dryad.3c025](https://doi.o
 
 The host display places 26 local species and leaves eight unplaced. Museum/contemporary *A. bruennichi* are separate sampling rows at one species tip. The plot does not estimate phylogenetic signal, ancestral infections or bacterial acquisition dates. Source branch lengths are retained in trees but suppressed in the topology display.
 
-The current curated workbook's SHA-256 is `c9d1ca2992f83ab6e583ff00744e3f4d5f17217990312bee47079a707ca574f6`. The manifest identifies exact deposited bytes and excludes its own checksum to avoid circular hashing. Earlier workbooks and results remain dated provenance, not interchangeable versions of the current analysis.
+The dataset DOI is [10.5061/dryad.tht76hfg6](https://doi.org/10.5061/dryad.tht76hfg6).
 
-The draft dataset DOI is [10.5061/dryad.tht76hfg6](https://doi.org/10.5061/dryad.tht76hfg6). Its reserved DOI does not establish that the dataset has been released. The Dryad record identifies the dataset creators and selected licence; the final citation and linked publication should be checked at release. Third-party attribution is documented separately in `THIRD_PARTY_SOURCES.md`.
+Third-party attribution is documented separately in `THIRD_PARTY_SOURCES.md`.
 
 ## Access information
 
