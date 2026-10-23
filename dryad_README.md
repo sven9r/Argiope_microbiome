@@ -305,7 +305,7 @@ Source-selected Figure 5 and S1 tables are in `figure_support/current/`. The add
 
 ### Collection periods and source OTU counts
 
-S3 uses right-closed intervals: year ≤1900; 1900 < year ≤1950; 1950 < year ≤2000; 2000 < year ≤2020; year >2020. All 30 records in the last interval are contemporary specimens from 2021. No 1900 or 2020 observation is present. The scripted display labels the first interval `≤1900`.
+S3 uses right-closed intervals: year ≤1900; 1900 < year ≤1950; 1950 < year ≤2000; 2000 < year ≤2020; year >2020. All 30 records in the last interval are contemporary specimens from 2021. No 1900 or 2020 observation is present. The current artwork labels the first interval `<1900`; the implemented interval is right-closed at 1900, and no specimen from 1900 is present.
 
 The read panels include 107 dated specimens. The bacterial-OTU panel includes 55 dated profiles with ≥507 bacterial reads; the prey-OTU panel includes 58 with ≥1,133 prey reads. Period sample counts are 10/20/29/18/30 for reads, 1/3/12/10/29 for bacterial OTU counts, and 2/2/10/15/29 for prey OTU counts.
 
