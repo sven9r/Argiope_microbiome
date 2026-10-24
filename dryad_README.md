@@ -2,6 +2,8 @@
 
 Dataset creators: Sven Weber, Tim Hörrmann and Anja Carina Melcher.
 
+Analysis code, figure scripts and Makefile: [sven9r/Argiope_microbiome](https://github.com/sven9r/Argiope_microbiome).
+
 ## Dataset description
 
 The dataset contains paired-end bacterial 16S and prey COI sequencing reads, curated specimen-level read counts, representative marker sequences and collection metadata for 112 *Argiope* spiders. Museum material provides comparative host and historical coverage; contemporary *A. bruennichi* provides paired bacterial and prey profiles from one German collection. The focal bacterial features are DUSA-like OTU2 and the source-annotated *Mesoplasma* OTU3 and OTU145.
@@ -85,7 +87,7 @@ All paths below are relative to the root of `Argiope_analysis_data.zip` after ex
 | `figure_file_map.csv` | Each figure's PNG, data tables, creating script or software and analysis scope. |
 | `THIRD_PARTY_SOURCES.md` | Citations, accessions and terms for reused material. |
 
-Analysis code and software requirements are maintained in the accompanying GitHub repository.
+Analysis code and software requirements are maintained in [sven9r/Argiope_microbiome](https://github.com/sven9r/Argiope_microbiome).
 
 ## Current curated count matrices
 
